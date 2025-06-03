@@ -1,0 +1,1283 @@
+[
+      {
+        "domanda": "Quanti giorni durò il diluvio?",
+        "risposte": ["7", "40", "12", "3"],
+        "corretta": "40",
+        "riferimento": " Genesi 7:12: La pioggia cadde sulla terra per quaranta giorni e quaranta notti."
+      },
+    {
+        "domanda": "Chi fu il re che ricevette 15 anni di vita in più dopo aver pregato Dio?",
+        "risposte": ["Ezechia", "Giosia", "Manasse", "Davide"],
+        "corretta": "Ezechia",
+        "riferimento": "Isaia 38:5: Ho udito la tua preghiera, ho visto le tue lacrime. Ecco, io aggiungerò alla tua vita quindici anni."
+    },
+    {
+        "domanda": "Chi fu il profeta che vide un carro di fuoco e fu rapito in cielo?",
+        "risposte": ["Elia", "Eliseo", "Isaia", "Geremia"],
+        "corretta": "Elia",
+        "riferimento": "2 Re 2:11: E mentre camminavano parlando, un carro di fuoco... separò l’uno dall’altro, ed Elia salì in cielo in un turbine."
+    },
+    {
+        "domanda": "Chi fu il sommo sacerdote durante il tempo del giovane Samuele?",
+        "risposte": ["Eli", "Aaronne", "Fineas", "Abiatar"],
+        "corretta": "Eli",
+        "riferimento": "1 Samuele 1:9: Mentre il sacerdote Eli sedeva sul suo seggio presso l’entrata del tempio del Signore..."
+    },
+    {
+        "domanda": "Chi profetizzò la nascita del Messia dicendo che una vergine concepirà?",
+        "risposte": ["Isaia", "Geremia", "Ezechiele", "Daniele"],
+        "corretta": "Isaia",
+        "riferimento": "Isaia 7:14: Ecco, la giovane concepirà, partorirà un figlio, e lo chiamerà Emmanuele."
+    },
+    {
+        "domanda": "Quale re d’Israele cercò una necromante per evocare lo spirito di Samuele?",
+        "risposte": ["Saul", "Achab", "Manasse", "Geroboamo"],
+        "corretta": "Saul",
+        "riferimento": "1 Samuele 28:7: Allora Saul disse ai suoi servi: «Cercatemi una donna che evoca gli spiriti» e io andrò da lei a consultarla"
+    },
+    {
+        "domanda": "Chi fu l’imperatore romano durante la nascita di Gesù?",
+        "risposte": ["Augusto", "Tiberio", "Nerone", "Cesare"],
+        "corretta": "Augusto",
+        "riferimento": "Luca 2:1: In quel tempo uscì un decreto da parte di Cesare Augusto..."
+    },
+    {
+        "domanda": "Chi fu il discepolo che Gesù vide sotto il fico prima di chiamarlo?",
+        "risposte": ["Natanaele", "Andrea", "Tommaso", "Filippo"],
+        "corretta": "Natanaele",
+        "riferimento": "Giovanni 1:47-48: Gesù vide Natanaele che gli veniva incontro e disse di lui: «Ecco un vero Israelita in cui non c'è falsità». Natanaele gli chiese: «Da che cosa mi conosci?» Gesù gli rispose: Prima che Filippo ti chiamasse, quando eri sotto il fico, io ti ho visto"
+    },
+    {
+        "domanda": "Quale profeta vide un’enorme valle piena di ossa secche?",
+        "risposte": ["Ezechiele", "Isaia", "Geremia", "Abacuc"],
+        "corretta": "Ezechiele",
+        "riferimento": "Ezechiele 37:1: La mano del Signore fu sopra di me e mi portò... in mezzo a una valle piena d’ossa."
+    },
+    {
+        "domanda": "Qual è il salmo più lungo della Bibbia?",
+        "risposte": ["Salmo 23", "Salmo 119", "Salmo 91", "Salmo 1"],
+        "corretta": "Salmo 119",
+        "riferimento": "Salmo 119: È il più lungo, con 176 versetti, e celebra la Parola di Dio."
+    },
+       {
+        "domanda": "Quali lettere sono conosciute come le Epistole Pastorali?",
+        "risposte": ["1 Timoteo, 2 Timoteo, Tito", "Efesini, Filippesi, Colossesi", "Romani, Galati, Filippesi", "Tito, Filemone, Ebrei"],
+        "corretta": "1 Timoteo, 2 Timoteo, Tito",
+        "riferimento": "Sono dette 'Pastorali' perché trattano dell’organizzazione della chiesa e della vita dei ministri."
+    },
+        {
+        "domanda": "Chi ha scritto il libro delle Lamentazioni secondo la tradizione?",
+        "risposte": ["Geremia", "Ezechiele", "Esdra", "Daniele"],
+        "corretta": "Geremia",
+        "riferimento": "La tradizione ebraica attribuisce a Geremia il libro delle Lamentazioni."
+    },
+        {
+        "domanda": "Dove è scritto: 'Io sono la via, la verità e la vita'?",
+        "risposte": ["Giovanni 14:6", "Giovanni 10:10", "Matteo 5:14", "Romani 8:1"],
+        "corretta": "Giovanni 14:6",
+        "riferimento": "Giovanni 14:6: Gesù gli disse: «Io sono la via, la verità e la vita...»"
+    },
+        {
+        "domanda": "Dove si trova scritto: 'Il Signore è il mio pastore, nulla mi mancherà'?",
+        "risposte": ["Salmo 23:1", "Isaia 40:11", "Giovanni 10:11", "Ezechiele 34:11"],
+        "corretta": "Salmo 23:1",
+        "riferimento": "Salmo 23:1: Il Signore è il mio pastore, nulla mi mancherà."
+    },
+        {
+        "domanda": "Dove è scritto: 'Tutto posso in colui che mi fortifica'?",
+        "risposte": ["Filippesi 4:13", "2 Timoteo 2:1", "Romani 8:28", "Efesini 6:10"],
+        "corretta": "Filippesi 4:13",
+        "riferimento": "Filippesi 4:13: Tutto posso in colui che mi fortifica."
+    },
+      {
+        "domanda": "Qual è il significato del termine ebraico 'Mitzvah'?",
+        "risposte": ["Benedizione", "Comandamento", "Preghiera", "Sacrificio"],
+        "corretta": "Comandamento",
+        "riferimento": "Mitzvah significa letteralmente 'comandamento', usato per riferirsi alle leggi di Dio."
+    },
+        {
+        "domanda": "Cosa rappresenta il velo nel Tempio che si squarciò alla morte di Gesù?",
+        "risposte": ["Accesso diretto a Dio", "Fine del sacrificio animale", "Rivelazione della verità", "Fine della legge"],
+        "corretta": "Accesso diretto a Dio",
+        "riferimento": "Matteo 27:51: Il velo del tempio si squarciò, simbolizzando l’accesso diretto a Dio tramite Cristo."
+    },
+       {
+        "domanda": "Cosa rappresenta la roccia colpita da Mosè nel deserto secondo il Nuovo Testamento?",
+        "risposte": ["Cristo", "La legge", "Il giudizio", "La grazia"],
+        "corretta": "Cristo",
+        "riferimento": "1 Corinzi 10:4: La roccia era Cristo, che dava da bere al popolo."
+    },
+      {
+    "domanda": "Che cos'è la soteriologia?",
+    "risposte": [ "Lo studio della salvezza", "Lo studio degli angeli", "L’interpretazione dei sogni", "La genealogia biblica"],
+    "corretta": "Lo studio della salvezza",
+    "riferimento": "sōtēría = salvezza, liberazione | logía = studio, discorso"
+  },
+    {
+    "domanda": "Chi è il soggetto principale della Pneumatologia?",
+    "risposte": [ "Lo Spirito Santo", "Mosè", "Gesù", "Il profeta Isaia" ],
+    "corretta": "Lo Spirito Santo",
+    "riferimento": "pneûma = spirito, soffio, vento> ed è il termine usato nel Nuovo Testamento per indicare lo Spirito Santo. | logía = studio, discorso"
+  },
+{
+  "domanda": "Qual è l'obiettivo dell'apologetica cristiana?",
+  "risposte": [
+    "Difendere razionalmente la fede cristiana",
+    "Spiegare e motivare la speranza cristiana con argomenti convincenti",
+    "Approfondire i fondamenti della teologia morale",
+    "Rafforzare la propria posizione in dibattiti interreligiosi"
+  ],
+  "corretta": "Difendere razionalmente la fede cristiana",
+  "riferimento": "“...siate sempre pronti a rispondere [apología] a chiunque vi domandi ragione [logos] della speranza che è in voi” – 1 Pietro 3:15"
+}
+,
+   {
+    "domanda": "Cosa fu deciso nel concilio di Nicea?",
+    "risposte": [
+      "La divinità di Cristo",
+      "L’inizio del papato",
+      "L’inclusione dei Vangeli",
+      "L’obbligo del celibato"
+    ],
+    "corretta": "La divinità di Cristo",
+    "riferimento": "Il Concilio di Nicea fu convocato nel 325 d.C. dall’imperatore Costantino e fu il primo concilio ecumenico della storia della Chiesa cristiana. Si svolse a Nicea (oggi İznik, in Turchia) e aveva lo scopo principale di affrontare divisioni dottrinali all’interno del cristianesimo, in particolare la disputa sull’arianesimo."
+  },
+   {
+    "domanda": "In quanti anni è stata scritta l'intera Bibbia, Antico e Nuovo Testamento?",
+    "risposte": ["1600 anni", "400 anni", "70 anni", "1200 anni"],
+    "corretta": "1600 anni",
+    "riferimento": "Tradizionalmente si considera che la Bibbia sia stata scritta in circa 1600 anni da oltre 40 autori."
+  },
+    {
+    "domanda": "Quante leggi o precetti avevano codificato i farisei secondo la tradizione ebraica?",
+    "risposte": ["613", "10", "365", "7"],
+    "corretta": "613",
+    "riferimento": "I farisei riconoscevano 613 precetti: 248 positivi ('fa questo...') e 365 negativi ('non fare questo...')."
+  },
+    {
+    "domanda": "Quanti anni ha vissuto Matusalemme, l'uomo più longevo della Bibbia?",
+    "risposte": ["969", "930", "1008", "850"],
+    "corretta": "969",
+    "riferimento": "Genesi 5:27: Tutto il tempo che Metusela visse fu di novecentosessantanove anni; poi morì."
+  },
+   {
+    "domanda": "Secondo la tradizione biblica, quali due uomini non hanno sperimentato la morte?",
+    "risposte": [" Mosè ed Elia", "Enoc ed Elia", "Abramo e Isacco", "Noè e Daniele"],
+    "corretta": "Enoc ed Elia",
+    "riferimento": "Genesi 5:24: Enoc camminò con Dio; poi scomparve, perché Dio lo prese. | 2 Re 2:11: Mentre camminavano e parlavano, ecco un carro di fuoco e cavalli di fuoco li separarono l’uno dall’altro, ed Elia salì al cielo in un turbine."
+  },
+{
+  "domanda": "Secondo la legge ebraica, cosa doveva fare un lebbroso guarito?",
+  "risposte": [
+    "Presentarsi al sacerdote e offrire un sacrificio",
+    "Recarsi al tempio con un’offerta di purificazione simbolica",
+    "Sottoporsi a un periodo di isolamento e lavaggio rituale",
+    "Farsi esaminare pubblicamente e portare un’offerta al popolo"
+  ],
+  "corretta": "Presentarsi al sacerdote e offrire un sacrificio",
+  "riferimento": "Levitico 14:2-4: Il sacerdote .. Se vedrà che la piaga della lebbra è guarita .., ordinerà che si prendano ..  due uccelli vivi, puri, del legno di cedro, dello scarlatto e dell'issopo.. ordinerà che si sgozzi uno degli uccelli sopra un vaso .. contenente acqua .. Poi prenderà l'uccello vivo, il legno di cedro, lo scarlatto e l'issopo. Immergerà quelle cose, insieme con l'uccello vivo, nel sangue dell'uccello sgozzato sopra l'acqua ..  Aspergerà sette volte colui che deve essere purificato dalla lebbra; lo dichiarerà puro e lascerà l'uccello vivo andare libero per i campi."
+}
+,
+{
+  "domanda": "Chi profetizzò che il Messia sarebbe nato a Betlemme?",
+  "risposte": [
+    "Isaia",
+    "Michea",
+    "Geremia",
+    "Zaccaria"
+  ],
+  "corretta": "Michea",
+  "riferimento": "Michea 5:2 – 'Da te, Betlemme, uscirà colui che deve regnare su Israele'"
+}
+,
+  {
+  "domanda": "In quali luoghi ha vissuto Gesù durante la sua vita, in ordine cronologico, fino alla sua morte?",
+  "risposte": [
+    "Betlemme, Egitto, Nazaret, Gerusalemme",
+    "Gerusalemme, Betlemme, Nazaret, Cafarnao",
+    "Betlemme, Egitto, Nazaret, Cafarnao, Gerusalemme",
+    "Nazaret, Egitto, Betlemme, Gerusalemme"
+  ],
+  "corretta": "Betlemme, Egitto, Nazaret, Cafarnao, Gerusalemme",
+  "riferimento": "Gesù nacque a Betlemme (Matteo 2:1), fu portato in Egitto (Matteo 2:13–15), crebbe a Nazaret (Matteo 2:23), visse a Cafarnao durante il suo ministero (Matteo 4:13) e morì a Gerusalemme (Luca 23)."
+},
+  {
+    "domanda": "Qual è il termine greco usato nel Nuovo Testamento per indicare 'grazia'?",
+    "risposte": ["Charis", "Agape", "Dikaiosyne", "Logos"],
+    "corretta": "Charis",
+    "riferimento": "Il termine greco 'charis' è tradotto come grazia e indica il favore immeritato di Dio (Efesini 2:8)."
+  },
+  {
+    "domanda": "Qual è la differenza principale tra un sacramento e un'ordinanza nelle tradizioni cristiane?",
+    "risposte": [
+      "Il sacramento è un mezzo di grazia, l'ordinanza è un atto simbolico",
+      "Il sacramento è per i bambini, l'ordinanza per gli adulti",
+      "L'ordinanza si fa solo una volta, il sacramento più volte",
+      "Non esiste alcuna differenza"
+    ],
+    "corretta": "Il sacramento è un mezzo di grazia, l'ordinanza è un atto simbolico",
+    "riferimento": "Le tradizioni protestanti spesso parlano di ordinanze (es. battesimo e Cena del Signore), mentre la teologia cattolica parla di sacramenti come mezzi di grazia."
+  },
+  {
+    "domanda": "In che modo la teologia cristiana definisce l'immutabilità di Dio?",
+    "risposte": [
+      "Dio non cambia nella sua essenza, volontà e promesse",
+      "Dio non cambia opinione, ma può cambiare piani",
+      "Dio cambia solo nell'Antico Testamento",
+      "Dio si adatta sempre alle azioni umane"
+    ],
+    "corretta": "Dio non cambia nella sua essenza, volontà e promesse",
+    "riferimento": "Giacomo 1:17: ogni cosa buona e ogni dono perfetto vengono dall'alto e discendono dal Padre degli astri luminosi presso il quale non c'è variazione né ombra di mutamento."
+  },
+    {
+    "domanda": "Qual è la differenza tra espiazione e propiziazione nella dottrina della salvezza?",
+    "risposte": [
+      "Espiazione rimuove il peccato, propiziazione placa l’ira di Dio",
+      "Sono sinonimi perfetti",
+      "Espiazione è dell’Antico Testamento, propiziazione del Nuovo",
+      "Espiazione è simbolica, propiziazione è reale"
+    ],
+    "corretta": "Espiazione rimuove il peccato, propiziazione placa l’ira di Dio",
+    "riferimento": "Espiazione (Lev 16) e propiziazione (Rom 3:25) sono concetti complementari ma distinti nella teologia."
+  },
+   {
+    "domanda": "In quale libro troviamo la frase: 'Il giusto vivrà per fede'?",
+    "risposte": ["Romani", "Habacuc", "Galati", "Tutte le precedenti"],
+    "corretta": "Tutte le precedenti",
+    "riferimento": "La frase appare in Habacuc 2:4, Romani 1:17, e Galati 3:11 come tema centrale della giustificazione per fede."
+  },
+    {
+    "domanda": "Cosa significa il termine 'kenosi' in cristologia?",
+    "risposte": [
+      "L'auto-svuotamento del Figlio di Dio nel diventare uomo",
+      "La distruzione del peccato originale",
+      "La glorificazione della natura divina",
+      "Il ritorno di Cristo nel giudizio finale"
+    ],
+    "corretta": "L'auto-svuotamento del Figlio di Dio nel diventare uomo",
+    "riferimento": "Il termine kenosi deriva da Filippesi 2:7: 'svuotò sé stesso prendendo forma di servo'."
+  },
+{
+  "domanda": "Qual è la distinzione tra rivelazione generale e rivelazione speciale?",
+  "risposte": [
+    "La rivelazione generale è data a tutti tramite la creazione; la speciale tramite la Scrittura",
+    "La rivelazione generale è accessibile alla ragione umana; la speciale richiede illuminazione spirituale",
+    "La rivelazione generale comunica la realtà di Dio; la speciale rivela la sua volontà salvifica",
+    "La rivelazione generale include la legge morale; la speciale comprende la venuta di Cristo"
+  ],
+  "corretta": "La rivelazione generale è data a tutti tramite la creazione; la speciale tramite la Scrittura",
+ "riferimento": "Romani 1:19-20; Ebrei 1:1-2: la rivelazione generale si manifesta nella creazione e nella coscienza; la speciale si manifesta tramite la Parola di Dio, i profeti e Cristo stesso"
+},
+
+{
+  "domanda": "Cosa significa il termine 'escatologia' in teologia?",
+  "risposte": [
+    "Studio delle ultime cose come la seconda venuta e il giudizio finale",
+    "Riflessione teologica sui tempi della fine e sul compimento della storia",
+    "Analisi delle promesse profetiche legate alla restaurazione di Israele",
+    "Dottrina che esamina il destino dell’uomo alla luce dell’alleanza"
+  ],
+  "corretta": "Studio delle ultime cose come la seconda venuta e il giudizio finale",
+  "riferimento": "L’escatologia è la parte della teologia che studia gli eventi finali (dal greco 'eschatos' = ultimo), come la parusia, la risurrezione, il giudizio e il destino eterno."
+}
+,
+    {
+    "domanda": "Quale concetto teologico è collegato all’espressione 'già e non ancora'?",
+    "risposte": [
+      "Il Regno di Dio",
+      "La Trinità",
+      "La creazione",
+      "L’ispirazione biblica"
+    ],
+    "corretta": "Il Regno di Dio",
+     "riferimento": "Già: Cristo ha inaugurato il Regno con la sua venuta, morte e risurrezione. Non ancora: il Regno non è ancora pienamente manifestato, lo sarà alla parusia (seconda venuta di Cristo)."
+  },
+{
+  "domanda": "Cosa si intende per ispirazione plenaria della Scrittura?",
+  "risposte": [
+    "Che tutta la Scrittura è ispirata da Dio, in ogni sua parte",
+    "Che l’insegnamento dottrinale è ispirato, ma non le parti narrative",
+    "Che la rivelazione si applica solo ai concetti, non alle parole",
+    "Che i libri più antichi godono di un’autorità superiore agli altri"
+  ],
+  "corretta": "Che tutta la Scrittura è ispirata da Dio, in ogni sua parte",
+  "riferimento": "2 Timoteo 3:16 – Il termine 'plenario' indica che ogni parte della Bibbia, non solo i contenuti centrali, è ispirata da Dio."
+},
+{
+  "domanda": "Che cosa afferma la dottrina della sufficienza della Scrittura?",
+  "risposte": [
+    "La Bibbia contiene tutto ciò che è necessario per la salvezza e la fede",
+    "La Scrittura guida, ma non basta senza autorità esterne riconosciute",
+    "La rivelazione biblica va integrata con esperienze spirituali personali",
+    "La Bibbia tratta principalmente di morale e non può rispondere a ogni questione dottrinale"
+  ],
+  "corretta": "La Bibbia contiene tutto ciò che è necessario per la salvezza e la fede",
+  "riferimento": "2 Timoteo 3:15-17: fin da bambino hai avuto conoscenza delle sacre Scritture, le quali possono darti la sapienza che conduce alla salvezza mediante la fede in Cristo Gesù.  Ogni Scrittura è ispirata da Dio e utile a insegnare, a riprendere, a correggere, a educare alla giustizia, perché l'uomo di Dio sia completo e ben preparato per ogni opera buona."
+}
+,
+   {
+    "domanda": "In quale epistola si trova l’elenco più dettagliato dei frutti dello Spirito?",
+    "risposte": ["Galati", "Efesini", "Romani", "Colossesi"],
+    "corretta": "Galati",
+    "riferimento": "Galati 5:22: Il frutto dello Spirito invece è amore, gioia, pace, pazienza, benevolenza, bontà, fedeltà, mansuetudine, autocontrollo; contro queste cose non c'è legge"
+  },
+ {
+  "domanda": "Cosa distingue un profeta autentico secondo la Scrittura?",
+  "risposte": [
+    "Le sue parole si avverano e sono in armonia con la Parola di Dio",
+    "Il contenuto del suo messaggio è edificante e genera entusiasmo",
+    "Le sue rivelazioni si accompagnano a segni esteriori potenti",
+    "È riconosciuto come tale da altri profeti o capi spirituali"
+  ],
+  "corretta": "Le sue parole si avverano e sono in armonia con la Parola di Dio",
+  "riferimento": "Deuteronomio 18:22 e Geremia 23 parlano del discernimento dei veri profeti."
+},
+    {
+    "domanda": "Quanti apostoli erano presenti alla crocifissione di Gesù secondo i Vangeli?",
+    "risposte": ["Uno", "Tutti", "Tre", "Dodici"],
+    "corretta": "Uno",
+    "riferimento": "Solo Giovanni è menzionato come presente sotto la croce (Giovanni 19:26-27)."
+  },
+  {
+    "domanda": "Quante persone entrarono nell'arca secondo Genesi?",
+    "risposte": ["8", "2", "6", "10"],
+    "corretta": "8",
+    "riferimento": "Genesi 7:13:  In quello stesso giorno Noè, Sem, Cam e Iafet, figli di Noè, la moglie di Noè e le tre mogli dei suoi figli entrarono con loro nell'arca: 8 in totale."
+  },
+    {
+    "domanda": "Qual è l’unico miracolo di Gesù riportato in tutti e quattro i Vangeli?",
+    "risposte": [
+      "La moltiplicazione dei pani e dei pesci",
+      "La resurrezione di Lazzaro",
+      "La trasformazione dell’acqua in vino",
+      "La guarigione del cieco nato"
+    ],
+    "corretta": "La moltiplicazione dei pani e dei pesci",
+    "riferimento": "È l’unico miracolo, oltre alla risurrezione, menzionato in tutti e quattro i Vangeli (Matteo 14, Marco 6, Luca 9, Giovanni 6)."
+  },
+   {
+    "domanda": "Chi fu Teofilo, il destinatario del Vangelo di Luca e degli Atti?",
+    "risposte": [
+      "Un ufficiale romano",
+      "Un discepolo di Paolo",
+      "Un sacerdote levitico",
+      "Un governatore giudeo"
+    ],
+    "corretta": "Un ufficiale romano",
+    "riferimento": "Luca 1:3 e Atti 1:1 usano il titolo 'eccellentissimo', tipico per autorità romane."
+  },
+    {
+    "domanda": "Qual è il significato escatologico del termine 'Parousia'?",
+    "risposte": [
+      "La seconda venuta di Cristo",
+      "La rivelazione dello Spirito Santo",
+      "L’inizio della Chiesa",
+      "La distruzione del tempio"
+    ],
+    "corretta": "La seconda venuta di Cristo",
+    "riferimento": "'Parousia' è un termine greco usato nel NT per indicare il ritorno glorioso di Gesù (es. 1 Tessalonicesi 4:15)."
+  },
+    {
+    "domanda": "Chi ha scritto il libro degli Atti degli Apostoli secondo l’evidenza testuale?",
+    "risposte": ["Luca", "Paolo", "Giovanni", "Pietro"],
+    "corretta": "Luca",
+    "riferimento": "Atti 1:1 fa riferimento a 'un primo libro' scritto a Teofilo, lo stesso destinatario del Vangelo di Luca. Lo stile e il vocabolario coincidono con quello del Vangelo attribuito a Luca."
+  },
+   {
+    "domanda": "Che legame di parentela c’era tra Mosè, Aronne e Maria (Miriam)?",
+    "risposte": [
+      "Erano fratelli",
+      "Cugini",
+      "Padre e figli",
+      "Zio e nipoti"
+    ],
+    "corretta": "Erano fratelli",
+    "riferimento": "Numeri 26:59: I tre sono figli di Amram e Iochebed."
+  },
+    {
+    "domanda": "Chi era il nonno di Gesù secondo la genealogia in Luca?",
+    "risposte": ["Eli", "Giacobbe", "Davide", "Zorobabele"],
+    "corretta": "Eli",
+    "riferimento": "Luca 3:23: 'Gesù [...] era figlio, come si credeva, di Giuseppe, figlio di Eli'."
+  },
+   {
+    "domanda": "Chi era la madre di Samuele, il profeta che unse Davide?",
+    "risposte": ["Anna", "Debora", "Abigail", "Micol"],
+    "corretta": "Anna",
+    "riferimento": "1 Samuele 1:20: Anna, dopo molte preghiere, partorì Samuele e lo dedicò al servizio del Signore."
+  },
+    {
+    "domanda": "Quale apostolo era parente di Gesù secondo la carne, oltre a Giacomo?",
+    "risposte": ["Giuda (non Iscariota)", "Andrea", "Bartolomeo", "Filippo"],
+    "corretta": "Giuda (non Iscariota)",
+    "riferimento": "Marco 6:3: Non è costui il falegname, il figlio di Maria, fratello di Giacomo, di Ioses, di Giuda e di Simone? | Giuda 1:1: Giuda, servo di Gesù Cristo e fratello di Giacomo."
+  },
+{
+  "domanda": "Come viene descritto fisicamente Davide quando viene scelto da Samuele?",
+  "risposte": [
+    "Rossiccio, con begli occhi e di bell’aspetto",
+    "Capelli neri e ricci, carnagione scura e sguardo deciso",
+    "Alto, con spalle larghe e barba folta",
+    "Capelli castani, occhi piccoli e volto severo"
+  ],
+  "corretta": "Rossiccio, con begli occhi e di bell’aspetto",
+  "riferimento": "1 Samuele 16:12: E mandò a chiamarlo, e lo fece venire. Egli era rossiccio, con begli occhi e di bell’aspetto. E il Signore disse: «Àlzati, ungilo, poiché è lui»"
+},
+{
+  "domanda": "Perché gli Israeliti rifiutarono il governo dei figli di Samuele?",
+  "risposte": [
+    "Perché erano corrotti e non giudicavano con giustizia",
+    "Perché cercavano il potere ma non erano stati unti dal profeta",
+    "Perché trascuravano il culto e favorivano interessi tribali",
+    "Perché erano considerati incapaci di garantire la sicurezza del popolo"
+  ],
+  "corretta": "Perché erano corrotti e non giudicavano con giustizia",
+  "riferimento": "1 Samuele 8:3: I suoi figli però non seguivano le sue orme; si lasciavano sviare dalla cupidigia, accettavano regali e pervertivano la giustizia."
+},
+{
+  "domanda": "Chi conquistò Gerusalemme e ne fece la capitale d’Israele?",
+  "risposte": [ "Davide", "Salomone", "Saul", "Ezechia" ],
+  "corretta": "Davide",
+  "riferimento": "2 Samuele 5:6-7: Il re e i suoi uomini andarono contro Gerusalemme (contro i Gebusei, che abitavano il paese) Davide prese la fortezza di Sion: questa è la città di Davide."
+},
+{
+  "domanda": "Chi sognò una scala che dalla terra arrivava al cielo, con angeli che vi salivano e scendevano?",
+  "risposte": [
+    "Giacobbe",
+    "Giuseppe",
+    "Abramo",
+    "Daniele"
+  ],
+  "corretta": "Giacobbe",
+  "riferimento": "Genesi 28:12: Sognò una scala poggiata sulla terra, la cui cima toccava il cielo, e gli angeli di Dio salivano e scendevano su di essa."
+},
+{
+  "domanda": "Cosa rappresentano spesso i 40 giorni nella Bibbia?",
+  "risposte": [
+    "Un tempo di prova e preparazione",
+    "Il tempo necessario per purificarsi",
+    "Un simbolo di eternità",
+    "Il numero delle tribù di Israele"
+  ],
+  "corretta": "Un tempo di prova e preparazione",
+  "riferimento": "Esempi: Mosè sul Sinai (Esodo 24:18), Gesù nel deserto (Matteo 4:2), Diluvio 40 giorni (Genesi 7:12)"
+},
+{
+  "domanda": "In che anno circa Gerusalemme fu conquistata da Nabucodonosor e il tempio distrutto?",
+  "risposte": [
+    "586 a.C.",
+    "722 a.C.",
+    "70 d.C.",
+    "606 a.C."
+  ],
+  "corretta": "586 a.C.",
+  "riferimento": "2 Re 25:8-10: L’anno 586 a.C. segna la distruzione del tempio e l’esilio babilonese."
+},
+{
+  "domanda": "Cosa chiese Dio agli amici di Giobbe affinché il Suo giudizio non si abbattesse su di loro?",
+  "risposte": [
+    "Di offrire sacrifici e lasciare che Giobbe pregasse per loro",
+    "Di pentirsi sinceramente e recitare parole di riconciliazione davanti a Giobbe",
+    "Di portare offerte nel tempio e astenersi dal parlare per sette giorni",
+    "Di confessare i loro errori e ritirarsi in silenzio per ascoltare Dio"
+  ],
+  "corretta": "Di offrire sacrifici e lasciare che Giobbe pregasse per loro",
+  "riferimento": "Giobbe 42:8: Prendete sette tori e sette montoni, andate da Giobbe... Il mio servo Giobbe pregherà per voi."
+}
+,
+{
+  "domanda": "Cosa simboleggia il roveto che arde ma non si consuma nella chiamata di Mosè?",
+  "risposte": [
+    "La presenza di Dio che purifica ma non distrugge",
+    "La santità divina che consuma l’iniquità ma risparmia il giusto",
+    "L’ira di Dio trattenuta nel tempo dell’alleanza",
+    "La rivelazione progressiva della legge nel deserto"
+  ],
+  "corretta": "La presenza di Dio che purifica ma non distrugge",
+  "riferimento": "Esodo 3:2-5: L’angelo del SIGNORE gli apparve in una fiamma di fuoco… ma il roveto non si consumava."
+}
+,
+{
+  "domanda": "Secondo Gesù, in che modo si è adempiuta la profezia del ritorno di Elia prima del giorno del Signore?",
+  "risposte": [
+    "In Giovanni Battista che preparò la via al Messia",
+    "Nel ministero profetico dei due testimoni in Apocalisse",
+    "In un adempimento spirituale attraverso la predicazione del Regno",
+    "Nell’apparizione gloriosa di Elia sul monte della Trasfigurazione"
+  ],
+  "corretta": "In Giovanni Battista che preparò la via al Messia",
+  "riferimento": "Malachia 4:5; Matteo 11:13-14: E se lo volete accettare, egli (Giovanni) è l'Elia che doveva venire."
+},
+{
+  "domanda": "Secondo la lettera di Giacomo, a cosa è paragonato chi ascolta la Parola ma non la mette in pratica?",
+  "risposte": [
+    "A uno che guarda il suo volto allo specchio e poi se ne dimentica",
+    "A un uomo che costruisce senza fondamento e vede la sua casa crollare",
+    "A un ascoltatore che gioisce ma non ha radice in sé",
+    "A un ramo reciso che si secca e viene gettato via"
+  ],
+  "corretta": "A uno che guarda il suo volto allo specchio e poi se ne dimentica",
+  "riferimento": "Giacomo 1:23-25: Poiché, se uno è uditore della parola e non facitore, è simile a un uomo che osserva la sua faccia naturale in uno specchio; 24 egli osserva se stesso e poi se ne va, dimenticando subito com'era. 25 Ma chi esamina attentamente la legge perfetta, che è la legge della libertà, e persevera in essa, non essendo un uditore dimentichevole ma un facitore dell'opera, costui sarà beato nel suo operare."
+}
+,
+{
+  "domanda": "Quale dettaglio nel testo suggerisce che il sacrificio di Isacco fu visto da ebrei e cristiani come un tipo del sacrificio di Cristo?",
+  "risposte": [
+    "Il fatto che Isacco portasse la legna sulle spalle",
+    "Il fatto che il sacrificio fu volontario e senza resistenza",
+    "Il fatto che Abramo profetizzò 'Dio provvederà l’agnello'",
+    "Il fatto che il sacrificio avvenisse su un monte designato da Dio"
+  ],
+  "corretta": "Il fatto che Isacco portasse la legna sulle spalle",
+  "riferimento": "Genesi 22:6; Giovanni 19:17; Isacco portava la legna come Cristo la croce."
+}
+,
+{
+  "domanda": "Cosa insegnava Gesù quando maledisse il fico senza frutto?",
+  "risposte": [
+    "Che Israele aveva l’apparenza della fede ma non i frutti",
+    "Che l’apparenza religiosa senza vera obbedienza porta al giudizio",
+    "Che la stagione dei frutti spirituali è stabilita da Dio",
+    "Che il Regno di Dio sarebbe stato tolto ai capi religiosi"
+  ],
+  "corretta": "Che Israele aveva l’apparenza della fede ma non i frutti",
+  "riferimento": "Marco 11:13-21; il fico simboleggia Israele: foglie ma niente frutti"
+}
+,
+{
+  "domanda": "Perché Gesù pronuncia la parola 'Eli, Eli, lamà sabactàni' sulla croce?",
+  "risposte": [
+    "Sta citando Salmo 22 per mostrare che sta adempiendo le Scritture nel momento più oscuro",
+    "Per esprimere la profondità della sua sofferenza messianica in termini profetici",
+    "Perché stava pregando secondo la tradizione liturgica ebraica",
+    "Per provocare riflessione nei presenti sul significato della crocifissione"
+  ],
+  "corretta": "Sta citando Salmo 22 per mostrare che sta adempiendo le Scritture nel momento più oscuro",
+  "riferimento": "Matteo 27:46; Salmo 22:1: Salmo che inizia con abbandono e termina con vittoria"
+}
+  ,
+{
+  "domanda": "In che modo la figura di Giobbe è ripresa nel Nuovo Testamento?",
+  "risposte": [
+    "Giacomo lo cita come esempio di perseveranza sotto prova",
+    "Pietro lo menziona nel contesto della sofferenza dei giusti",
+    "Paolo lo allude parlando della ricompensa dopo le tribolazioni",
+    "L'autore di Ebrei lo include implicitamente tra gli eroi della fede"
+  ],
+  "corretta": "Giacomo lo cita come esempio di perseveranza sotto prova",
+  "riferimento": "Giacomo 5:11: Ecco, noi proclamiamo beati coloro che hanno perseverato; avete udito parlare della pazienza di Giobbe, e avete visto la sorte finale che il Signore gli riserbò, poiché il Signore è pieno di misericordia e di compassione."
+}
+  ,
+{
+  "domanda": "Chi era Mefiboset, e cosa rappresenta la sua storia nella teologia della grazia?",
+  "risposte": [
+    "Il figlio storpio di Gionatan che riceve la grazia regale di Davide",
+    "Un discendente di Saul che fu esiliato a causa della sua menomazione",
+    "Un giovane della casa reale risparmiato per rispetto alla memoria di Saul",
+    "Un uomo salvato da Davide per non creare disordini politici nel regno"
+  ],
+  "corretta": "Il figlio storpio di Gionatan che riceve la grazia regale di Davide",
+  "riferimento": "2 Samuele 9: Davide lo accoglie come figlio per amore del patto con Gionatan"
+}
+  ,
+{
+  "domanda": "Chi era Baruc, e quale ruolo profetico svolse accanto a Geremia?",
+  "risposte": [
+    "Lo scriba che scrisse le parole di Geremia e subì persecuzioni con lui",
+    "Un collaboratore levita incaricato della lettura pubblica della legge",
+    "Un consigliere del re che si oppose alla distruzione del rotolo",
+    "Un emissario scelto per consegnare le profezie ai capi in esilio"
+  ],
+  "corretta": "Lo scriba che scrisse le parole di Geremia e subì persecuzioni con lui",
+  "riferimento": "Geremia 36: Baruc scrisse su rotolo le profezie e le lesse pubblicamente nel tempio"
+},
+{
+  "domanda": "Cosa accadde a Betel secondo la narrazione della Genesi?",
+  "risposte": [
+    "Giacobbe ebbe un sogno con una scala che toccava il cielo",
+    "Fu il luogo della sepoltura di Rachele",
+    "Mosè ricevette in questo luogo i Dieci Comandamenti",
+    "Valle in cui Davide uccise Golia"
+  ],
+  "corretta": "Giacobbe ebbe un sogno con una scala che toccava il cielo",
+  "riferimento": "Genesi 28:12,19: Giacobbe sognò una scala… chiamò quel luogo Betel, che significa 'casa di Dio'"
+},
+{
+  "domanda": "Chi era il padre di Davide secondo la genealogia?",
+  "risposte": [
+    "Isai, uomo di Betlemme",
+    "Saul, il primo re d’Israele",
+    "Obed, servo del tempio",
+    "Nathan, consigliere di Samuele"
+  ],
+  "corretta": "Isai, uomo di Betlemme",
+  "riferimento": "1 Samuele 16:1: «Io manderò da Isai il Betlemmita, perché mi sono provveduto un re»"
+}
+,
+{
+  "domanda": "Chi era Abigail e quale ruolo ebbe nella vita di Davide?",
+  "risposte": [
+    "Moglie di Nabal, fermò Davide dall'ucciderlo, poi divenne sua moglie",
+    "Figlia di Saul, fuggì con Davide durante la sua persecuzione",
+    "Sorella di Davide, lo incoraggiò nella battaglia contro Golia",
+    "Vedova di Uria, divenne regina dopo aver sposato Davide"
+  ],
+  "corretta": "Moglie di Nabal, fermò Davide dall'ucciderlo, poi divenne sua moglie",
+  "riferimento": "1 Samuele 25: Abigail, moglie di Nabal, intervenne per evitare lo spargimento di sangue; dopo la morte del marito, divenne moglie di Davide"
+}
+
+,
+{
+  "domanda": "Chi era Gamaliele e che ruolo ebbe nella vita di Paolo?",
+  "risposte": [
+    "Era un fariseo e maestro della legge, sotto il quale Paolo fu educato",
+    "Era il fratello maggiore di Paolo che lo accompagnò nei viaggi missionari",
+    "Era un sacerdote che accusò Paolo davanti al Sinedrio",
+    "Era un re straniero convertito dalla predicazione di Paolo"
+  ],
+  "corretta": "Era un fariseo e maestro della legge, sotto il quale Paolo fu educato",
+  "riferimento": "Atti 22:3: Paolo dice di essere stato educato ai piedi di Gamaliele, secondo la legge dei padri"
+}
+,
+{
+  "domanda": "Chi era Eli e quale responsabilità gli fu affidata?",
+  "risposte": [
+    "Sommo sacerdote e giudice che allevò il giovane Samuele",
+    "Profeta che unse Davide re di Israele",
+    "Re di Giuda che restaurò il culto nel tempio",
+    "Levita che custodì l’arca nell’epoca dei Giudici"
+  ],
+  "corretta": "Sommo sacerdote e giudice che allevò il giovane Samuele",
+  "riferimento": "1 Samuele 1–4: Eli accoglie Samuele nel tempio e lo guida nei suoi primi anni"
+}
+,
+{
+  "domanda": "Cosa accadde sul monte Carmelo secondo la Bibbia?",
+  "risposte": [
+    "Elia sfidò e sconfisse i profeti di Baal",
+    "Mosè ricevette la legge da Dio",
+    "Giosuè pronunciò la benedizione e la maledizione",
+    "Gesù fu trasfigurato davanti ai discepoli"
+  ],
+  "corretta": "Elia sfidò e sconfisse i profeti di Baal",
+  "riferimento": "1 Re 18:20-40: Elia invoca il fuoco di Dio sul monte Carmelo"
+},
+  {
+    "domanda": "In che modo Abramo è considerato un modello nella dottrina della fede?",
+    "risposte": [
+      "Perché credette alle promesse di Dio prima che si realizzassero",
+      "Perché osservava fedelmente tutta la Legge di Mosè",
+      "Perché vinse molte guerre con l’aiuto divino",
+      "Perché costruì l’altare del primo sacrificio animale"
+    ],
+    "corretta": "Perché credette alle promesse di Dio prima che si realizzassero",
+    "riferimento": "Romani 4:20-22: «…fu pienamente convinto che quanto Egli aveva promesso, era anche potente da compierlo…»"
+  },
+    {
+    "domanda": "Cosa dimostra la guarigione della donna che toccò il mantello di Gesù?",
+    "risposte": [
+      "Che la fede personale autentica apre alla potenza salvifica di Cristo",
+      "Che toccare un oggetto sacro garantisce automaticamente la guarigione",
+      "Che le donne erano escluse dal culto e dovevano avvicinarsi in segreto",
+      "Che solo i miracoli pubblici erano validi davanti alla folla"
+    ],
+    "corretta": "Che la fede personale autentica apre alla potenza salvifica di Cristo",
+    "riferimento": "Marco 5:25–34: «Figlia, la tua fede ti ha salvata»"
+  },
+    {
+    "domanda": "Perché la profezia di Aggeo fu cruciale per la restaurazione post-esilica?",
+    "risposte": [
+      "Perché spronò il popolo a ricostruire il tempio dopo anni di negligenza",
+      "Perché predisse l’arrivo del Messia da Babilonia",
+      "Perché spiegò il motivo per cui Israele non doveva più offrire sacrifici",
+      "Perché indicò il giorno esatto del ritorno del Signore sul monte Sion"
+    ],
+    "corretta": "Perché spronò il popolo a ricostruire il tempio dopo anni di negligenza",
+    "riferimento": "Aggeo 1–2: «È forse tempo per voi di abitare nelle vostre case mentre questo tempio è in rovina?»"
+  },
+    {
+    "domanda": "Secondo Ebrei 9:12, quale contrasto esiste tra il sangue di Cristo e quello degli animali?",
+    "risposte": [
+      "Il sangue di Cristo ottiene una redenzione eterna, non temporanea",
+      "Entrambi i sacrifici erano necessari per il perdono",
+      "Il sangue animale serviva solo per i peccati volontari",
+      "Cristo offrì il proprio sangue solo per Israele"
+    ],
+    "corretta": "Il sangue di Cristo ottiene una redenzione eterna, non temporanea",
+    "riferimento": "Ebrei 9:12: «…è entrato una volta per sempre nel santuario… avendo acquistato una redenzione eterna»"
+  },
+    {
+    "domanda": "Qual era uno dei segni esteriori del nazireato osservato da Samuele?",
+    "risposte": [
+      "Non si tagliava mai i capelli",
+      "Indossava un mantello di peli di cammello",
+      "Camminava scalzo in segno di umiltà",
+      "Portava un turbante sacerdotale"
+    ],
+    "corretta": "Non si tagliava mai i capelli",
+    "riferimento": "1 Samuele 1:11 e Numeri 6:5: il nazireo non doveva radersi il capo"
+  },
+    {
+    "domanda": "Per quale evento biblico è principalmente noto il monte Sinai?",
+    "risposte": [
+      "Per la consegna dei Dieci Comandamenti a Mosè",
+      "Per la trasfigurazione di Gesù",
+      "Elia sfidò i profeti di Baal e Dio rispose col fuoco",
+      "Mosè vide la terra promessa da lontano"
+    ],
+    "corretta": "Per la consegna dei Dieci Comandamenti a Mosè",
+    "riferimento": "Esodo 19-20: il monte Sinai è il luogo dove Dio diede la Legge a Israele"
+  },
+  {
+  "domanda": "Perché la croce di Sant'Andrea viene chiamata così secondo la tradizione cristiana?",
+  "risposte": [
+    "Perché Sant'Andrea fu crocifisso su una croce a forma di X, secondo la tradizione",
+    "Perché antiche leggende raccontano che portasse sempre con sé una croce simile",
+    "Perché fu sepolto accanto a una croce scolpita in modo particolare",
+    "Perché i suoi discepoli diffusero l’uso di una croce con quella forma simbolica"
+  ],
+  "corretta": "Perché Sant'Andrea fu crocifisso su una croce a forma di X, secondo la tradizione",
+  "riferimento": "Secondo la tradizione, Sant’Andrea fu messo a morte su una croce decussata (in X), ritenendosi indegno di morire come Gesù. Da qui deriva il nome 'croce di Sant’Andrea'."
+},
+  {
+    "domanda": "Nel contesto profetico, cosa rappresenta spesso la vigna?",
+    "risposte": [
+      "Il popolo di Israele e la sua responsabilità davanti a Dio",
+       "Il mondo pagano bisognoso di giudizio e redenzione a causa della sua idolatria",
+      "L’eredità di Abramo per le nazioni",
+      "La saggezza che scende dall’alto"
+    ],
+    "corretta": "Il popolo di Israele e la sua responsabilità davanti a Dio",
+    "riferimento": "Isaia 5:1–7: la vigna è la casa d’Israele, curata da Dio ma infedele; anche in Matteo 21:33–44"
+  },
+    {
+    "domanda": "Per cosa è noto Jonathan Edwards nel contesto della spiritualità evangelica?",
+    "risposte": [
+      "Per la sua predicazione sul risveglio e l’enfasi sulla conversione autentica",
+      "Per il suo ruolo nel concilio di Trento come teologo protestante",
+      "Per aver combattuto in Israele durante le crociate",
+      "Per la sua opera nella compilazione del Vulgata americana"
+    ],
+    "corretta": "Per la sua predicazione sul risveglio e l’enfasi sulla conversione autentica",
+    "riferimento": "Edwards (1703–1758): figura centrale del Primo Grande Risveglio; autore di 'Peccatori nelle mani di un Dio adirato'"
+  },
+    {
+    "domanda": "In cosa si distinse William Wilberforce come cristiano evangelico?",
+    "risposte": [
+      "Guidò la campagna per l’abolizione della schiavitù nell’impero britannico",
+      "Stilò la prima liturgia metodista con John Wesley",
+      "Rivisitò i testi rabbinici per favorire il dialogo interreligioso",
+      "Organizzò la prima società biblica europea"
+    ],
+    "corretta": "Guidò la campagna per l’abolizione della schiavitù nell’impero britannico",
+    "riferimento": "Wilberforce (1759–1833): convertito all’evangelicalismo, fu leader parlamentare nella battaglia contro la tratta"
+  },
+    {
+    "domanda": "Come reagì il popolo al comportamento dei figli di Samuele?",
+    "risposte": [
+      "Chiese un re per essere governato.",
+      "Li cacciò dalle loro città e chiese nuovi giudici",
+      "Li arrestò e li portò davanti a Samuele",
+      "Li accolse comunque per rispetto del padre"
+    ],
+    "corretta": "Chiese un re per essere governato.",
+    "riferimento": "1 Samuele 8:4-5: il popolo, deluso dai figli, chiese un re umano per giudicarli"
+  },
+    {
+    "domanda": "Quale problema familiare segnò la casa del re Davide dopo il suo peccato con Betsabea?",
+    "risposte": [
+      "Violenza, incesto e ribellioni tra i suoi figli",
+      "La perdita del trono a favore di Saul",
+      "L’abbandono della fede da parte di Salomone",
+      "L’esilio di tutta la famiglia in Babilonia"
+    ],
+    "corretta": "Violenza, incesto e ribellioni tra i suoi figli",
+    "riferimento": "2 Samuele 13–18 – Dopo il peccato, Davide vide la distruzione morale della sua casa"
+  },
+{
+  "domanda": "Che problema morale emerge nella famiglia di Eli, il sacerdote?",
+  "risposte": [
+    "I suoi figli disprezzavano i sacrifici e vivevano nel peccato",
+    "Eli fu accusato ingiustamente di idolatria dai suoi figli",
+    "La moglie di Eli rubò le offerte del tempio",
+    "I figli di Eli cercarono di usurpare il trono di Israele"
+  ],
+  "corretta": "I suoi figli disprezzavano i sacrifici e vivevano nel peccato",
+  "riferimento": "1 Samuele 2:12-36 – I figli di Eli erano corrotti e lui non li correggeva, attirando il giudizio di Dio"
+},
+  {
+    "domanda": "Quale stratagemma fece pensare ai Moabiti che gli israeliti si erano sterminati tra loro?",
+    "risposte": [
+      "Le urla nella notte",
+      "I fuochi accesi nel campo che sembravano segnali di caos",
+      "Il riflesso del sole sull’acqua che sembrava sangue",
+      "Le trombe da guerra suonate per errore"
+    ],
+    "corretta": "Il riflesso del sole sull’acqua che sembrava sangue",
+    "riferimento": "2 Re 3:22–23 – L’acqua apparve rossa come sangue ai Moabiti"
+  },
+  {
+  "domanda": "Il termine 'apostolo' deriva dal verbo greco 'apostéllō': cosa significa questo termine e cosa indica 'apostolo' nella Bibbia?",
+  "risposte": [
+    "Maestro delle Scritture e consigliere spirituale",
+    "Fondatore di una nuova dottrina religiosa",
+    "Inviato con un mandato e autorità",
+    "Colui che osserva e riferisce senza prendere parte"
+  ],
+  "corretta": "Inviato con un mandato e autorità",
+  "riferimento": "Luca 6:13 – Gesù chiamò dodici discepoli e diede loro il nome di apostoli; 'apostolo' deriva da 'apostéllō', che significa 'mandare con autorità'"
+},
+{
+  "domanda": "Cosa significa il termine ebraico 'shalom', ricorrente nell’Antico Testamento?",
+  "risposte": [
+    "Rito di purificazione",
+    "Pace, benessere e pienezza",
+    "Riposo sabbatico",
+    "Benedizione sacerdotale"
+  ],
+  "corretta": "Pace, benessere e pienezza",
+  "riferimento": "Numeri 6:26 – 'Il SIGNORE rivolga verso di te il suo volto e ti dia la pace (shalom)'"
+},
+{
+  "domanda": "Cosa significa 'Adonai', uno dei nomi usati per Dio nella Bibbia ebraica?",
+  "risposte": [
+    "Creatore del mondo",
+    "Signore, Padrone sovrano",
+    "Re dei profeti",
+    "Giudice eterno"
+  ],
+  "corretta": "Signore, Padrone sovrano",
+  "riferimento": "Salmo 8:1 – 'O SIGNORE, Signore nostro (Adonai), quanto è magnifico il tuo nome in tutta la terra!'"
+},
+{
+  "domanda": "Il termine greco 'koinonía' è usato nel Nuovo Testamento: cosa indica?",
+  "risposte": [
+    "Scambio tra credenti",
+    "Offerta tra amici",
+    "Relazione condivisa",
+    "Richiamo alla Legge"
+  ],
+  "corretta": "Relazione condivisa",
+  "riferimento": "Atti 2:42 – 'Erano perseveranti... nella comunione fraterna (koinonía)'"
+},
+{
+  "domanda": "Cosa significa il termine greco 'ekklesía', tradotto come 'chiesa' nel Nuovo Testamento?",
+  "risposte": [
+    "Assemblea chiamata",
+    "Tempio sacro",
+    "Alleanza scritta",
+    "Casa di preghiera"
+  ],
+  "corretta": "Assemblea chiamata",
+  "riferimento": "Matteo 16:18 – 'Tu sei Pietro, e su questa pietra edificherò la mia chiesa (ekklesía)'"
+},
+{
+  "domanda": "Cosa significa il termine ebraico 'shalom'?",
+  "risposte": [
+    "Riposo santo",
+    "Pace stabile",
+    "Grazia divina",
+    "Donazione pura"
+  ],
+  "corretta": "Pace stabile",
+  "riferimento": "Numeri 6:26 – 'Il SIGNORE rivolga verso di te il suo volto e ti dia la pace (shalom)'"
+},
+{
+  "domanda": "Cosa indica il termine ebraico 'ruach' nella Scrittura?",
+  "risposte": [
+    "Soffio divino",
+    "Forza celeste",
+    "Fiamma viva",
+    "Suono profondo"
+  ],
+  "corretta": "Soffio divino",
+  "riferimento": "Genesi 1:2 – 'Lo Spirito (ruach) di Dio aleggiava sulle acque'"
+}
+,
+{
+  "domanda": "Cosa rappresenta il termine ebraico 'kadosh'?",
+  "risposte": [
+    "Fedele e giusto",
+    "Santo e separato",
+    "Maestro Irreprsibile",
+    "Re e sacerdote"
+  ],
+  "corretta": "Santo e separato",
+  "riferimento": "Levitico 19:2 – 'Siate santi (kadosh), perché io sono santo'"
+},
+
+{
+  "domanda": "Cosa fa la vedova di Sarepta quando Elia le chiede da mangiare?",
+  "risposte": [
+    "Dice che stava raccogliendo legna per l’ultimo pasto",
+    "Gli offre l'ultima parte del suo cibo",
+    "Chiama i vicini per aiutarla",
+    "Fugge per la paura"
+  ],
+  "corretta": "Gli offre l'ultima parte del suo cibo",
+  "riferimento": "1 Re 17:15 – 'Essa andò e fece come Elia le aveva detto... mangiarono lei, Elia e la sua famiglia per molto tempo'"
+}
+,
+{
+  "domanda": "Quale evento miracoloso accade nella casa della vedova di Sarepta?",
+  "risposte": [
+    "Il pane si moltiplica giorno dopo giorno",
+    "La farina e l’olio non si consumano mai",
+    "Il figlio guarisce da una grave febbre",
+    "Una brocca d'acqua non si svuota mai"
+  ],
+  "corretta": "La farina e l’olio non si consumano mai",
+  "riferimento": "1 Re 17:16 – 'La farina nella giara non venne meno e l’olio nell’orcio non diminuì, secondo la parola del SIGNORE pronunciata per mezzo di Elia'"
+}
+,
+{
+  "domanda": "Perché Dio manda Elia da una vedova di Sarepta?",
+  "risposte": [
+    "Perché era l’unica con una fede pronta",
+    "Perché era lontana dai persecutori di Elia",
+    "Perché Dio voleva benedire anche i non israeliti",
+    "Perché in Israele nessuno l’avrebbe accolto"
+  ],
+  "corretta": "Perché Dio voleva benedire anche i non israeliti",
+  "riferimento": "Luca 4:26 – 'Elia non fu mandato a nessuna di esse, ma a una vedova in Sarepta di Sidone'"
+}
+,
+{
+  "domanda": "Perché esiste una raccolta di Salmi (14) chiamata 'Canti dei pellegrinaggi di Davide'?",
+  "risposte": [
+    "Per accompagnare i sacerdoti mentre offrivano i sacrifici nel Tempio",
+    "Per ricordare l’esilio in Babilonia",
+    "Per sostenere il popolo nei viaggi spirituali",
+    "Per essere cantati durante i pellegrinaggi alle feste a Gerusalemme"
+  ],
+  "corretta": "Per essere cantati durante i pellegrinaggi alle feste a Gerusalemme",
+  "riferimento": "Deuteronomio 16:16 – Il popolo saliva a Gerusalemme tre volte l’anno: Pasqua, Pentecoste, Capanne"
+},
+{
+  "domanda": "Come inizia il Sermone sul Monte?",
+  "risposte": [
+    "Con una parabola",
+    "Con l’insegnamento sul Padre nostro",
+    "Con le Beatitudini",
+    "Con la moltiplicazione dei pani"
+  ],
+  "corretta": "Con le Beatitudini",
+  "riferimento": "Matteo 5:3–12 – Gesù apre il sermone con le Beatitudini, una serie di benedizioni"
+},
+{
+  "domanda": "Con quale tipo di conclusione termina il Sermone sul Monte?",
+  "risposte": [
+    "Una profezia apocalittica",
+    "Un invito a donare, senza pretendere",
+    "La parabola della casa costruita sulla roccia",
+    "La distribuzione del pane per cinquemila uomini"
+  ],
+  "corretta": "La parabola della casa costruita sulla roccia",
+  "riferimento": "Matteo 7:24–27 – La parabola dei due costruttori chiude il sermone"
+}
+,
+{
+  "domanda": "In quale di questi passi si trova il Sermone sul Monte (nella sua forma più completa)?",
+  "risposte": [
+    "Luca 6–8",
+    "Matteo 5–7",
+    "Marco 4–6",
+    "Giovanni 3–5"
+  ],
+  "corretta": "Matteo 5–7",
+  "riferimento": "Il Sermone sul Monte si trova in Matteo 5–7. Luca riporta un discorso simile ma più breve (Luca 6:17–49)"
+},
+{
+  "domanda": "Che altezza aveva Golia secondo il testo masoretico?",
+  "risposte": [
+    "Circa 2 metri",
+    "Circa 2,5 metri",
+    "Circa 3 metri",
+    "Oltre 4 metri"
+  ],
+  "corretta": "Circa 3 metri",
+  "riferimento": "1 Samuele 17:4 – Golia era alto 6 cubiti e un palmo ≈ 2,9 metri"
+}
+,
+{
+  "domanda": "Quante pietre prese Davide dal torrente prima di affrontare Golia?",
+  "risposte": [
+    "Una",
+    "Tre",
+    "Cinque",
+    "Sette"
+  ],
+  "corretta": "Cinque",
+  "riferimento": "1 Samuele 17:40 – 'prese in mano cinque pietre lisce dal torrente Ma ne uso solo 1 '"
+}
+,
+{
+  "domanda": "Che età aveva Mosè quando guidò Israele fuori dall’Egitto?",
+  "risposte": [
+    "40 anni",
+    "80 anni",
+    "100 anni",
+    "120 anni"
+  ],
+  "corretta": "80 anni",
+  "riferimento": "Esodo 7:7 – Mosè aveva 80 anni, Aaronne 83, quando parlarono al faraone"
+},
+{
+  "domanda": "Cosa accadde quando Uzza toccò l’Arca dell’Alleanza?",
+  "risposte": [
+    "Nulla, la trasportò in sicurezza",
+    "Fu benedetto da Dio",
+    "Morì sul colpo",
+    "Perse la vista"
+  ],
+  "corretta": "Morì sul colpo",
+  "riferimento": "2 Samuele 6:6–7 – Uzza fu colpito da Dio per aver toccato l’Arca, anche se lo fece per impedirne la caduta"
+}
+,
+{
+  "domanda": "Dove veniva custodita l’Arca durante il pellegrinaggio nel deserto?",
+  "risposte": [
+    "Nel monte Horeb",
+    "Nella tenda di Mosè",
+    "Nel tabernacolo nel luogo santissimo",
+    "Alla porta dell’accampamento"
+  ],
+  "corretta": "Nel tabernacolo nel luogo santissimo",
+  "riferimento": "Esodo 26:33–34 – L’Arca era posta nel luogo santissimo (Santo dei Santi) del tabernacolo, separata dal velo"
+},
+{
+  "domanda": "Cosa dice Geremia 3:16 riguardo al futuro dell’Arca dell’Alleanza?",
+  "risposte": [
+    "Che sarà restaurata nel tempio di Dio",
+    "Che sarà portata in tutte le nazioni",
+    "Che non sarà più ricordata né cercata",
+    "Che sarà ritrovata negli ultimi giorni"
+  ],
+  "corretta": "Che non sarà più ricordata né cercata",
+  "riferimento": "Geremia 3:16 – Il profeta dice che verrà un tempo in cui non si parlerà più dell’Arca"
+},
+{
+  "domanda": "Chi fu la prima persona a vedere Gesù risorto?",
+  "risposte": [
+    "Pietro",
+    "Maria di Magdala",
+    "Tommaso",
+    "Giovanni"
+  ],
+  "corretta": "Maria di Magdala",
+  "riferimento": "Giovanni 20:14–16 – Maria Maddalena fu la prima a vedere Gesù risorto"
+},
+{
+  "domanda": "Secondo Paolo in 1 Corinzi 15, quanti furono i fratelli che videro Gesù risorto 'in una volta sola'?",
+  "risposte": [
+    "12",
+    "70",
+    "500",
+    "300"
+  ],
+  "corretta": "500",
+  "riferimento": "1 Corinzi 15:6 – '...fu visto da più di cinquecento fratelli in una volta'"
+}
+,
+{
+  "domanda": "Cosa significa 'Boanerges', soprannome dato da Gesù a Giacomo e Giovanni?",
+  "risposte": [
+    "Figli del silenzio",
+    "Figli della luce",
+    "Figli del tuono",
+    "Figli della croce"
+  ],
+  "corretta": "Figli del tuono",
+  "riferimento": "Marco 3:17 – Gesù chiamò Giacomo e Giovanni 'Boanerges', cioè figli del tuono"
+},
+{
+  "domanda": "Quale donna fu chiamata 'discepola' e fu risuscitata da Pietro?",
+  "risposte": [
+    "Febe",
+    "Damaris",
+    "Tabita",
+    "Sofronia"
+  ],
+  "corretta": "Tabita",
+  "riferimento": "Atti 9:36–41 – Tabita (chiamata anche Dorca) fu risuscitata da Pietro"
+},
+{
+  "domanda": "Qual è la prima donna europea convertita nel Nuovo Testamento?",
+  "risposte": [
+    "Lidia",
+    "Febe",
+    "Damaris",
+    "Evodia"
+  ],
+  "corretta": "Lidia",
+  "riferimento": "Atti 16:14 – Lidia, commerciante di porpora, fu convertita a Filippi"
+}
+,
+{
+  "domanda": "Quale libro del Nuovo Testamento ha il maggior numero di capitoli?",
+  "risposte": [
+    "Matteo",
+    "Atti",
+    "Apocalisse",
+    "Luca"
+  ],
+  "corretta": "Matteo",
+  "riferimento": "Matteo ha 28 capitoli – il più lungo per numero di capitoli nel NT"
+},
+{
+  "domanda": "Chi fu il primo pagano convertito secondo gli Atti degli Apostoli?",
+  "risposte": [
+    "L’etiope eunuco",
+    "Cornelio",
+    "Sergio Paolo",
+    "Lidia"
+  ],
+  "corretta": "Cornelio",
+  "riferimento": "Atti 10 – Cornelio, centurione romano, ricevette lo Spirito Santo prima del battesimo"
+}
+,
+{
+  "domanda": "Quanti giorni passarono tra la risurrezione e l’ascensione di Gesù?",
+  "risposte": [
+    "7",
+    "12",
+    "40",
+    "50"
+  ],
+  "corretta": "40",
+  "riferimento": "Atti 1:3 – Gesù apparve ai suoi discepoli per 40 giorni prima di ascendere"
+}
+,
+{
+  "domanda": "Quanti anni visse Mosè secondo Deuteronomio?",
+  "risposte": [
+    "100",
+    "110",
+    "120",
+    "130"
+  ],
+  "corretta": "120",
+  "riferimento": "Deuteronomio 34:7 – 'Mosè aveva centovent’anni quando morì'"
+},
+{
+  "domanda": "In che anno fu distrutto il Secondo Tempio di Gerusalemme dai Romani?",
+  "risposte": [
+    "500 a.C.",
+    "70 d.C.",
+    "73 d.C.",
+    "90 d.C."
+  ],
+  "corretta": "70 d.C.",
+  "riferimento": "Confermato da storici come Giuseppe Flavio – fu distrutto durante l’assedio da Tito"
+}
+,
+{
+  "domanda": "Quanti giorni durò il Diluvio, fino al completo ritiro delle acque secondo Genesi?",
+  "risposte": [
+    "40 giorni",
+    "150 giorni",
+    "circa 370 giorni",
+    "300 giorni"
+  ],
+  "corretta": "circa 370 giorni",
+  "riferimento": "Genesi 7:11 – 8:14 – Il Diluvio iniziò il 17 del secondo mese e terminò il 27 dello stesso mese l’anno successivo, cioè circa un anno e 10 giorni"
+}
+,
+{
+  "domanda": "Dove Paolo fu arrestato per la prima volta?",
+  "risposte": [
+    "Efeso",
+    "Filippi",
+    "Gerusalemme",
+    "Cesarea"
+  ],
+  "corretta": "Gerusalemme",
+  "riferimento": "Atti 21:30–33 – Paolo fu arrestato nel tempio di Gerusalemme"
+},
+{
+  "domanda": "Quale isola del Mediterraneo ospitò Paolo dopo un naufragio?",
+  "risposte": [
+    "Cipro",
+    "Malta",
+    "Creta",
+    "Patmos"
+  ],
+  "corretta": "Malta",
+  "riferimento": "Atti 28:1 – Dopo il naufragio, Paolo e gli altri naufraghi approdarono a Malta"
+}
+,
+{
+  "domanda": "Che significato ha il nome 'Mahanaim', dato da Giacobbe al luogo dove vide due accampamenti di angeli?",
+  "risposte": [
+    "Luogo della visione",
+    "Due accampamenti",
+    "Porta del cielo",
+    "Casa della benedizione"
+  ],
+  "corretta": "Due accampamenti",
+  "riferimento": "Genesi 32:2 – Giacobbe chiamò quel luogo 'Mahanaim', perché vi vide due schiere angeliche"
+},
+{
+  "domanda": "Chi era il sommo sacerdote durante il processo di Gesù?",
+  "risposte": [
+    "Anna",
+    "Caiàfa",
+    "Zaccaria",
+    "Gamalièle"
+  ],
+  "corretta": "Caiàfa",
+  "riferimento": "Matteo 26:57 – Gesù fu condotto da Caiàfa, il sommo sacerdote"
+}
+,
+{
+  "domanda": "Quanti capitoli ha il libro dei Salmi?",
+  "risposte": [
+    "150",
+    "100",
+    "99",
+    "151"
+  ],
+  "corretta": "150",
+  "riferimento": "Il libro dei Salmi ha 150 capitoli nel canone ebraico e cristiano"
+}
+,
+  {
+    "domanda": "Qual era una caratteristica fisica di Eliseo menzionata nella Bibbia?",
+    "risposte": [
+      "Era calvo",
+      "Aveva capelli lunghi",
+      "Portava una barba bianca",
+      "Aveva occhi azzurri"
+    ],
+    "corretta": "Era calvo",
+    "riferimento": "2 Re 2:23 – Alcuni ragazzi lo derisero dicendo: 'Sali, calvo!'"
+  }
+  ,
+    {
+    "domanda": "Quale miracolo fece Eliseo per la vedova indebitata?",
+    "risposte": [
+      "Moltiplicò l’olio",
+      "Fece piovere oro",
+      "Fece apparire pane",
+      "Risuscitò suo marito"
+    ],
+    "corretta": "Moltiplicò l’olio",
+    "riferimento": "2 Re 4:1–7 – L’olio continuò a fluire finché non ci furono più recipienti"
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+]

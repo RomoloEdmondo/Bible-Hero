@@ -1,0 +1,49 @@
+{
+  "generale": {
+    "riferimento": "",
+    "eventi": [
+      "Creazione del mondo",
+      "Diluvio universale",
+      "Chiamata di Abramo",
+      "Esodo dall'Egitto",
+      "Conquista di Canaan",
+      "Regno di Davide",
+      "Esilio babilonese",
+      "Ritorno a Gerusalemme",
+      "Nascita di Gesù",
+      "Crocifissione e resurrezione",
+      "Pentecoste"
+    ]
+  },
+  "ministero_gesu": {
+    "riferimento": "📖 Gesù inizia il suo ministero con il battesimo nel Giordano e affronta poi le tentazioni nel deserto. Sceglie i dodici discepoli e, salito su un monte, insegna alle folle. Guarisce malati e compie miracoli, fino a rivelare la sua gloria nella trasfigurazione. Si dirige quindi verso Gerusalemme, dove entra acclamato come re. Lì, durante l’Ultima Cena, annuncia il suo sacrificio. Dopo il tradimento, subisce il processo e viene crocifisso. Ma il terzo giorno risorge e, dopo quaranta giorni, ascende al cielo.",
+    "eventi": [
+      "Battesimo di Gesù",
+      "Tentazioni nel deserto",
+      "Scelta dei discepoli",
+      "Sermone sul monte",
+      "Guarigioni e miracoli",
+      "Trasfigurazione",
+      "Ingresso trionfale a Gerusalemme",
+      "Ultima Cena",
+      "Processo e crocifissione",
+      "Resurrezione",
+      "Ascensione"
+    ]
+  },
+     "apostoli": {
+        "riferimento": "📖 Le tappe principali della missione degli apostoli dopo la risurrezione di Gesù.",
+        "eventi": [
+            "Pentecoste",
+            "Discorso di Pietro a Gerusalemme",
+            "Lapidazione di Stefano",
+            "Conversione di Saulo",
+            "Viaggi missionari di Paolo",
+            "Concilio di Gerusalemme",
+            "Prigionia di Paolo",
+            "Lettere alle chiese",
+            "Esilio di Giovanni",
+            "Scrittura dell’Apocalisse"
+        ]
+    }
+}

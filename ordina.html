@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordina</title>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  background: url('/img/quiz-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+</style>
+<body>
+  <div class="container">
+    <h1 class="text-center m-4">🔠 Ordina Categorie</h1>
+    <p class="text-center">Scegli una lista e trascina gli elementi per metterli nell'ordine corretto.</p>
+
+    <div class="text-center mb-4">
+      <select id="selectSet" class="form-select w-50 mx-auto mb-3" onchange="caricaElementi()">
+      </select>
+      <button class="btn btn-primary" onclick="verificaOrdine()">Verifica Ordine</button>
+      <button class="btn btn-secondary me-2" onclick="caricaElementi()">🔄 Rimescola</button>
+    </div>
+
+ <div class="container mb-4">
+  <ul id="sortable-list" class="sortable-list sortable-container"></ul>
+</div>
+<div class="text-center mb-3">
+  <button class="btn btn-primary" onclick="verificaOrdine()">Verifica ordine</button>
+</div>
+<div id="feedback" class="text-center mt-4"></div>
+
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-secondary rounded-pill px-4">⌂ Torna alla Home</a>
+  </div>
+  </div>
+
+  <script>
+    let liste = {};
+      fetch("/data/ordina.json")
+        .then(response => response.json())
+        .then(data => {
+          liste = data;
+          popolaSelect();
+          caricaElementi(); // carica la prima lista quando i dati sono pronti
+        })
+        .catch(error => {
+          console.error("Errore nel caricamento delle liste:", error);
+          feedback.innerHTML = "<div class='alert alert-danger'>Errore nel caricamento delle liste. Controlla il file liste.json.</div>";
+        });
+
+
+    let ordineCorretto = [];
+    const lista = document.getElementById("sortable-list");
+    const feedback = document.getElementById("feedback");
+    const selectSet = document.getElementById("selectSet");
+
+    new Sortable(lista, { animation: 150 });
+
+    function mescolaArray(array) {
+      return array.slice().sort(() => Math.random() - 0.5);
+    }
+
+    function popolaSelect() {
+      for (const key in liste) {
+        const option = document.createElement("option");
+        option.value = key;
+        option.textContent = formattaTesto(key); // Per migliorare leggibilità
+        selectSet.appendChild(option);
+      }
+      function formattaTesto(chiave) {
+        return chiave
+          .replace(/_/g, " ")            // Sostituisce _ con spazio
+          .replace(/\b\w/g, l => l.toUpperCase()); // Iniziali maiuscole
+}
+}
+
+  function caricaElementi() {
+  const selezione = selectSet.value;
+  ordineCorretto = liste[selezione];
+  const elementi = mescolaArray(ordineCorretto);
+
+  lista.innerHTML = "";
+
+  // Rimuovi eventuali classi precedenti
+  lista.classList.remove("sortable-container", "compact");
+
+  // Applica dinamicamente scroll e compattezza se lista lunga
+  if (elementi.length >= 16) {
+    lista.classList.add("sortable-container", "compact");
+  }
+
+  elementi.forEach(nome => {
+    const li = document.createElement("li");
+    li.textContent = nome;
+    li.className = "sortable-item";
+    lista.appendChild(li);
+  });
+
+  feedback.innerHTML = "";
+}
+
+    function verificaOrdine() {
+      const items = Array.from(lista.children);
+      let corretti = 0;
+
+      items.forEach((el, idx) => {
+        el.classList.remove("correct", "incorrect");
+        if (el.textContent === ordineCorretto[idx]) {
+          el.classList.add("correct");
+          corretti++;
+        } else {
+          el.classList.add("incorrect");
+        }
+      });
+
+      feedback.innerHTML = corretti === ordineCorretto.length
+        ? '<div class="alert alert-success">✅ Ordine corretto!</div>'
+        : `<div class="alert alert-warning">❌ ${ordineCorretto.length - corretti} errori. <br> Gli elementi corretti sono evidenziati in verde, quelli errati in rosso.</div>`;
+    }
+
+    caricaElementi();
+  </script>
+</body>
+</html>
