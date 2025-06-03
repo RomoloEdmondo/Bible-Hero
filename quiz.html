@@ -11,7 +11,7 @@
 </head>
 <style>
 body {
-  background: url('/img/quiz-background.jpg') no-repeat center center fixed;
+  background: url('img/quiz-background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -39,7 +39,7 @@ body {
   <script>
     let questions = [];
 
-    fetch(`/data/quiz.json?ts=${Date.now()}`)
+    fetch(`data/quiz.json?ts=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
         allQuestions = shuffleArray(data);
