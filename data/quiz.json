@@ -219,7 +219,7 @@
     "riferimento": "Le tradizioni protestanti spesso parlano di ordinanze (es. battesimo e Cena del Signore), mentre la teologia cattolica parla di sacramenti come mezzi di grazia."
   },
   {
-    "domanda": "In che modo la teologia cristiana definisce l'immutabilità di Dio?",
+    "domanda": "In che modo la teologia definisce l'immutabilità di Dio?",
     "risposte": [
       "Dio non cambia nella sua essenza, volontà e promesse",
       "Dio non cambia opinione, ma può cambiare piani",
@@ -242,12 +242,12 @@
   },
    {
     "domanda": "In quale libro troviamo la frase: 'Il giusto vivrà per fede'?",
-    "risposte": ["Romani", "Habacuc", "Galati", "Tutte le precedenti"],
-    "corretta": "Tutte le precedenti",
+    "risposte": ["Romani", "Habacuc", "Galati", "in Tutti e tre"],
+    "corretta": "in Tutti e tre",
     "riferimento": "La frase appare in Habacuc 2:4, Romani 1:17, e Galati 3:11 come tema centrale della giustificazione per fede."
   },
     {
-    "domanda": "Cosa significa il termine 'kenosi' in cristologia?",
+    "domanda": "Cosa significa il termine 'kenosi'?",
     "risposte": [
       "L'auto-svuotamento del Figlio di Dio nel diventare uomo",
       "La distruzione del peccato originale",
@@ -270,7 +270,7 @@
 },
 
 {
-  "domanda": "Cosa significa il termine 'escatologia' in teologia?",
+  "domanda": "Cosa significa il termine 'escatologia'?",
   "risposte": [
     "Studio delle ultime cose come la seconda venuta e il giudizio finale",
     "Riflessione teologica sui tempi della fine e sul compimento della storia",
@@ -308,7 +308,7 @@
   "risposte": [
     "La Bibbia contiene tutto ciò che è necessario per la salvezza e la fede",
     "La Scrittura guida, ma non basta senza autorità esterne riconosciute",
-    "La rivelazione biblica va integrata con esperienze spirituali personali",
+    "La rivelazione biblica va integrata con esperienze personali",
     "La Bibbia tratta principalmente di morale e non può rispondere a ogni questione dottrinale"
   ],
   "corretta": "La Bibbia contiene tutto ciò che è necessario per la salvezza e la fede",
@@ -339,7 +339,7 @@
     "riferimento": "Solo Giovanni è menzionato come presente sotto la croce (Giovanni 19:26-27)."
   },
   {
-    "domanda": "Quante persone entrarono nell'arca secondo Genesi?",
+    "domanda": "Quante persone entrarono nell'arca secondo Genesi 7?",
     "risposte": ["8", "2", "6", "10"],
     "corretta": "8",
     "riferimento": "Genesi 7:13:  In quello stesso giorno Noè, Sem, Cam e Iafet, figli di Noè, la moglie di Noè e le tre mogli dei suoi figli entrarono con loro nell'arca: 8 in totale."
@@ -367,7 +367,7 @@
     "riferimento": "Luca 1:3 e Atti 1:1 usano il titolo 'eccellentissimo', tipico per autorità romane."
   },
     {
-    "domanda": "Qual è il significato escatologico del termine 'Parousia'?",
+    "domanda": "Qual è il significato del termine 'Parousia'?",
     "risposte": [
       "La seconda venuta di Cristo",
       "La rivelazione dello Spirito Santo",
@@ -518,18 +518,6 @@
   ],
   "corretta": "A uno che guarda il suo volto allo specchio e poi se ne dimentica",
   "riferimento": "Giacomo 1:23-25: Poiché, se uno è uditore della parola e non facitore, è simile a un uomo che osserva la sua faccia naturale in uno specchio; 24 egli osserva se stesso e poi se ne va, dimenticando subito com'era. 25 Ma chi esamina attentamente la legge perfetta, che è la legge della libertà, e persevera in essa, non essendo un uditore dimentichevole ma un facitore dell'opera, costui sarà beato nel suo operare."
-}
-,
-{
-  "domanda": "Quale dettaglio nel testo suggerisce che il sacrificio di Isacco fu visto da ebrei e cristiani come un tipo del sacrificio di Cristo?",
-  "risposte": [
-    "Il fatto che Isacco portasse la legna sulle spalle",
-    "Il fatto che il sacrificio fu volontario e senza resistenza",
-    "Il fatto che Abramo profetizzò 'Dio provvederà l’agnello'",
-    "Il fatto che il sacrificio avvenisse su un monte designato da Dio"
-  ],
-  "corretta": "Il fatto che Isacco portasse la legna sulle spalle",
-  "riferimento": "Genesi 22:6; Giovanni 19:17; Isacco portava la legna come Cristo la croce."
 }
 ,
 {
@@ -854,21 +842,21 @@
   "risposte": [
     "Scambio tra credenti",
     "Offerta tra amici",
-    "Relazione condivisa",
+    "la comunione fraterna",
     "Richiamo alla Legge"
   ],
-  "corretta": "Relazione condivisa",
+  "corretta": "la comunione fraterna",
   "riferimento": "Atti 2:42 – 'Erano perseveranti... nella comunione fraterna (koinonía)'"
 },
 {
   "domanda": "Cosa significa il termine greco 'ekklesía', tradotto come 'chiesa' nel Nuovo Testamento?",
   "risposte": [
-    "Assemblea chiamata",
+    "Assemblea dei chiamati fuori",
     "Tempio sacro",
     "Alleanza scritta",
     "Casa di preghiera"
   ],
-  "corretta": "Assemblea chiamata",
+  "corretta": "Assemblea dei chiamati fuori",
   "riferimento": "Matteo 16:18 – 'Tu sei Pietro, e su questa pietra edificherò la mia chiesa (ekklesía)'"
 },
 {
