@@ -17,28 +17,34 @@
 </style>
 <body>
   <div class="d-flex flex-column min-vh-100">
-    <div class="container d-flex flex-column text-center py-3 flex-grow-1">
+    <div class="decorative-element"></div>
+    <div class="decorative-element"></div>
+    <div class="decorative-element"></div>
 
+    <div class="container-home d-flex flex-column text-center py-3 flex-grow-1">
+        <h1 class="big-title mb-3">Bible Hero</h1>
+        <p class="subtitle">Scegli una modalità di apprendimento divertente e stimolante</p>
 
-    <h1 class="big-title mb-3">Bible Hero</h1>
-    <p class="">Scegli una modalità di apprendimento divertente e stimolante:</p>
+        <div class="game-modes">
+            <div class="game-mode" onclick="location.href='quiz.html'">
+                <span class="game-icon">🧩</span>
+                <h2 class="game-title">Quiz Interattivo</h2>
+                <p class="game-description">Metti alla prova le tue conoscenze con domande coinvolgenti su eventi, personaggi e concetti biblici</p>
+            </div>
 
-    <div class="game-mode" onclick="location.href='quiz.html'">
-      <h2>🧩 Quiz</h2>
-      <p>Rispondi a domande a scelta multipla su eventi, personaggi e concetti biblici.</p>
+            <div class="game-mode" onclick="location.href='ordina.html'">
+                <span class="game-icon">🔠</span>
+                <h2 class="game-title">Ordina & Scopri</h2>
+                <p class="game-description">Riconosci e ordina correttamente le tribù, i re e altre categorie bibliche in sfide sempre nuove</p>
+            </div>
+
+            <div class="game-mode" onclick="location.href='timeline.html'">
+                <span class="game-icon">🕰️</span>
+                <h2 class="game-title">Cronologia Biblica</h2>
+                <p class="game-description">Trascina gli eventi storici per ricostruire la linea temporale della storia sacra</p>
+            </div>
+        </div>
     </div>
-
-    <div class="game-mode" onclick="location.href='ordina.html'">
-      <h2>🔠 Ordina</h2>
-      <p>Riconosci e ordina correttamente le tribù, i re o altre categorie bibliche.</p>
-    </div>
-
-    <div class="game-mode" onclick="location.href='timeline.html'">
-      <h2>🕰️ Sequenza degli Eventi</h2>
-      <p>Trascina gli eventi per metterli nell'ordine cronologico corretto.</p>
-    </div>
-
-  </div>
  <div id="footer-placeholder"></div>
 
 
@@ -53,6 +59,45 @@
         document.getElementById('annoCorrente').textContent = new Date().getFullYear();
       });
 
+
+       document.addEventListener('DOMContentLoaded', function() {
+            const gameModes = document.querySelectorAll('.game-mode');
+            
+            gameModes.forEach((mode, index) => {
+                mode.addEventListener('mouseenter', function() {
+                    this.style.zIndex = '10';
+                });
+                
+                mode.addEventListener('mouseleave', function() {
+                    this.style.zIndex = '1';
+                });
+
+                // Add touch feedback for mobile
+                mode.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.95)';
+                });
+
+                mode.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Parallax effect for decorative elements
+            document.addEventListener('mousemove', function(e) {
+                const decorativeElements = document.querySelectorAll('.decorative-element');
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+
+                decorativeElements.forEach((element, index) => {
+                    const speed = (index + 1) * 0.5;
+                    const x = (mouseX - 0.5) * speed * 50;
+                    const y = (mouseY - 0.5) * speed * 50;
+                    element.style.transform = `translate(${x}px, ${y}px)`;
+                });
+            });
+        });
   </script>
 </body>
 </html>
