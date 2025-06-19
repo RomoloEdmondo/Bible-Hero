@@ -1373,14 +1373,249 @@
     ],
     "corretta": "Avorio",
     "riferimento": "1 Re 10:18–20 – Il trono era di avorio e rivestito d’oro fino"
+  },
+  {
+    "domanda": "Chi pregò: 'O Dio, abbi pietà di me, peccatore', ed è detto che tornò giustificato?",
+    "risposte": [
+      "Il pubblicano",
+      "Il fariseo",
+      "Il centurione",
+      "Il ladrone sulla croce"
+    ],
+    "corretta": "Il pubblicano",
+    "riferimento": "Luca 18:13-14 – Il pubblicano fu giustificato davanti a Dio"
+  },
+    {
+    "domanda": "Chi pregò Dio affinché aprisse gli occhi del suo servo per vedere l’esercito celeste attorno a lui?",
+    "risposte": [
+      "Samuele",
+      "Mosè",
+      "Eliseo",
+      "Elia"
+    ],
+    "corretta": "Eliseo",
+    "riferimento": "2 Re 6:17 – Eliseo pregò e il servo vide il monte pieno di cavalli e carri di fuoco"
+  },
+    {
+    "domanda": "Che ruolo ha lo Spirito Santo nella preghiera del credente secondo Paolo in Romani 8?",
+    "risposte": [
+      "Intercede con sospiri ineffabili",
+      "Insegna cosa pregare",
+      "Traduce la preghiera in lode",
+      "Parla lingue spirituali"
+    ],
+    "corretta": "Intercede con sospiri ineffabili",
+    "riferimento": "Romani 8:26 – lo Spirito viene in aiuto alla nostra debolezza, perché non sappiamo pregare come si conviene; ma lo Spirito intercede egli stesso per noi con sospiri ineffabili;"
+  },
+    {
+    "domanda": "Cosa significa pregare 'nel nome di Gesù' dal punto di vista dottrinale?",
+    "risposte": [
+      "Concludere ogni preghiera con 'nel nome di Gesù'",
+      "Invocare la potenza di Gesù",
+      "Pregare secondo la sua volontà e autorità",
+      "Chiedere miracoli"
+    ],
+    "corretta": "Pregare secondo la sua volontà e autorità",
+    "riferimento": "Giovanni 14:13-14 – Pregare nel nome di Gesù implica agire nella sua autorità"
+  },
+  {
+  "domanda": "Secondo 1 Pietro, quale atteggiamento può impedire che le preghiere siano esaudite?",
+  "risposte": [
+    "La mancanza di fede",
+    "L'amarezza contro Dio",
+    "La disobbedienza civile",
+    "Non onorare il coniuge"
+  ],
+  "corretta": "Non onorare il coniuge",
+  "riferimento": "1 Pietro 3:7 – Onoratele, poiché anch'esse sono eredi..., affinché le vostre preghiere non siano impedite."
+},
+{
+  "domanda": "Chi venne colpito da lebbra per aver mormorato contro Mosè?",
+  "risposte": [
+    "Miriam",
+    "Aronne",
+    "Core",
+    "Nadab"
+  ],
+  "corretta": "Miriam",
+  "riferimento": "Numeri 12:10 – Miriam punita per aver parlato contro Mosè"
+},
+  {
+    "domanda": "Chi sopravvisse al morso di un serpente velenoso senza subire danni?",
+    "risposte": [
+      "Paolo",
+      "Mosè",
+      "Daniele",
+      "Giona"
+    ],
+    "corretta": "Paolo",
+    "riferimento": "Atti 28:3-5 – Paolo viene morso da un serpente a Malta"
+  },
+  {
+    "domanda": "Chi fece un voto affrettato che portò alla morte della propria figlia?",
+    "risposte": [
+      "Iefte",
+      "Gedeone",
+      "Saul",
+      "Davide"
+    ],
+    "corretta": "Iefte",
+    "riferimento": "Giudici 11:30-35 –  ..Se tu mi dai nelle mani i figli di Ammon, chiunque uscirà di casa mia per venirmi incontro .. io l'offrirò in olocausto»"
+  },
+    {
+    "domanda": "Quale popolo fu spesso in guerra con Israele e discendeva da Esaù?",
+    "risposte": [
+      "Gli Edomiti",
+      "Gli Ammoniti",
+      "I Filistei",
+      "Gli Amaleciti"
+    ],
+    "corretta": "Gli Edomiti",
+    "riferimento": "Genesi 36:1 – Questa è la discendenza di Esaù, cioè Edom...Esaù prese le sue mogli tra le figlie dei Cananei..."
+  },
+ {
+    "domanda": "Chi fu il primo uomo nella Bibbia a costruire una città?",
+    "risposte": [
+      "Caino",
+      "Nimrod",
+      "Noè",
+      "Abramo"
+    ],
+    "corretta": "Caino",
+    "riferimento": "Genesi 4:17 – Caino costruì una città e la chiamò come suo figlio, Enoc"
+  },
+    {
+    "domanda": "Che relazione c’è tra il serpente di rame innalzato nel deserto e Gesù?",
+    "risposte": [
+      "Gesù usa quell’immagine per annunciare la sua croce",
+      "Entrambi guariscono da malattie fisiche",
+      "Sono entrambi simboli di giudizio",
+      "Indicano entrambi la fine del peccato"
+    ],
+    "corretta": "Gesù usa quell’immagine per annunciare la sua croce",
+    "riferimento": "Giovanni 3:14 – Come Mosè innalzò il serpente, così il Figlio dell’uomo..."
+  },
+    {
+    "domanda": "Da quale tribù discende la casa di Davide?",
+    "risposte": [
+      "Giuda",
+      "Beniamino",
+      "Efraim",
+      "Levi"
+    ],
+    "corretta": "Giuda",
+    "riferimento": "1 Samuele 17:12 – Davide era della tribù di Giuda"
+  },
+   {
+    "domanda": "Cosa si intende per 'ermeneutica' nel contesto biblico?",
+    "risposte": [
+      "Lo studio dei principi per interpretare correttamente la Bibbia",
+      "La traduzione automatica delle lingue bibliche",
+      "La spiegazione dei miracoli di Gesù",
+      "La catalogazione dei manoscritti antichi"
+    ],
+    "corretta": "Lo studio dei principi per interpretare correttamente la Bibbia",
+    "riferimento": "Ermeneutica è la disciplina che studia come interpretare i testi sacri"
+  },
+  {
+    "domanda": "Qual è il principio base dell’ermeneutica evangelica?",
+    "risposte": [
+      "La Scrittura interpreta la Scrittura",
+      "Ogni versetto ha significati illimitati",
+      "Le emozioni guidano la lettura",
+      "La tradizione della Chiesa è suprema"
+    ],
+    "corretta": "La Scrittura interpreta la Scrittura",
+    "riferimento": "Isaia 28:10; Luca 24:27 – Principio della coerenza interna del testo biblico"
+  },
+    {
+    "domanda": "Cosa intende Gesù quando dice 'chi crede in me farà anche le opere che io faccio'?",
+    "risposte": [
+      "Che tutti i cristiani faranno miracoli",
+      "Che ogni credente diventerà guaritore",
+      "Che le opere includono annunciare il Vangelo e vivere come Cristo",
+      "Che possiamo risorgere i morti oggi"
+    ],
+    "corretta": "Che le opere includono annunciare il Vangelo e vivere come Cristo",
+    "riferimento": "Giovanni 14:12 – 'Opere maggiori' si riferisce alla portata della missione evangelistica"
+  },
+  {
+    "domanda": "Cosa afferma Proverbi su chi confida nel proprio cuore?",
+    "risposte": [
+      "È benedetto",
+      "È pazzo",
+      "È uno stolto",
+      "È giusto"
+    ],
+    "corretta": "È uno stolto",
+    "riferimento": "Proverbi 28:26 – Chi confida nel proprio cuore è uno stolto, ma chi cammina da saggio scamperà."
+  },
+  {
+    "domanda": "Secondo Proverbi, come risponde il saggio alla provocazione?",
+    "risposte": [
+      "Con parole dure",
+      "Con ironia",
+      "Con una risposta dolce",
+      "Con vendetta"
+    ],
+    "corretta": "Con una risposta dolce",
+    "riferimento": "Proverbi 15:1 – 'Una risposta gentile calma il furore...'"
+  },
+    {
+    "domanda": "Secondo Proverbi, cosa nutre la lingua gentile?",
+    "risposte": [
+      "La lode",
+      "L’orgoglio",
+      "Il cuore degli altri",
+      "La vita"
+    ],
+    "corretta": "La vita",
+    "riferimento": "Proverbi 15:4 – 'Una lingua dolce è un albero di vita...'"
+  },
+{
+  "domanda": "Come considera Dio chi semina discordia tra fratelli?",
+  "risposte": [
+    "È causa di rovina",
+    "È oggetto di disciplina da parte dei giusti",
+    "È uno dei sei abomini agli occhi del Signore",
+    "È un leader naturale"
+  ],
+  "corretta": "È uno dei sei abomini agli occhi del Signore",
+  "riferimento": "Proverbi 6:16-19 – Tra le cose che il Signore odia c’è anche 'chi semina discordie tra fratelli'"
+},
+    {
+    "domanda": "Che beneficio ha chi cammina con i saggi secondo Proverbi?",
+    "risposte": [
+      "Diventa famoso",
+      "Diventa saggio",
+      "Riceve onore terreno",
+      "Evita ogni problema"
+    ],
+    "corretta": "Diventa saggio",
+    "riferimento": "Proverbi 13:20 – 'Chi va con i saggi diventa saggio...'"
+  },
+    {
+    "domanda": "Secondo Efesini 4, quale atteggiamento deve accompagnare ogni conversazione?",
+    "risposte": [
+      "Franchezza diretta",
+      "Parole sagge e persuasive",
+      "Grazia per edificare chi ascolta",
+      "Toni forti per affermare la verità"
+    ],
+    "corretta": "Grazia per edificare chi ascolta",
+    "riferimento": "Efesini 4:29 – Nessuna cattiva parola esca dalla vostra bocca; ma se ne avete qualcuna buona, che edifichi secondo il bisogno, ditela, affinché conferisca grazia a chi l'ascolta."
+  },
+  {
+    "domanda": "Secondo Colossesi, come deve agire il cristiano in ogni cosa che fa?",
+    "risposte": [
+      "Con ordine e precisione",
+      "Come se lo facesse per il Signore",
+      "Con spirito di sacrificio",
+      "Con massima efficienza"
+    ],
+    "corretta": "Come se lo facesse per il Signore",
+    "riferimento": "Colossesi 3:23 – 'Qualunque cosa facciate, fatela di buon animo, come per il Signore e non per gli uomini.'"
   }
-
-
-
-
-
-
-
 
 
 

@@ -123,113 +123,133 @@ function selectAnswer(button, q) {
     nextBtn.focus();
 }
 
-    nextBtn.onclick = () => {
-      current++;
-      if (current < questions.length) {
-        loadQuestion();
-      } else {
-        quizBox.innerHTML = "";
+   nextBtn.onclick = () => {
+  current++;
+  if (current < questions.length) {
+    loadQuestion();
+  } else {
+    quizBox.innerHTML = "";
+    quizBox.style.display = "none";
 
-        let html = `
-           <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
-            <h3 class="text-success mb-3">
-              <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
-            </h3>
-            <p class="fs-5">
-              <span class="text-muted">Risposte corrette:</span>
-              <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
-              <span class="text-muted">su</span>
-              <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
-            </p>
-          </div>
+    let html = `
+       <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
+        <h3 class="text-success mb-3">
+          <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
+        </h3>
+        <p class="fs-5">
+          <span class="text-muted">Risposte corrette:</span>
+          <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
+          <span class="text-muted">su</span>
+          <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
+        </p>
+      </div>
     `;
 
-        if (errori.length > 0) {
-          html += `
-           <div class="d-flex justify-content-center mt-4">
-            <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
-              <i class="bi bi-arrow-repeat"></i>
-              Ripeti solo gli errori
-              <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
-            </button>
-          </div>
-
-      `;
-        }
-
-        html += `</div>`;
-
-        resultEl.innerHTML = html;
-        localStorage.setItem('quizScore', score);
-
-        const retryBtn = document.getElementById("retryBtn");
-        if (retryBtn) {
-          retryBtn.addEventListener("click", ripetiErrori);
-        }
-      }
-    };
-
-
-    function ripetiErrori() {
-      if (errori.length === 0) return;
-      questions.splice(0, questions.length, ...errori);
-      current = 0;
-      score = 0;
-      errori = [];
-      resultEl.innerHTML = "";
-      quizBox.innerHTML = `
-        <h4 id="question" class="text-center"></h4>
-        <div id="options" class="text-center rounded-pill mt-3"></div>
-        <div id="feedback" class="text-center"></div>
-        <div class="d-grid gap-2">
-      <button id="nextBtn" class="btn btn-primary btn-lg px-5 py-2 shadow-sm rounded-pill mt-3" disabled>Prossima</button>
-    </div>
-      `;
-      questionEl = document.getElementById("question");
-      optionsEl = document.getElementById("options");
-      nextBtn = document.getElementById("nextBtn");
-      feedbackEl = document.getElementById("feedback");
-      nextBtn.onclick = () => {
-        current++;
-        if (current < questions.length) {
-          loadQuestion();
-        } else {
-          quizBox.innerHTML = "";
-          let html = `
-          <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
-            <h3 class="text-success mb-3">
-              <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
-            </h3>
-            <p class="fs-5">
-              <span class="text-muted">Risposte corrette:</span>
-              <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
-              <span class="text-muted">su</span>
-              <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
-            </p>
-          </div>
-          `;
-          if (errori.length > 0) {
-            html += `
-          <div class="d-flex justify-content-center mt-4">
-            <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
-              <i class="bi bi-arrow-repeat"></i>
-              Ripeti solo gli errori
-              <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
-            </button>
-          </div>
-            `;
-          }
-          resultEl.innerHTML = html;
-          localStorage.setItem('quizScore', score);
-
-          const retryBtn = document.getElementById("retryBtn");
-          if (retryBtn) {
-            retryBtn.addEventListener("click", ripetiErrori);
-          }
-        }
-      };
-      loadQuestion();
+    if (errori.length > 0) {
+      html += `
+       <div class="d-flex justify-content-center mt-4">
+        <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
+          <i class="bi bi-arrow-repeat"></i>
+          Ripeti solo gli errori
+          <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
+        </button>
+      </div>`;
     }
+
+    resultEl.innerHTML = html;
+    resultEl.style.display = "block";
+    localStorage.setItem('quizScore', score);
+
+    const retryBtn = document.getElementById("retryBtn");
+    if (retryBtn) {
+      retryBtn.addEventListener("click", ripetiErrori);
+    }
+  }
+};
+
+
+
+   function ripetiErrori() {
+  if (errori.length === 0) return;
+
+  // Reimposta i dati
+  questions = [...errori];
+  current = 0;
+  score = 0;
+  errori = [];
+  resultEl.innerHTML = "";
+
+  // Ricostruisci il box del quiz
+quizBox.style.display = 'block';
+quizBox.innerHTML = `
+  <h4 class="text-center mb-4" id="question">Caricamento domanda...</h4>
+  <div id="options" class="mt-3"></div>
+  <div id="feedback" class="text-center"></div>
+  <div class="text-center mt-4">
+    <button id="nextBtn" class="btn btn-next btn-lg px-5 py-2 shadow-sm rounded-pill" disabled>
+      Prossima <i class="bi bi-arrow-right-circle ms-2"></i>
+    </button>
+  </div>
+`;
+
+  resultEl.style.display = "none";
+
+  // Riassegna i riferimenti DOM
+  questionEl = document.getElementById("question");
+  optionsEl = document.getElementById("options");
+  feedbackEl = document.getElementById("feedback");
+  nextBtn = document.getElementById("nextBtn");
+
+  // Ricollega l'evento
+  nextBtn.onclick = () => {
+    current++;
+    if (current < questions.length) {
+      loadQuestion();
+    } else {
+      quizBox.innerHTML = "";
+      quizBox.style.display = 'none';
+
+      let html = `
+        <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
+          <h3 class="text-success mb-3">
+            <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
+          </h3>
+          <p class="fs-5">
+            <span class="text-muted">Risposte corrette:</span>
+            <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
+            <span class="text-muted">su</span>
+            <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
+          </p>
+        </div>
+      `;
+      quizBox.style.display = 'none';
+
+
+      if (errori.length > 0) {
+        html += `
+        <div class="d-flex justify-content-center mt-4">
+          <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
+            <i class="bi bi-arrow-repeat"></i>
+            Ripeti solo gli errori
+            <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
+          </button>
+        </div>`;
+      }
+
+      resultEl.innerHTML = html;
+      resultEl.style.display = "block";
+      localStorage.setItem('quizScore', score);
+
+      const retryBtn = document.getElementById("retryBtn");
+      if (retryBtn) {
+        retryBtn.addEventListener("click", ripetiErrori);
+      }
+    }
+  };
+
+  loadQuestion();
+}
+
 
     function startQuiz(count) {
       questions = count === 'MAX' ? allQuestions : allQuestions.slice(0, count);
