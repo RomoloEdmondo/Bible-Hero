@@ -208,17 +208,6 @@
     "riferimento": "Il termine greco 'charis' è tradotto come grazia e indica il favore immeritato di Dio (Efesini 2:8)."
   },
   {
-    "domanda": "Qual è la differenza principale tra un sacramento e un'ordinanza nelle tradizioni cristiane?",
-    "risposte": [
-      "Il sacramento è un mezzo di grazia, l'ordinanza è un atto simbolico",
-      "Il sacramento è per i bambini, l'ordinanza per gli adulti",
-      "L'ordinanza si fa solo una volta, il sacramento più volte",
-      "Non esiste alcuna differenza"
-    ],
-    "corretta": "Il sacramento è un mezzo di grazia, l'ordinanza è un atto simbolico",
-    "riferimento": "Le tradizioni protestanti spesso parlano di ordinanze (es. battesimo e Cena del Signore), mentre la teologia cattolica parla di sacramenti come mezzi di grazia."
-  },
-  {
     "domanda": "In che modo la teologia definisce l'immutabilità di Dio?",
     "risposte": [
       "Dio non cambia nella sua essenza, volontà e promesse",
@@ -1694,8 +1683,192 @@
     "corretta": "Fu ucciso da un leone lungo la strada",
     "riferimento": "1 Re 13:24 – 'Un leone lo incontrò per la via e lo uccise'"
   }
-
-
-
-  
+,
+  {
+    "domanda": "Quale termine greco usato nel Nuovo Testamento esprime l'amore incondizionato e sacrificale di Dio?",
+    "risposte": [
+      "Éros",
+      "Philia",
+      "Storgé",
+      "Agápe"
+    ],
+    "corretta": "Agápe",
+    "riferimento": "1 Corinzi 13; Giovanni 3:16 – L’amore di Dio per il mondo è definito con il termine agápē."
+  },
+  {
+    "domanda": "Che tipo di amore è descritto in 1 Corinzi 13?",
+    "risposte": [
+      "Amore passionale",
+      "Amore familiare",
+      "Amore amichevole",
+      "Amore agápē, incondizionato e altruista"
+    ],
+    "corretta": "Amore agápē, incondizionato e altruista",
+    "riferimento": "1 Corinzi 13:1-13 – L’amore che non cerca il proprio interesse e non verrà mai meno è agápē."
+  },
+  {
+    "domanda": "Quale tipo di amore biblico rappresenta l’amicizia sincera e reciproca?",
+    "risposte": [
+      "Agápe",
+      "Philia",
+      "Storgé",
+      "Éros"
+    ],
+    "corretta": "Philia",
+    "riferimento": "Giovanni 15:13-15 – Gesù chiama 'amici' (phíloi) i suoi discepoli."
+  },
+    {
+    "domanda": "Cosa distingue l’agápe dalla philia?",
+    "risposte": [
+      "Agápe è passione romantica, philia è affetto familiare",
+      "Agápe è amore fraterno, philia è amore divino",
+      "Agápe è amore disinteressato, philia è amore tra amici",
+      "Non c’è nessuna differenza tra i due"
+    ],
+    "corretta": "Agápe è amore disinteressato, philia è amore tra amici",
+    "riferimento": "Giovanni 21:15-17 – il dialogo tra Gesù e Pietro gioca su agápē e philía."
+  },
+    {
+    "domanda": "Quale tipo di amore non è esplicitamente menzionato nel Nuovo Testamento ma è celebrato nel Cantico dei Cantici?",
+    "risposte": [
+      "Storgé",
+      "Philia",
+      "Éros",
+      "Agápe"
+    ],
+    "corretta": "Éros",
+    "riferimento": "Cantico dei Cantici – È un poema sull’amore romantico e fisico, coerente con il concetto di érōs."
+  },
+    {
+    "domanda": "Quale parola greca rappresenta l’amore naturale tra genitori e figli?",
+    "risposte": [
+      "Storgé",
+      "Philia",
+      "Éros",
+      "Agápe"
+    ],
+    "corretta": "Storgé",
+    "riferimento": "Romani 12:10 – La parola composta 'philostorgoi' esprime l’affetto familiare tra i credenti."
+  },
+  {
+    "domanda": "Come viene definito l’amore di Dio nella Prima lettera di Giovanni?",
+    "risposte": [
+      "Dio ha amore",
+      "Dio mostra amore quando vuole",
+      "Dio è amore",
+      "Dio giudica più dell’amore"
+    ],
+    "corretta": "Dio è amore",
+    "riferimento": "1 Giovanni 4:8 – 'Chi non ama non ha conosciuto Dio, perché Dio è amore (agápē)'."
+  }
+  ,
+    {
+    "domanda": "Chi fu il re d'Israele durante il ministero del profeta Elia?",
+    "risposte": ["Acab", "Saul", "Ezechia", "Giosia"],
+    "corretta": "Acab",
+    "riferimento": "1 Re 17:1 – Elia profetizzò durante il regno di Acab, re malvagio d’Israele."
+  },
+  {
+  "domanda": "Perché, Israele fu diviso in due regni dopo la morte del re Salomone?",
+  "risposte": [
+    "Perché Salomone si era allontanato da Dio e aveva adorato altri dèi",
+    "Perché il popolo voleva una monarchia militare",
+    "Perché ci fu una guerra civile tra le tribù",
+    "Perché i profeti volevano che le tribù si separassero"
+  ],
+  "corretta": "Perché Salomone si era allontanato da Dio e aveva adorato altri dèi",
+    "riferimento": "1 Re 11:9–13 Poiché ti sei comportato in questo modo… io ti toglierò il regno e lo darò a un tuo servo. Tuttavia, non lo farò durante la tua vita, per amore di Davide tuo padre; ma lo strapperò dalla mano di tuo figlio. Però non gli toglierò tutto il regno: gli darò una tribù, per amore di Davide, mio servo…"
+  },
+  {
+  "domanda": "Dopo la divisione del regno, quali tribù formarono il Regno di Giuda (Sud)?",
+  "risposte": [
+    "Giuda e Beniamino",
+    "Levi e Ruben",
+    "Giuda e Efraim",
+    "Manasse e Neftali"
+  ],
+  "corretta": "Giuda e Beniamino",
+  "riferimento": "1 Re 12:21 – Roboamo regnò su Giuda e Beniamino, le uniche tribù rimastegli fedeli."
+},
+{
+  "domanda": "Quante tribù formarono il Regno del Nord, chiamato Israele?",
+  "risposte": ["10", "2", "12", "6"],
+  "corretta": "10",
+  "riferimento": "1 Re 11:31 – Il profeta Ahia dice a Geroboamo che Dio gli darà dieci tribù."
+}
+,
+{
+  "domanda": "Quale fu il peccato principale del Regno del Nord (Israele) dopo la divisione?",
+  "risposte": [
+    "Adorazione dei vitelli d’oro a Dan e Betel",
+    "Sacrifici umani",
+    "Alleanze con Babilonia",
+    "Distruzione del tempio"
+  ],
+  "corretta": "Adorazione dei vitelli d’oro a Dan e Betel",
+  "riferimento": "1 Re 12:28-30 – Geroboamo fece due vitelli d’oro e disse al popolo: 'Ecco il tuo Dio, o Israele'."
+},
+{
+  "domanda": "Quale dei due regni rimase fedele più a lungo al culto del vero Dio",
+  "risposte": ["Giuda", "Israele", "Entrambi ugualmente", "Nessuno"],
+  "corretta": "Giuda",
+  "riferimento": "2 Cronache 21:12-15 – Anche se peccatore, Giuda ebbe re fedeli come Ezechia e Giosia."
+},
+{
+  "domanda": "Chi fu uno dei re più fedeli del Regno di Giuda che restaurò il culto nel tempio?",
+  "risposte": ["Giosia", "Manasse", "Achaz", "Geroboamo"],
+  "corretta": "Giosia",
+  "riferimento": "2 Re 23:1–25 – Giosia abbatté gli idoli, restaurò il culto e ristabilì la Pasqua."
+},
+{
+  "domanda": "Quando il popolo di Giuda tornò dall’esilio, con quali tribù si ricostituì il popolo?",
+  "risposte": [
+    "Principalmente Giuda, Beniamino e Levi",
+    "Tutte le dodici tribù",
+    "Solo Israele",
+    "Le tribù del Nord scomparse riapparvero"
+  ],
+  "corretta": "Principalmente Giuda, Beniamino e Levi",
+  "riferimento": "Esdra 1:5; Neemia 11:4 – Furono le tribù meridionali a tornare da Babilonia."
+},
+{
+  "domanda": "Cosa si intende per 'le dieci tribù perdute di Israele'?",
+  "risposte": [
+    "Le tribù del Nord deportate dagli Assiri che non fecero mai ritorno",
+    "Le tribù che non seguirono Mosè",
+    "Le tribù che si unirono a Giuda",
+    "Le tribù che fondarono il regno di Edom"
+  ],
+  "corretta": "Le tribù del Nord deportate dagli Assiri che non fecero mai ritorno",
+  "riferimento": "2 Re 17 – Dopo la deportazione assira, le dieci tribù non ricomparvero nella storia biblica."
+}
+,
+{
+  "domanda": "Dopo la distruzione di Israele, ci fu una vera riunificazione dei due regni?",
+  "risposte": ["No, le dieci tribù furono disperse", "Sì, dopo l’esilio", "Solo alcune tribù tornarono", "Sì, al tempo di Ezechia"],
+  "corretta": "No, le dieci tribù furono disperse",
+  "riferimento": "2 Re 17:23 – Israele fu deportato e non tornò più come regno."
+},
+  {
+    "domanda": "Qual è l’ordine cronologico corretto di questi personaggi: Noè, Abramo, Mosè, Davide?",
+    "risposte": [
+      "Noè → Abramo → Mosè → Davide",
+      "Abramo → Noè → Davide → Mosè",
+      "Mosè → Abramo → Noè → Davide",
+      "Noè → Mosè → Abramo → Davide"
+    ],
+    "corretta": "Noè → Abramo → Mosè → Davide",
+    "riferimento": "Genesi–Re – L’ordine cronologico biblico segue questo schema, secondo genealogie e racconti storici."
+  },
+    {
+    "domanda": "Chi tra questi profeti visse per primo: Isaia, Geremia, Ezechiele, Daniele?",
+    "risposte": [
+      "Isaia",
+      "Geremia",
+      "Daniele",
+      "Ezechiele"
+    ],
+    "corretta": "Isaia",
+    "riferimento": "2 Re–Profeti – Isaia predicò prima dell’esilio; Geremia durante l’esilio; Ezechiele e Daniele durante la deportazione a Babilonia."
+  }
 ]
