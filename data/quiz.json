@@ -1870,5 +1870,104 @@
     ],
     "corretta": "Isaia",
     "riferimento": "2 Re–Profeti – Isaia predicò prima dell’esilio; Geremia durante l’esilio; Ezechiele e Daniele durante la deportazione a Babilonia."
+  },
+    {
+    "domanda": "Qual era la prima azione che l’offerente doveva compiere con l’animale prima del sacrificio?",
+    "risposte": [
+      "Lavarlo con acqua",
+      "Porre le mani sul capo dell’animale",
+      "Tagliarlo a pezzi",
+      "Chiederne la benedizione al sacerdote"
+    ],
+    "corretta": "Porre le mani sul capo dell’animale",
+    "riferimento": "Levitico 1:4 – L’offerente doveva imporre la mano sull’animale per essere accettato in espiazione."
+  },
+    {
+    "domanda": "Quale tipo di sacrificio veniva completamente bruciato sull’altare?",
+    "risposte": [
+      "Sacrificio espiatorio",
+      "Olocausto",
+      "Offerta di cereali",
+      "Sacrificio di comunione"
+    ],
+    "corretta": "Olocausto",
+    "riferimento": "Levitico 1:9 – Il sacerdote farà fumare ogni cosa sull'altare, come olocausto, sacrificio di profumo soave consumato dal fuoco per il Signore."
+  },
+    {
+    "domanda": "Quale tra questi non era un animale accettabile per l’olocausto secondo Levitico 1?",
+    "risposte": [
+      "Tortora",
+      "Colomba",
+      "Bue",
+      "Cammello"
+    ],
+    "corretta": "Cammello",
+    "riferimento": "Levitico 1:3–17 – Erano accettabili solo bue, pecora, capra, colomba o tortora; il cammello non era tra gli animali puri per il sacrificio."
+  },
+ {
+    "domanda": "Cosa accadeva alle parti grasse dell’animale durante i sacrifici?",
+    "risposte": [
+      "Erano conservate dai sacerdoti leviti per i pasti",
+      "Erano bruciate sull'altare come parte sacra a Dio",
+      "Erano gettate fuori dal campo",
+      "Erano lasciate sull’animale"
+    ],
+    "corretta": "Erano bruciate sull'altare come parte sacra a Dio",
+    "riferimento": "Levitico 3:14–16 – Le parti grasse appartenevano al Signore, non dovevano essere mangiate e venivano bruciate sull’altare."
+  },
+  {
+    "domanda": "Cosa era assolutamente vietato ai sacerdoti durante il servizio al Tabernacolo?",
+    "risposte": [
+      "Mangiare pane non lievitato",
+      "Bere vino o bevande inebrianti",
+      "Portare incenso",
+      "Toccare il sangue del sacrificio"
+    ],
+    "corretta": "Bere vino o bevande inebrianti",
+    "riferimento": "Levitico 10:8–10 – Ai sacerdoti era vietato bere vino quando entravano nel Tabernacolo, per distinguere il sacro dal profano."
+  },
+    {
+    "domanda": "Che tipo di donna non poteva sposare un sacerdote?",
+    "risposte": [
+      "Una donna straniera convertita",
+      "Una vedova con figli",
+      "Una divorziata o una prostituta",
+      "Una donna della tribù di Ruben"
+    ],
+    "corretta": "Una divorziata o una prostituta",
+    "riferimento": "Levitico 21:7 – I sacerdoti non potevano sposare donne divorziate o che avevano avuto rapporti impuri."
+  },
+    {
+    "domanda": "Dove si trovava l'altare degli olocausti nel Tabernacolo?",
+    "risposte": [
+      "All'interno del Santo",
+      "Nel cortile esterno",
+      "Nel luogo Santissimo",
+      "Sulla cima del Tabernacolo"
+    ],
+    "corretta": "Nel cortile esterno",
+    "riferimento": "Esodo 40:29 – L’altare degli olocausti era collocato all’ingresso del cortile del Tabernacolo."
+  }, 
+   {
+    "domanda": "Quale altro altare, oltre a quello degli olocausti, era presente nel Tabernacolo?",
+    "risposte": [
+      "Altare d’oro per l’incenso",
+      "Altare del pane",
+      "Altare del sangue",
+      "Altare delle offerte volontarie"
+    ],
+    "corretta": "Altare d’oro per l’incenso",
+    "riferimento": "Esodo 30:1-3 – L’altare d’oro si trovava nel Luogo Santo, e serviva per offrire incenso ogni mattina e sera."
+  },
+    {
+    "domanda": "Qual era la funzione dell’incenso bruciato sull’altare d’oro nel luogo santo?",
+    "risposte": [
+      "Simbolizzare il cibo per Dio",
+      "Purificare i peccati del popolo",
+      "Rappresentare le preghiere dei santi",
+      "Saziare il sacerdote"
+    ],
+    "corretta": "Rappresentare le preghiere dei santi",
+    "riferimento": "Apocalisse 5:8; Salmo 141:2 – L’incenso simboleggia le preghiere che salgono a Dio."
   }
 ]
