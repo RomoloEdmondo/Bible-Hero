@@ -1844,7 +1844,7 @@
 }
 ,
 {
-  "domanda": "Dopo la distruzione di Israele, ci fu una vera riunificazione dei due regni?",
+  "domanda": "Dopo la divisione del popolo in due regni e la distruzione di Israele, il popolo tornò mai a essere un solo regno?",
   "risposte": ["No, le dieci tribù furono disperse", "Sì, dopo l’esilio", "Solo alcune tribù tornarono", "Sì, al tempo di Ezechia"],
   "corretta": "No, le dieci tribù furono disperse",
   "riferimento": "2 Re 17:23 – Israele fu deportato e non tornò più come regno."
@@ -1969,5 +1969,27 @@
     ],
     "corretta": "Rappresentare le preghiere dei santi",
     "riferimento": "Apocalisse 5:8; Salmo 141:2 – L’incenso simboleggia le preghiere che salgono a Dio."
-  }
+  },
+  {
+  "domanda": "Chi nella Bibbia ricevette un orecchino al naso come dono?",
+  "risposte": [
+    "Sara",
+    "Rebecca",
+    "Rachele",
+    "Miriam"
+  ],
+  "corretta": "Rebecca",
+  "riferimento": "Genesi 24:47 – Poi l'ho interrogata (Servo di Abramo) e le ho detto: 'Di chi sei figlia?' Lei ha risposto: 'Sono figlia di Betuel, il figlio che Milca partorì a Naor'. Allora io le ho messo l'anello al naso e i braccialetti ai polsi."
+},
+{
+  "domanda": "Cosa rappresentava il dono dell’orecchino al naso dato a Rebecca nella cultura antica descritta nella Bibbia?",
+  "risposte": [
+    "Un rito di purificazione prima del matrimonio",
+    "Un semplice ornamento personale senza significato",
+    "Un segno di ricchezza e proposta di matrimonio",
+    "Un simbolo di consacrazione al servizio del tempio"
+  ],
+  "corretta": "Un segno di ricchezza e proposta di matrimonio",
+  "riferimento": "Genesi 24:22,47 – Il servo di Abramo diede a Rebecca un anello per il naso e braccialetti, doni preziosi usati per indicare la scelta della futura moglie per Isacco."
+}
 ]
