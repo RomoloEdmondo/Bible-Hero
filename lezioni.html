@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lezioni</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    background: url('img/quiz-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <div class="container py-4 flex-grow-1">
+      <h1 class="text-center main-title-quiz mb-4">📚 <span class="game-title-quiz">Lezioni</span></h1>
+      <p class="text-center text-white-50 mb-4">Seleziona una lezione per iniziare.</p>
+
+      <div id="lessonList" class="lessons-grid"></div>
+      <div id="lessonEmpty" class="text-center text-white-50 mt-4" style="display:none;">Nessuna lezione disponibile.</div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
+          <i class="bi bi-arrow-left-circle me-2"></i>Home
+        </a>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+  </div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        const yearEl = document.getElementById('annoCorrente');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+      });
+
+    async function fetchLessonTitle(path) {
+      const res = await fetch(path);
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const titleEl = doc.querySelector('[data-lesson-title], h1, title');
+      const title = titleEl ? titleEl.textContent.trim() : null;
+      return title || path.split('/').pop().replace('.html', '');
+    }
+
+    async function loadLessons() {
+      try {
+        const res = await fetch(`data/lezioni.json?ts=${Date.now()}`);
+        const lessons = await res.json();
+        const listEl = document.getElementById('lessonList');
+        listEl.innerHTML = '';
+
+        if (!Array.isArray(lessons) || lessons.length === 0) {
+          document.getElementById('lessonEmpty').style.display = 'block';
+          return;
+        }
+
+        for (const item of lessons) {
+          const path = typeof item === 'string' ? item : item.file;
+          if (!path) continue;
+          const title = (item && item.title) ? item.title : await fetchLessonTitle(path);
+
+          const card = document.createElement('a');
+          card.className = 'lesson-card';
+          card.href = path;
+          card.innerHTML = `
+            <div class="lesson-card-icon">📖</div>
+            <div class="lesson-card-body">
+              <h3 class="lesson-card-title">${title}</h3>
+              <p class="lesson-card-desc">Apri la lezione</p>
+            </div>
+          `;
+
+          listEl.appendChild(card);
+        }
+      } catch (err) {
+        console.error('Errore nel caricamento delle lezioni:', err);
+        document.getElementById('lessonEmpty').style.display = 'block';
+      }
+    }
+
+    loadLessons();
+  </script>
+</body>
+</html>

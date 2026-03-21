@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lezione - Le Chiese del Nuovo Testamento</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body {
+      background: url('../img/quiz-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .overlay-bg {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(6px);
+      border-radius: 24px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-box {
+      background: linear-gradient(135deg, #f8fbff, #eef5ff);
+      border-radius: 24px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .lesson-badge {
+      background: #0d6efd;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #1f2d3d;
+    }
+
+    .church-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      height: 100%;
+    }
+
+    .church-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    .church-card .card-header {
+      border: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .church-card .card-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.22), transparent 55%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .church-card .card-header .header-subtitle {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .church-title {
+      font-size: 1.35rem;
+      letter-spacing: 0.4px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    .church-header {
+      color: #fff;
+    }
+
+    .header-jerusalem {
+      background: linear-gradient(135deg, #1d3bd1, #0077b6);
+    }
+
+    .header-corinth {
+      background: linear-gradient(135deg, #c81d25, #ff7b00);
+    }
+
+    .header-ephesus {
+      background: linear-gradient(135deg, #0b6fa8, #2f9ed8);
+    }
+
+    .header-philippi {
+      background: linear-gradient(135deg, #0f766e, #1f9d55);
+    }
+
+    .header-thessalonica {
+      background: linear-gradient(135deg, #b45309, #d97706);
+    }
+
+    .header-galatia {
+      background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    }
+
+    .header-laodicea {
+      background: linear-gradient(135deg, #1f2937, #374151);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #214c9b;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin: 0.2rem;
+    }
+
+    .reference-box {
+      background: #f8f9fa;
+      border-left: 4px solid #0d6efd;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    .memory-box {
+      background: #fff8e6;
+      border: 1px solid #ffe08a;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+
+    .filter-btn.active {
+      background-color: #0d6efd !important;
+      color: #fff !important;
+      border-color: #0d6efd !important;
+    }
+
+    .quiz-option {
+      border: 1px solid #dee2e6;
+      border-radius: 14px;
+      padding: 0.9rem 1rem;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #fff;
+    }
+
+    .quiz-option:hover {
+      background: #f8f9fa;
+    }
+
+    .quiz-option.correct {
+      border-color: #198754;
+      background: #eaf7ef;
+      color: #146c43;
+      font-weight: 600;
+    }
+
+    .quiz-option.wrong {
+      border-color: #dc3545;
+      background: #fdecec;
+      color: #b02a37;
+      font-weight: 600;
+    }
+
+    .progress-wrap {
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #eef5ff;
+      color: #0d3b8e;
+      box-shadow: none;
+    }
+
+    .small-muted {
+      color: #6c757d;
+      font-size: 0.92rem;
+    }
+
+    .timeline-item {
+      border-left: 3px solid #0d6efd;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 4px;
+      width: 13px;
+      height: 13px;
+      background: #0d6efd;
+      border-radius: 50%;
+    }
+
+    .summary-list li {
+      margin-bottom: 0.55rem;
+    }
+
+    .btn-home {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+    }
+
+    .btn-home:hover {
+      background-color: #0b5ed7;
+      color: white;
+    }
+
+    .hidden-card {
+      display: none !important;
+    }
+
+    .lesson-nav {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .lesson-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      background: rgba(13, 110, 253, 0.1);
+      color: #0d3b8e;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(13, 110, 253, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .lesson-nav-btn:hover {
+      background: rgba(13, 110, 253, 0.18);
+      color: #0b5ed7;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(13, 110, 253, 0.15);
+    }
+
+    .church-card table th {
+      color: #1f2d3d;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .church-card table td {
+      color: #495057;
+    }
+
+    .church-card .table {
+      margin-bottom: 0;
+    }
+
+    .ref-tag {
+      border-bottom: 1px dashed rgba(13, 110, 253, 0.5);
+      cursor: help;
+      transition: all 0.2s ease;
+    }
+
+    .ref-tag:hover {
+      color: #0362f0;
+      border-bottom: 1px solid #0b5ed7;
+    }
+
+    .header-subtitle {
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0.9;
+      line-height: 1.2;
+    }
+
+    .curiosity-box {
+      background: #ededed;
+      border-left: 5px solid #0d6efd;
+      border-radius: 14px;
+      padding: 0.5rem 0.8rem;
+    }
+
+    .curiosity-title {
+      font-weight: 700;
+      color: #0d6efd;
+      margin-bottom: 0.5rem;
+    }
+
+    .curiosity-box ul {
+      padding-left: 1.2rem;
+    }
+
+    .curiosity-box li {
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+
+    .quiz-toggle-btn {
+      align-self: center;
+      background: linear-gradient(135deg, #ffb347, #ff6b35);
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      padding: 0.75rem 1.6rem;
+      box-shadow: 0 10px 25px rgba(255, 107, 53, 0.35);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quiz-toggle-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.25), transparent 60%);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .quiz-toggle-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 16px 35px rgba(255, 107, 53, 0.45);
+    }
+
+    .quiz-toggle-btn:hover::after {
+      transform: translateX(0%);
+    }
+
+    .quiz-toggle-btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .explore-toggle-btn {
+      background: rgba(13, 110, 253, 0.1);
+      color: #0d3b8e;
+      border: 1px solid rgba(13, 110, 253, 0.35);
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .explore-toggle-btn:hover {
+      background: linear-gradient(135deg, rgba(13, 110, 253, 0.15), rgba(13, 110, 253, 0.05));
+      color: #0b5ed7;
+      border-color: rgba(13, 110, 253, 0.55);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px rgba(13, 110, 253, 0.18);
+    }
+
+    .keywords-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .keyword-tag {
+      background: linear-gradient(135deg, #f8f9fa, #ffffff);
+      border: 1px solid #e0e0e0;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .keyword-tag small {
+      font-weight: 500;
+      color: #666;
+    }
+
+    .keyword-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      border-color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4 py-lg-5">
+
+    <div class="overlay-bg p-3 p-md-4 p-lg-5">
+      <div class="lesson-nav mb-4">
+        <a href="../lezioni.html" class="lesson-nav-btn">
+          <i class="bi bi-arrow-left-circle me-2"></i>Torna alle lezioni
+        </a>
+      </div>
+      <section class="hero-box mb-5">
+        <span class="lesson-badge">Lezione interattiva biblica</span>
+        <h1 class="section-title display-6 mb-3">Le Chiese del Nuovo Testamento</h1>
+        <p class="lead mb-3">
+          In questa lezione puoi studiare le principali chiese menzionate nel Nuovo Testamento,
+          ricordando per ciascuna:
+          <strong>contesto</strong>, <strong>punti forti</strong>, <strong>problemi</strong>,
+          <strong>insegnamenti</strong> e <strong>riferimenti biblici</strong>.
+        </p>
+
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-search me-2"></i>Cosa impari</h5>
+              <p class="mb-0">Le particolarità delle varie chiese e i loro messaggi distintivi nel Nuovo Testamento.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-journal-text me-2"></i>Cosa osservare</h5>
+              <p class="mb-0">Chi scrive, a chi scrive, quale problema affronta e quale soluzione spirituale propone.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-lightbulb me-2"></i>Metodo di studio</h5>
+              <p class="mb-0">Apri le schede, leggi i dettagli, memorizza le parole chiave e poi prova il quiz finale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+
+
+        <div class="row g-4" id="churchCards">
+
+          <!-- Gerusalemme -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="fedelta perseveranza">
+            <div class="card church-card">
+              <div class="card-header church-header header-jerusalem text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-geo-alt-fill me-2"></i> <span class="fw-bold fs-5 church-title">Gerusalemme</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    la prima grande chiesa cristiana, nata dopo la Pentecoste.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Pentecoste</span>
+                  <span class="tag">Comunione</span>
+                  <span class="tag">Preghiera</span>
+                  <span class="tag">Persecuzione</span>
+                </div>
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>È la prima chiesa cristiana nata dopo la Pentecoste (Atti 2).</li>
+                    <li>Punto di partenza del vangelo verso in tutto il mondo (Atti 1:8).</li>
+                    <li>Da qui parte la dispersione dei credenti a causa della persecuzione (Atti 8:1).</li>
+                  </ul>
+                </div>
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Gerusalemme, nella regione della Giudea</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Nasce nel giorno di Pentecoste con la discesa dello Spirito Santo</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Pietro, Giovanni, Giacomo, Stefano, Barnaba e gli altri apostoli</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Atti 2:42 - Perseveravano nell'insegnamento degli apostoli">Dottrina
+                            apostolica,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Atti 2:44 - Tutti quelli che credevano stavano insieme e avevano ogni cosa in comune">comunione
+                            fraterna,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Atti 2:42 - Perseveravano nelle preghiere">preghiera,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Atti 4:32 - Nessuno diceva sua proprietà quello che possedeva, ma tutto era in comune tra loro">condivisione
+                            dei beni</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>Persecuzioni, tensioni nella distribuzione quotidiana, opposizione religiosa</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Una chiesa sana cresce quando rimane salda nella Parola, nella preghiera, nella comunione
+                          fraterna e in una cura concreta gli uni per gli altri.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Atti 2:42-47; Atti 4:32-35; Atti 6; Atti 8:1
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseJerusalem"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+
+                <div class="collapse mt-3" id="collapseJerusalem">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Fondamento teologico:</strong>
+                      La chiesa di Gerusalemme nasce come compimento diretto della promessa dello Spirito Santo (Atti
+                      2),
+                      segnando l’inizio della nuova alleanza. È una comunità fondata sull’insegnamento apostolico,
+                      che diventa il modello normativo per la vita della chiesa nel Nuovo Testamento (Atti 2:42).
+                    </li>
+                    <li>
+                      <strong>Struttura e vita comunitaria:</strong>
+                      Non era solo un gruppo spirituale, ma una vera comunità visibile e organizzata:
+                      condivisione dei beni (Atti 4:32), cura dei bisogni (Atti 6) e una forte unità interna.
+                      Questo mostra una chiesa che vive sia la dimensione spirituale che quella pratica.
+                    </li>
+                    <li>
+                      <strong>Dinamica missionaria:</strong>
+                      La persecuzione (Atti 8:1) non distrugge la chiesa, ma diventa lo strumento attraverso cui
+                      il Vangelo si diffonde. Gerusalemme diventa così il punto di partenza della missione globale
+                      prevista in Atti 1:8.
+                    </li>
+                    <li>
+                      <strong>Tensioni interne:</strong>
+                      Già nella prima chiesa emergono problemi reali (Atti 6), mostrando che anche una comunità sana
+                      può affrontare conflitti. La risposta non è divisione, ma organizzazione e guida spirituale.
+                    </li>
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Gerusalemme rappresenta il modello della chiesa ideale: fondata sulla Parola, guidata dallo
+                      Spirito,
+                      centrata sulla comunione e attiva nella missione. Tuttavia, mostra anche che la crescita autentica
+                      passa attraverso prove e purificazione.
+                    </li>
+                    <li>
+                      <strong>Applicazione:</strong>
+                      Una chiesa sana non è quella senza problemi, ma quella che rimane salda nella dottrina,
+                      vive la comunione in modo concreto e vede anche le difficoltà come opportunità per l’opera di Dio.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corinto -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="correzione dottrina">
+            <div class="card church-card">
+              <div class="card-header church-header header-corinth text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-exclamation-octagon-fill me-2"></i>
+                    <span class="fw-bold fs-5 church-title">Corinto</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    Chiesa ricca di doni, ma segnata da molti disordini
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Divisioni</span>
+                  <span class="tag">Doni spirituali</span>
+                  <span class="tag">Immoralità</span>
+                  <span class="tag">Risurrezione</span>
+                </div>
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>È una delle chiese con più problemi affrontati da Paolo nelle sue lettere (1 Corinzi).</li>
+                    <li>Era una città molto immorale e influenzata dalla cultura pagana (Atti 18).</li>
+                    <li>Nonostante i problemi, era molto ricca di doni spirituali (1 Corinzi 1:7).</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Corinto, ricca città greca nella regione dell'Acaia</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Fondata dall’apostolo Paolo durante il suo secondo viaggio missionario</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Paolo, Apollo, Cefa (Pietro), Priscilla e Aquila, membri della chiesa locale</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="2 Corinzi 8:7 - Ma siccome abbondante in ogni cosa, in fede, in parola, in conoscenza, in ogni zelo e nell’amore che avete per noi, vedete di abbondare anche in quest’opera di grazia.">Ricchezza
+                            di doni spirituali e zelo</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Corinzi 12:13 - Infatti noi tutti siamo stati battezzati in un unico Spirito per formare un unico corpo, Giudei e Greci, schiavi e liberi; e tutti siamo stati abbeverati di un solo Spirito.">grande
+                            varietà di persone,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Corinzi 1:22 - I Giudei infatti chiedono segni miracolosi e i Greci cercano sapienza,">forte
+                            influenza culturale</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>Divisioni, immoralità, abusi nella Cena del Signore, disordine nei culti, errori sulla
+                          risurrezione</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>I doni e la conoscenza non bastano: una chiesa cresce veramente solo quando vive nell’amore,
+                          nella santità e nell’ordine secondo Dio.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> 1 Corinzi 1:10-13; 1 Corinzi 5; 1 Corinzi 11; 1 Corinzi 12-15
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCorinth"> <i class="bi bi-chevron-down me-2"></i>Approfondisci </button>
+                <div class="collapse mt-3" id="collapseCorinth">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Contesto culturale e spirituale:</strong>
+                      Corinto era una città fortemente segnata dall’immoralità e dalla filosofia greca.
+                      La chiesa riflette questo ambiente: ricca di doni spirituali, ma influenzata da mentalità carnali
+                      e divisioni interne (1 Corinzi 1:10-12).
+                    </li>
+
+                    <li>
+                      <strong>Ricchezza di doni ma immaturità:</strong>
+                      I credenti non mancavano di alcun dono (1 Corinzi 1:7), ma Paolo li definisce “carnali” (1 Corinzi
+                      3:1).
+                      Questo mostra che i doni spirituali non sono segno automatico di maturità spirituale.
+                    </li>
+
+                    <li>
+                      <strong>Problemi dottrinali e morali:</strong>
+                      La chiesa affrontava divisioni, immoralità (1 Corinzi 5), disordini nella Cena del Signore
+                      (1 Corinzi 11) e confusione nell’uso dei doni spirituali (1 Corinzi 12–14).
+                      Inoltre, alcuni negavano la risurrezione (1 Corinzi 15), toccando il cuore del Vangelo.
+                    </li>
+
+                    <li>
+                      <strong>Ordine nel culto e nella vita della chiesa:</strong>
+                      Paolo introduce il principio fondamentale:
+                      “Dio non è un Dio di disordine, ma di pace” (1 Corinzi 14:33).
+                      La vita comunitaria deve essere guidata da ordine, edificazione e comprensione.
+                    </li>
+
+                    <li>
+                      <strong>Centralità dell’amore:</strong>
+                      In mezzo ai doni e ai problemi, Paolo presenta l’amore come via superiore (1 Corinzi 13).
+                      Senza amore, anche i doni più grandi perdono valore davanti a Dio.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Corinto dimostra che una chiesa può essere ricca spiritualmente ma disordinata.
+                      Il vero criterio di maturità non è il carisma, ma il carattere trasformato e l’amore cristiano.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      Una chiesa sana non è definita dai doni o dall’attività, ma dall’amore, dalla santità e
+                      dall’ordine secondo la Parola di Dio.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Efeso -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="dottrina fedelta">
+            <div class="card church-card">
+              <div class="card-header church-header header-ephesus text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-journal-richtext me-2"></i> <span class="fw-bold fs-5 church-title">Efeso</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    Chiesa forte nella dottrina e nella vigilanza, ma in pericolo di perdere il primo amore.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Dottrina</span>
+                  <span class="tag">Discernimento</span>
+                  <span class="tag">Primo amore</span>
+                  <span class="tag">Vigilanza</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>Paolo vi rimase più a lungo che in altre città, insegnando e formando la chiesa (Atti 20:31).
+                    </li>
+                    <li>Efeso, una delle città più importanti dell’Asia Minore, sede del tempio della dea Artemide (Atti
+                      19).</li>
+                    <li>La Parola di Dio si diffuse potentemente da Efeso in tutta la regione (Atti 19:10).</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Efeso, importante città dell’Asia Minore (attuale Turchia), centro commerciale e religioso
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Fondata dall’apostolo Paolo durante il suo terzo viaggio missionario</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Paolo, Timoteo, Priscilla e Aquila, Giovanni (secondo la tradizione)</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Efesini 1:3 - Benedetto sia il Dio e Padre del nostro Signore Gesù Cristo, che ci ha benedetti con ogni benedizione spirituale nei luoghi celesti in Cristo.">
+                            ricchezza spirituale in Cristo,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 2:2 - Io conosco le tue opere, la tua fatica e la tua costanza; so che non puoi sopportare i malvagi e che hai messo alla prova quelli che si chiamano apostoli e non lo sono.">
+                            Buon discernimento dottrinale,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Efesini 6:11 - Rivestitevi della completa armatura di Dio, affinché possiate stare saldi contro le insidie del diavolo.">
+                            combattimento spirituale
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 2:4 - Ma ho questo contro di te: che hai lasciato il tuo primo amore">
+                            perdita del primo amore (futuro),
+                          </span>
+                          rischio di una fede corretta ma senza amore
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>La verità e la dottrina sono fondamentali, ma senza amore per Cristo la vita spirituale si
+                          raffredda e perde il suo valore davanti a Dio.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Efesini 1-6; Atti 19; Apocalisse 2:1-7
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEphesus"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+
+                <div class="collapse mt-3" id="collapseEphesus">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Profondità dottrinale:</strong>
+                      La chiesa di Efeso riceve uno degli insegnamenti più elevati del Nuovo Testamento.
+                      La lettera agli Efesini presenta la chiesa come corpo di Cristo e realtà spirituale
+                      nei luoghi celesti (Efesini 1:22-23), mostrando la sua identità e posizione in Cristo.
+                    </li>
+
+                    <li>
+                      <strong>Identità della chiesa:</strong>
+                      I credenti sono descritti come famiglia di Dio e tempio spirituale (Efesini 2:19-22),
+                      uniti in Cristo indipendentemente dall’origine (Giudei e Gentili).
+                      La chiesa è quindi una nuova umanità riconciliata in Cristo.
+                    </li>
+
+                    <li>
+                      <strong>Discernimento e fedeltà:</strong>
+                      Efeso è una chiesa attenta alla dottrina e capace di riconoscere il falso insegnamento
+                      (Apocalisse 2:2). Questo mostra una forte vigilanza spirituale e fedeltà alla verità.
+                    </li>
+
+                    <li>
+                      <strong>Combattimento spirituale:</strong>
+                      La vita cristiana è presentata come una battaglia spirituale.
+                      I credenti sono chiamati a rivestirsi dell’armatura di Dio (Efesini 6:11)
+                      per resistere alle insidie del nemico.
+                    </li>
+
+                    <li>
+                      <strong>Il pericolo del raffreddamento:</strong>
+                      Nonostante la solidità dottrinale, la chiesa viene rimproverata perché ha lasciato
+                      il suo primo amore (Apocalisse 2:4).
+                      Questo rivela il rischio di una fede corretta ma priva di relazione viva con Cristo.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Efeso mostra che la verità senza amore non è sufficiente.
+                      Una chiesa può essere ortodossa nella dottrina ma mancare nella dimensione relazionale
+                      e spirituale più profonda.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      La vita cristiana deve unire verità e amore.
+                      Non basta conoscere la dottrina: è necessario mantenere un cuore vivo,
+                      centrato su Cristo e motivato da amore sincero.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filippi -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="fedelta perseveranza">
+            <div class="card church-card">
+              <div class="card-header church-header header-philippi text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-gift-fill me-2"></i> <span class="fw-bold fs-5 church-title">Filippi</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    Chiesa fedele, generosa e molto vicina all’apostolo Paolo.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Gioia</span>
+                  <span class="tag">Generosità</span>
+                  <span class="tag">Collaborazione</span>
+                  <span class="tag">Fedeltà</span>
+                </div>
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>Prima chiesa in Europa, nasce dopo la conversione di Lidia, prima credente in Europa (Atti
+                      16:14-15).</li>
+                    <li>A Filippi non c’era una sinagoga, quindi Paolo iniziò a predicare fuori dalla città presso un
+                      luogo di preghiera (Atti 16:13).</li>
+                    <li>È una delle chiese più vicine a Paolo, che lo ha sostenuto concretamente nel suo ministero
+                      (Filippesi 4:15-16).</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Filippi, città della Macedonia, colonia romana</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Fondata dall’apostolo Paolo durante il suo secondo viaggio missionario (Atti 16)</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Lidia, il carceriere di Filippi, Evodia, Sintiche, collaboratori di Paolo</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Filippesi 1:3-5 - Ringrazio il mio Dio ogni volta che mi ricordo di voi... a motivo della vostra partecipazione al vangelo, dal primo giorno fino ad ora.">
+                            partecipazione al Vangelo,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Filippesi 4:15-16 - Voi Filippesi sapete che all'inizio della predicazione del vangelo... nessuna chiesa partecipò con me nel dare e nel ricevere, se non voi soli.">
+                            generosità e sostegno,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Filippesi 1:29-30 - Poiché a voi è stata data la grazia rispetto a Cristo, non soltanto di credere in lui, ma anche di soffrire per lui.">
+                            perseveranza nelle prove,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Filippesi 4:4 - Rallegratevi sempre nel Signore. Ripeto: rallegratevi.">
+                            gioia in Cristo
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Filippesi 4:2 - Esorto Evodia ed esorto Sintiche ad avere un medesimo sentimento nel Signore.">
+                            tensioni interne,
+                          </span>
+                          rischio di mancanza di unità tra alcuni membri
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Una chiesa matura vive nella gioia in Cristo, sostiene concretamente l’opera del Vangelo e
+                          rimane fedele anche nelle difficoltà, coltivando l’unità tra i credenti.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Filippesi 1:3-7; Filippesi 2; Filippesi 4:10-19; Atti 16
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapsePhilippi"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+
+                <div class="collapse mt-3" id="collapsePhilippi">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Centralità di Cristo (Cristologia):</strong>
+                      La lettera ai Filippesi contiene uno dei passaggi cristologici più profondi del Nuovo Testamento
+                      (Filippesi 2:6-11), che descrive l’abbassamento (kenosi) e l’esaltazione di Cristo.
+                      Gesù è presentato come modello supremo di umiltà e obbedienza.
+                    </li>
+
+                    <li>
+                      <strong>Partecipazione al Vangelo:</strong>
+                      La chiesa è lodata per la sua partecipazione attiva all’opera del Vangelo
+                      (Filippesi 1:5; 4:15-16). Non è solo destinataria del messaggio,
+                      ma collaboratrice concreta nella missione.
+                    </li>
+
+                    <li>
+                      <strong>Gioia nella sofferenza:</strong>
+                      Paolo scrive dalla prigione, eppure la gioia è un tema dominante (Filippesi 4:4).
+                      La gioia cristiana non dipende dalle circostanze, ma dalla relazione con Cristo
+                      e dalla consapevolezza della sua opera.
+                    </li>
+
+                    <li>
+                      <strong>Unità e umiltà:</strong>
+                      La chiesa è esortata a vivere nell’unità attraverso l’umiltà (Filippesi 2:2-3).
+                      L’esempio di Cristo diventa il fondamento della vita comunitaria,
+                      contrastando ogni forma di rivalità o ambizione personale.
+                    </li>
+
+                    <li>
+                      <strong>Orientamento escatologico:</strong>
+                      I credenti sono chiamati a vivere con una prospettiva celeste:
+                      “La nostra cittadinanza è nei cieli” (Filippesi 3:20).
+                      Questo orienta tutta la vita cristiana verso il ritorno di Cristo.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Filippi mostra una chiesa matura, in cui dottrina e vita sono armonizzate.
+                      La fede si esprime in gioia, comunione, sacrificio e servizio.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      La vita cristiana autentica si manifesta in una gioia stabile, in un cuore umile
+                      e in una partecipazione concreta all’opera del Vangelo, anche nelle difficoltà.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tessalonica -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="perseveranza dottrina">
+            <div class="card church-card">
+              <div class="card-header church-header header-thessalonica text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-cloud-moon-fill me-2"></i> <span class="fw-bold fs-5 church-title">Tessalonica</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    chiesa giovane ma perseverante, con forte attesa del ritorno di Cristo.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Persecuzione</span>
+                  <span class="tag">Speranza</span>
+                  <span class="tag">Ritorno di Cristo</span>
+                  <span class="tag">Santificazione</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>Nasce in mezzo a una persecuzione quasi immediata dopo la predicazione di Paolo (Atti 17:5-6).
+                    </li>
+                    <li>Nonostante la giovane età della chiesa, la loro fede si diffuse rapidamente in molte regioni (1
+                      Tessalonicesi 1:8).</li>
+                    <li>Tessalonica era una città strategica situata sulla Via Egnatia, importante via commerciale
+                      romana.</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Tessalonica, importante città della Macedonia e centro commerciale dell’Impero romano</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Fondata dall’apostolo Paolo durante il suo secondo viaggio missionario (Atti 17)</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Giasone, alcuni Giudei e molti Greci convertiti, collaboratori di Paolo</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Tessalonicesi 1:3 - Ricordando continuamente l’opera della vostra fede, la fatica del vostro amore e la costanza della vostra speranza nel Signore nostro Gesù Cristo.">
+                            fede viva, amore e speranza,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Tessalonicesi 1:6-7 - Voi siete diventati imitatori nostri e del Signore, avendo ricevuto la parola in mezzo a molte sofferenze, con la gioia dello Spirito Santo.">
+                            perseveranza nella persecuzione,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Tessalonicesi 1:9-10 - Vi siete convertiti dagli idoli a Dio per servire il Dio vivente e vero e per aspettare dai cieli il Figlio suo.">
+                            attesa del ritorno di Cristo,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="1 Tessalonicesi 1:8 - La parola del Signore ha risuonato per mezzo vostro... la vostra fede in Dio si è divulgata in ogni luogo.">
+                            testimonianza diffusa
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="2 Tessalonicesi 2:1-2 - Non lasciatevi così presto sconvolgere... come se il giorno del Signore fosse già presente.">
+                            confusione sul ritorno del Signore,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="2 Tessalonicesi 3:11 - Sentiamo infatti che alcuni tra di voi si comportano disordinatamente, non lavorando affatto.">
+                            disordine nella vita pratica
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Una chiesa sana vive nella fede, nell’amore e nella speranza, rimane salda nelle prove e
+                          attende il ritorno di Cristo con una vita ordinata e responsabile.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> 1 Tessalonicesi 1:3-10; 1 Tessalonicesi 4-5; 2 Tessalonicesi 1-3
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThessalonica"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+
+                <div class="collapse mt-3" id="collapseThessalonica">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Fede operante, amore attivo e speranza perseverante:</strong>
+                      Paolo descrive la chiesa attraverso una triade fondamentale
+                      (1 Tessalonicesi 1:3): fede, amore e speranza.
+                      Queste non sono qualità astratte, ma realtà operative che si manifestano nella vita quotidiana.
+                    </li>
+
+                    <li>
+                      <strong>Persecuzione e autenticità della fede:</strong>
+                      La chiesa nasce in un contesto di forte opposizione (Atti 17:5-6),
+                      ma proprio la sofferenza diventa prova della genuinità della fede
+                      (1 Tessalonicesi 1:6). La persecuzione non indebolisce la chiesa, ma la purifica.
+                    </li>
+
+                    <li>
+                      <strong>Escatologia e attesa del ritorno di Cristo:</strong>
+                      Uno dei temi centrali è il ritorno del Signore (1 Tessalonicesi 4:16-17).
+                      I credenti vivono orientati verso il futuro, aspettando Cristo dai cieli
+                      (1 Tessalonicesi 1:10). L’escatologia non è teoria, ma motivazione per la vita presente.
+                    </li>
+
+                    <li>
+                      <strong>Chiarimento dottrinale sul “giorno del Signore”:</strong>
+                      In 2 Tessalonicesi Paolo corregge confusione e false idee riguardo al ritorno di Cristo
+                      (2 Tessalonicesi 2:1-3), mostrando la necessità di discernimento anche su temi escatologici.
+                    </li>
+
+                    <li>
+                      <strong>Etica del lavoro e vita ordinata:</strong>
+                      Alcuni, aspettando il ritorno di Cristo, vivevano in modo disordinato.
+                      Paolo stabilisce un principio chiaro: “se uno non vuole lavorare, neppure mangi”
+                      (2 Tessalonicesi 3:10), collegando fede e responsabilità pratica.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Tessalonica mostra una chiesa giovane ma spiritualmente viva,
+                      in cui la speranza futura modella il comportamento presente.
+                      L’escatologia diventa fondamento dell’etica cristiana.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      La vita cristiana autentica vive tra il “già” e il “non ancora”:
+                      radicata nella fede, attiva nell’amore e proiettata nella speranza del ritorno di Cristo,
+                      mantenendo una vita ordinata e responsabile.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Galazia -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="correzione dottrina">
+            <div class="card church-card">
+              <div class="card-header church-header header-galatia text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-shield-lock-fill me-2"></i> <span class="fw-bold fs-5 church-title">Galazia</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    chiese minacciate da false dottrine sul Vangelo e sulla legge.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Giustificazione</span>
+                  <span class="tag">Poco Discernimento</span>
+                  <span class="tag">Legge</span>
+                  <span class="tag">Libertà cristiana</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>Galati è l’unica lettera in cui Paolo non ringrazia all’inizio, ma entra subito in modo diretto
+                      perché il vangelo rischia di essere alterato (Galati 1:6).</li>
+                    <li>Non è una sola città, ma una regione con più chiese fondate durante i viaggi missionari di Paolo
+                      (Atti 13–14).</li>
+                    <li>È una delle lettere più forti contro il legalismo e difende il Vangelo della grazia (Galati
+                      2:16).</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Regione della Galazia, nell’Asia Minore (non una sola città ma diverse chiese)</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>Fondate dall’apostolo Paolo durante i suoi viaggi missionari (Atti 13–14)</td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Credenti provenienti dal paganesimo e dal giudaismo; Paolo come fondatore</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 1:6 - Mi meraviglio che così presto voi passiate da colui che vi ha chiamati mediante la grazia di Cristo a un altro vangelo.">
+                            Esposizione al falso vangelo,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 3:2 - Questo soltanto desidero sapere da voi: avete ricevuto lo Spirito per mezzo delle opere della legge o mediante la predicazione della fede?">
+                            Esperienza dello Spirito per fede,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 4:9 - Ora che avete conosciuto Dio... come mai vi rivolgete di nuovo ai deboli e poveri elementi?">
+                            Rischio di ritorno alla legge,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 5:1 - Cristo ci ha liberati perché fossimo liberi; state dunque saldi e non vi lasciate di nuovo mettere sotto il giogo della schiavitù.">
+                            Rischio Legalismo
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 2:16 - L’uomo non è giustificato per le opere della legge ma soltanto per mezzo della fede in Gesù Cristo.">
+                            legalismo e giustificazione per opere,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Galati 3:1 - O Galati insensati, chi vi ha ammaliati, voi davanti ai cui occhi Gesù Cristo è stato rappresentato crocifisso?">
+                            Mancanza di discernimento.
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Il Vangelo deve rimanere puro: la salvezza è per grazia mediante la fede, e non deve essere
+                          mescolata con opere o tradizioni umane.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Galati 1:6-9; Galati 2; Galati 3; Galati 5
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseGalatia"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+                <div class="collapse mt-3" id="collapseGalatia">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Difesa del Vangelo autentico:</strong>
+                      La lettera ai Galati è una risposta urgente alla distorsione del Vangelo.
+                      Paolo denuncia con forza ogni “altro vangelo” (Galati 1:6-9),
+                      affermando l’unicità e l’immutabilità del messaggio della grazia.
+                    </li>
+
+                    <li>
+                      <strong>Giustificazione per fede:</strong>
+                      Il cuore teologico della lettera è che l’uomo è giustificato
+                      non per le opere della legge, ma per la fede in Cristo (Galati 2:16).
+                      Questo principio è fondamentale per tutta la dottrina della salvezza.
+                    </li>
+
+                    <li>
+                      <strong>Legge e promessa:</strong>
+                      Paolo sviluppa un’argomentazione teologica profonda:
+                      la legge non salva, ma ha avuto una funzione pedagogica
+                      fino a Cristo (Galati 3:24). La promessa precede e supera la legge.
+                    </li>
+
+                    <li>
+                      <strong>Libertà cristiana:</strong>
+                      In Cristo i credenti sono liberati dal “giogo della schiavitù”
+                      (Galati 5:1). Tuttavia, questa libertà non è licenza,
+                      ma una chiamata a vivere nello Spirito.
+                    </li>
+
+                    <li>
+                      <strong>Vita secondo lo Spirito:</strong>
+                      Paolo contrappone le opere della carne al frutto dello Spirito
+                      (Galati 5:19-23). La vera vita cristiana non è guidata dalla legge,
+                      ma dallo Spirito Santo che produce trasformazione interiore.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Galazia è fondamentale per comprendere la dottrina della salvezza.
+                      Mostra che aggiungere opere alla grazia significa compromettere
+                      il Vangelo stesso.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      La vita cristiana autentica si fonda sulla grazia di Dio,
+                      ricevuta per fede, e si manifesta in una vita guidata dallo Spirito,
+                      non da sistemi religiosi o sforzi umani.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laodicea -->
+          <div class="col-md-6 col-xl-6 church-item" data-category="correzione">
+            <div class="card church-card">
+              <div class="card-header church-header header-laodicea text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-droplet-half me-2"></i> <span class="fw-bold fs-5 church-title">Laodicea</span>
+                  </div>
+                  <small class="header-subtitle mt-1">
+                    chiesa tiepida, autosufficiente, ma spiritualmente povera.
+                  </small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Tiepidezza</span>
+                  <span class="tag">Autosufficienza</span>
+                  <span class="tag">Ravvedimento</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title">
+                    <i class="bi bi-lightbulb me-2"></i>Curiosità
+                  </div>
+                  <ul class="mb-0">
+                    <li>Laodicea era una città molto ricca, famosa per le banche, i tessuti e un collirio per gli occhi
+                      (Apocalisse 3:17-18).</li>
+                    <li>L’immagine della “tiepidezza” (Apocalisse 3:15-16) riflette probabilmente la situazione
+                      dell’acqua della città, che arrivava tramite acquedotti, in quanto non vi era una sorgente ed era
+                      tiepida.</li>
+                    <li>È l’unica tra le sette chiese a non ricevere alcun elogio, ma solo un richiamo al ravvedimento
+                      (Apocalisse 3:14-19).</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 130px;">Luogo</th>
+                        <td>Laodicea, città ricca dell’Asia Minore (attuale Turchia), nota per commercio, banche e
+                          produzione di tessuti</td>
+                      </tr>
+                      <tr>
+                        <th>Origine</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Colossesi 4:15-16 Salutate i fratelli che sono a Laodicea, Ninfa e la chiesa che è in casa sua. Quando questa lettera sarà stata letta da voi, fate che sia letta anche nella chiesa dei Laodicesi, e leggete anche voi quella che vi sarà mandata da Laodicea.">
+                            Chiesa esistente già al tempo apostolico, collegata a Colosse (Colossesi 4:15-16)
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Membri noti</th>
+                        <td>Non specificati; chiesa locale conosciuta ma senza figure principali menzionate</td>
+                      </tr>
+                      <tr>
+                        <th>Caratteristiche</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 3:15 - Io conosco le tue opere: tu non sei né freddo né fervente. Oh fossi tu pur freddo o fervente!">
+                            tiepidezza spirituale,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 3:17 - Tu dici: 'Io sono ricco, mi sono arricchito e non ho bisogno di nulla', e non sai che tu sei infelice, miserabile, povero, cieco e nudo.">
+                            autosufficienza,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 3:17 - ...non sai che tu sei infelice, miserabile, povero, cieco e nudo.">
+                            cecità spirituale
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Problemi</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 3:16 - Così, perché sei tiepido e non sei né freddo né fervente, io ti vomiterò dalla mia bocca.">
+                            rifiuto da parte del Signore,
+                          </span>
+
+                          <span class="ref-tag" data-bs-toggle="tooltip"
+                            title="Apocalisse 3:18 - Io ti consiglio di comprare da me dell’oro raffinato col fuoco... delle vesti bianche... e del collirio per ungerti gli occhi.">
+                            bisogno di ravvedimento e trasformazione
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Una chiesa può apparire forte e prospera, ma essere spiritualmente povera: è necessario un
+                          cuore fervente, dipendente da Cristo e pronto al ravvedimento.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Apocalisse 3:14-22
+                </div>
+                <button class="btn btn-sm rounded-pill explore-btn explore-toggle-btn" data-bs-toggle="collapse"
+                  data-bs-target="#collapseLaodicea"><i class="bi bi-chevron-down me-2"></i>Approfondisci</button>
+
+                <div class="collapse mt-3" id="collapseLaodicea">
+                  <ul class="summary-list">
+                    <li>
+                      <strong>Diagnosi divina della chiesa:</strong>
+                      Cristo si presenta come “l’Amen, il testimone fedele e veritiero”
+                      (Apocalisse 3:14), sottolineando l’autorità della sua valutazione.
+                      La diagnosi è netta: la chiesa non è né fredda né fervente,
+                      ma tiepida (Apocalisse 3:15-16).
+                    </li>
+
+                    <li>
+                      <strong>Contrasto tra percezione e realtà:</strong>
+                      Laodicea si considera ricca e autosufficiente,
+                      ma Cristo rivela la sua vera condizione:
+                      “infelice, miserabile, povera, cieca e nuda” (Apocalisse 3:17).
+                      Questo evidenzia il pericolo dell’autoinganno spirituale.
+                    </li>
+
+                    <li>
+                      <strong>Autosufficienza come problema spirituale:</strong>
+                      La ricchezza materiale della città si riflette in una mentalità
+                      di indipendenza da Dio. La chiesa perde il senso del bisogno
+                      della grazia e della dipendenza da Cristo.
+                    </li>
+
+                    <li>
+                      <strong>Invito al ravvedimento:</strong>
+                      Cristo non abbandona la chiesa, ma la invita a ravvedersi:
+                      “Io riprendo e correggo tutti quelli che amo” (Apocalisse 3:19).
+                      Il giudizio è accompagnato da grazia e possibilità di restaurazione.
+                    </li>
+
+                    <li>
+                      <strong>Cristo fuori dalla porta:</strong>
+                      L’immagine di Cristo che bussa (Apocalisse 3:20)
+                      indica una situazione drammatica: la chiesa esiste,
+                      ma Cristo è fuori. Tuttavia, la comunione è ancora possibile
+                      per chi apre la porta.
+                    </li>
+
+                    <li>
+                      <strong>Rilevanza teologica:</strong>
+                      Laodicea rappresenta il pericolo di una religiosità formale
+                      senza vita spirituale. Mostra che la prosperità esterna
+                      non è segno di salute spirituale.
+                    </li>
+
+                    <li>
+                      <strong>Applicazione:</strong>
+                      La vita cristiana richiede vigilanza continua:
+                      è necessario esaminarsi alla luce della Parola
+                      e mantenere una dipendenza reale da Cristo,
+                      evitando l’autosufficienza spirituale.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title h3 mb-4">Schema per memorizzare meglio</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h5 class="mb-3"><i class="bi bi-diagram-3-fill me-2"></i>Domande guida da fare a ogni chiesa</h5>
+                <div class="timeline-item"><strong>1.</strong> Qual era la situazione generale della chiesa?</div>
+                <div class="timeline-item"><strong>2.</strong> Quale era il suo punto forte?</div>
+                <div class="timeline-item"><strong>3.</strong> Quale era il suo problema principale?</div>
+                <div class="timeline-item"><strong>4.</strong> Quale verità biblica viene sottolineata?</div>
+                <div class="timeline-item"><strong>5.</strong> Quale lezione pratica posso applicare oggi?</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h5 class="mb-3 d-flex align-items-center">
+                  <i class="bi bi-stars me-2 text-warning"></i>
+                  <span class="fw-bold">Parole chiave da ricordare</span>
+                </h5>
+
+                <div class="keywords-container">
+                  <span class="keyword-tag">Gerusalemme <small>Comunione e crescita</small></span>
+                  <span class="keyword-tag">Corinto <small>Doni ma disordine</small></span>
+                  <span class="keyword-tag">Efeso <small>Verità ma amore perso</small></span>
+                  <span class="keyword-tag">Filippi <small>Gioia e generosità</small></span>
+                  <span class="keyword-tag">Tessalonica <small>Fede e speranza</small></span>
+                  <span class="keyword-tag">Galazia <small>Grazia vs legge</small></span>
+                  <span class="keyword-tag">Laodicea <small>Ricca ma tiepida</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title h3 mb-4">Approfondimento tematico</h2>
+
+        <div class="accordion" id="thematicAccordion">
+          <div class="accordion-item border-0 rounded-4 overflow-hidden mb-3 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#theme1">
+                Chiese forti nella comunione e nella fedeltà
+              </button>
+            </h2>
+            <div id="theme1" class="accordion-collapse collapse show" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Gerusalemme</strong> e <strong>Filippi</strong> mostrano quanto siano importanti la comunione
+                  pratica, la generosità e la collaborazione nell’opera del Signore.</p>
+                <p class="mb-0"><strong>Idea chiave:</strong> una chiesa sana non è solo corretta, ma vive concretamente
+                  l’amore fraterno.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 rounded-4 overflow-hidden mb-3 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#theme2">
+                Chiese che avevano bisogno di correzione
+              </button>
+            </h2>
+            <div id="theme2" class="accordion-collapse collapse" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Corinto</strong>, <strong>Galazia</strong> e <strong>Laodicea</strong> mostrano pericoli
+                  diversi: disordine morale, errore dottrinale e tiepidezza spirituale.</p>
+                <p class="mb-0"><strong>Idea chiave:</strong> i problemi della chiesa possono essere morali, dottrinali
+                  o spirituali, e richiedono sempre ritorno alla verità di Cristo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 rounded-4 overflow-hidden shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#theme3">
+                Chiese legate alla speranza e alla vigilanza
+              </button>
+            </h2>
+            <div id="theme3" class="accordion-collapse collapse" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Tessalonica</strong> mette in risalto l’attesa del ritorno di Cristo, mentre
+                  <strong>Efeso</strong> ricorda l’importanza di non perdere il primo amore.
+                </p>
+                <p class="mb-0"><strong>Idea chiave:</strong> speranza futura e amore presente devono camminare insieme.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-4">
+        <div class="card border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="text-center mb-4">
+              <h2 class="section-title h3 mb-1">Mini quiz finale</h2>
+              <p class="small-muted mb-3">Metti alla prova quello che hai imparato.</p>
+              <button class="btn btn-primary rounded-pill quiz-toggle-btn" id="toggleQuizBtn">
+                <i class="bi bi-lightbulb-fill me-2"></i>Avvia il quiz
+              </button>
+            </div>
+
+            <div id="quizSection" class="d-none">
+              <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-outline-secondary rounded-pill" id="resetQuizBtn">
+                  <i class="bi bi-arrow-counterclockwise me-2"></i>Reset quiz
+                </button>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="1">
+                <h5>1. Quale chiesa è particolarmente nota per i problemi di divisioni e disordine?</h5>
+                <div class="quiz-option" data-index="0">Filippi</div>
+                <div class="quiz-option" data-index="1">Corinto</div>
+                <div class="quiz-option" data-index="2">Gerusalemme</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>2. Quale chiesa viene rimproverata per aver lasciato il primo amore?</h5>
+                <div class="quiz-option" data-index="0">Laodicea</div>
+                <div class="quiz-option" data-index="1">Galazia</div>
+                <div class="quiz-option" data-index="2">Efeso</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="0">
+                <h5>3. Quale chiesa viene collegata in modo forte alla gioia e alla generosità?</h5>
+                <div class="quiz-option" data-index="0">Filippi</div>
+                <div class="quiz-option" data-index="1">Tessalonica</div>
+                <div class="quiz-option" data-index="2">Corinto</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>4. Quale chiesa è un esempio di tiepidezza spirituale?</h5>
+                <div class="quiz-option" data-index="0">Gerusalemme</div>
+                <div class="quiz-option" data-index="1">Tessalonica</div>
+                <div class="quiz-option" data-index="2">Laodicea</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>6. Quale chiesa rischiava di abbandonare il vero Vangelo per tornare alla legge?</h5>
+                <div class="quiz-option" data-index="0">Corinto</div>
+                <div class="quiz-option" data-index="1">Filippi</div>
+                <div class="quiz-option" data-index="2">Galazia</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="0">
+                <h5>7. Quale chiesa è la prima comunità cristiana nata dopo la Pentecoste?</h5>
+                <div class="quiz-option" data-index="0">Gerusalemme</div>
+                <div class="quiz-option" data-index="1">Efeso</div>
+                <div class="quiz-option" data-index="2">Laodicea</div>
+              </div>
+
+              <div class="alert alert-primary rounded-4 d-none" id="quizResult"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex justify-content-center mt-5">
+        <a href="../lezioni.html" class="lesson-nav-btn px-4 py-2">
+          <i class="bi bi-arrow-left-circle me-2"></i>Torna alle lezioni
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const churchItems = document.querySelectorAll('.church-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        churchItems.forEach(item => {
+          const categories = item.getAttribute('data-category');
+          if (filter === 'all' || categories.includes(filter)) {
+            item.classList.remove('hidden-card');
+          } else {
+            item.classList.add('hidden-card');
+          }
+        });
+      });
+    });
+
+    const quizQuestions = document.querySelectorAll('.quiz-question');
+    const quizResult = document.getElementById('quizResult');
+    const resetQuizBtn = document.getElementById('resetQuizBtn');
+    const toggleQuizBtn = document.getElementById('toggleQuizBtn');
+    const quizSection = document.getElementById('quizSection');
+
+    function calculateQuizResult() {
+      let answeredAll = true;
+      let score = 0;
+
+      quizQuestions.forEach(question => {
+        const correctIndex = question.getAttribute('data-correct');
+        const selected = question.querySelector('.quiz-option.selected');
+
+        if (!selected) {
+          answeredAll = false;
+          return;
+        }
+
+        if (selected.getAttribute('data-index') === correctIndex) {
+          score++;
+        }
+      });
+
+      if (answeredAll) {
+        quizResult.classList.remove('d-none');
+        quizResult.innerHTML = `
+          <strong>Risultato:</strong> hai risposto correttamente a <strong>${score} su ${quizQuestions.length}</strong> domande.
+          ${score === quizQuestions.length
+            ? '<br>Ottimo lavoro! Hai assimilato molto bene la lezione.'
+            : '<br>Rileggi le schede principali e prova a ripetere i punti chiave.'}
+        `;
+      }
+    }
+
+    quizQuestions.forEach(question => {
+      const correctIndex = question.getAttribute('data-correct');
+      const options = question.querySelectorAll('.quiz-option');
+
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          if (question.classList.contains('answered')) return;
+
+          question.classList.add('answered');
+          option.classList.add('selected');
+
+          options.forEach(opt => {
+            if (opt.getAttribute('data-index') === correctIndex) {
+              opt.classList.add('correct');
+            }
+          });
+
+          if (option.getAttribute('data-index') !== correctIndex) {
+            option.classList.add('wrong');
+          }
+
+          calculateQuizResult();
+        });
+      });
+    });
+
+    resetQuizBtn.addEventListener('click', () => {
+      quizQuestions.forEach(question => {
+        question.classList.remove('answered');
+        const options = question.querySelectorAll('.quiz-option');
+
+        options.forEach(option => {
+          option.classList.remove('selected', 'correct', 'wrong');
+        });
+      });
+
+      quizResult.classList.add('d-none');
+      quizResult.innerHTML = '';
+    });
+
+    toggleQuizBtn.addEventListener('click', () => {
+      const isHidden = quizSection.classList.contains('d-none');
+      quizSection.classList.toggle('d-none', !isHidden);
+
+      if (isHidden) {
+        toggleQuizBtn.innerHTML = '<i class="bi bi-lightning-charge-fill me-2"></i>Chiudi quiz';
+        quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        toggleQuizBtn.innerHTML = '<i class="bi bi-lightbulb-fill me-2"></i>Avvia il quiz';
+      }
+    });
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+  </script>
+</body>
+
+</html>

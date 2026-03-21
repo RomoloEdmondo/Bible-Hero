@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,73 +12,82 @@
 </head>
 <style>
     body {
-  background: url('img/quiz-background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
+        background: url('img/quiz-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
 </style>
+
 <body>
-  <div class="d-flex flex-column min-vh-100">
-    <div class="decorative-element"></div>
-    <div class="decorative-element"></div>
-    <div class="decorative-element"></div>
+    <div class="d-flex flex-column min-vh-100">
+        <div class="decorative-element"></div>
+        <div class="decorative-element"></div>
+        <div class="decorative-element"></div>
 
-    <div class="container-home d-flex flex-column text-center py-3 flex-grow-1">
-        <h1 class="big-title mb-3">Bible Hero</h1>
-        <p class="subtitle">Scegli una modalità di apprendimento divertente e stimolante</p>
+        <div class="container-home d-flex flex-column text-center py-3 flex-grow-1">
+            <h1 class="big-title mb-3">Bible Hero</h1>
+            <p class="subtitle">Scegli una modalità di apprendimento stimolante</p>
 
-        <div class="game-modes">
-            <div class="game-mode" onclick="location.href='quiz.html'">
-                <span class="game-icon">🧩</span>
-                <h2 class="game-title">Quiz</h2>
-                <p class="game-description">Metti alla prova le tue conoscenze.</p>
-            </div>
+            <div class="game-modes">
+                <div class="game-mode" onclick="location.href='quiz.html'">
+                    <span class="game-icon">🧩</span>
+                    <h2 class="game-title">Quiz</h2>
+                    <p class="game-description">Metti alla prova le tue conoscenze.</p>
+                </div>
 
-            <div class="game-mode" onclick="location.href='ordina.html'">
-                <span class="game-icon">🔠</span>
-                <h2 class="game-title">Ordina</h2>
-                <p class="game-description">Riconosci e ordina correttamente.</p>
-            </div>
+                <div class="game-mode" onclick="location.href='lezioni.html'">
+                    <span class="game-icon">📚</span>
+                    <h2 class="game-title">Lezioni</h2>
+                    <p class="game-description">Approfondimenti tematici</p>
+                </div>
 
-            <div class="game-mode" onclick="location.href='timeline.html'">
-                <span class="game-icon">🕰️</span>
-                <h2 class="game-title">Cronologia</h2>
-                <p class="game-description">Ordina gli eventi storici.</p>
+                <div class="game-mode" onclick="location.href='ordina.html'">
+                    <span class="game-icon">🔠</span>
+                    <h2 class="game-title">Ordina</h2>
+                    <p class="game-description">Riconosci e ordina correttamente.</p>
+                </div>
+
+                <div class="game-mode" onclick="location.href='timeline.html'">
+                    <span class="game-icon">🕰️</span>
+                    <h2 class="game-title">Cronologia</h2>
+                    <p class="game-description">Ordina gli eventi storici.</p>
+                </div>
+
+
             </div>
         </div>
+        <div id="footer-placeholder"></div>
+
+
     </div>
- <div id="footer-placeholder"></div>
 
-
-</div>
-
-  <script>
+    <script>
 
         fetch("footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-        document.getElementById('annoCorrente').textContent = new Date().getFullYear();
-      });
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+                document.getElementById('annoCorrente').textContent = new Date().getFullYear();
+            });
 
 
-       document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const gameModes = document.querySelectorAll('.game-mode');
-            
+
             gameModes.forEach((mode, index) => {
-                mode.addEventListener('mouseenter', function() {
+                mode.addEventListener('mouseenter', function () {
                     this.style.zIndex = '10';
                 });
-                
-                mode.addEventListener('mouseleave', function() {
+
+                mode.addEventListener('mouseleave', function () {
                     this.style.zIndex = '1';
                 });
 
                 // Add touch feedback for mobile
-                mode.addEventListener('touchstart', function() {
+                mode.addEventListener('touchstart', function () {
                     this.style.transform = 'scale(0.95)';
                 });
 
-                mode.addEventListener('touchend', function() {
+                mode.addEventListener('touchend', function () {
                     setTimeout(() => {
                         this.style.transform = '';
                     }, 150);
@@ -85,7 +95,7 @@
             });
 
             // Parallax effect for decorative elements
-            document.addEventListener('mousemove', function(e) {
+            document.addEventListener('mousemove', function (e) {
                 const decorativeElements = document.querySelectorAll('.decorative-element');
                 const mouseX = e.clientX / window.innerWidth;
                 const mouseY = e.clientY / window.innerHeight;
@@ -98,6 +108,7 @@
                 });
             });
         });
-  </script>
+    </script>
 </body>
+
 </html>
