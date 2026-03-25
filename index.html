@@ -8,14 +8,11 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/footer.css">
+
 </head>
-<style>
-    body {
-        background: url('img/quiz-background.jpg') no-repeat center center fixed;
-        background-size: cover;
-    }
-</style>
 
 <body>
     <div class="d-flex flex-column min-vh-100">
@@ -23,45 +20,104 @@
         <div class="decorative-element"></div>
         <div class="decorative-element"></div>
 
-        <div class="container-home d-flex flex-column text-center py-3 flex-grow-1">
-            <h1 class="big-title mb-3">Bible Hero</h1>
-            <p class="subtitle">Scegli una modalità di apprendimento stimolante</p>
+        <div class="container-home d-flex flex-column text-center py-3 flex-grow-1 justify-content-center">
+            <div class="hero-badge mx-auto">
+                <i class="bi bi-stars"></i>
+                Impara, ripassa e approfondisci la Bibbia
+            </div>
 
-            <div class="game-modes">
-                <div class="game-mode" onclick="location.href='quiz.html'">
-                    <span class="game-icon">🧩</span>
-                    <h2 class="game-title">Quiz</h2>
-                    <p class="game-description">Metti alla prova le tue conoscenze.</p>
+            <h1 class="big-title mb-3">
+                <span class="accent">Bibbia</span> Interattiva
+            </h1>
+
+            <p class="subtitle">
+                Un’esperienza semplice e coinvolgente per studiare la Bibbia:
+                quiz, lezioni, esercizi di ordine e cronologia in un unico spazio.
+            </p>
+
+            <div class="home-panel">
+                <div class="game-modes">
+                    <div class="game-mode" onclick="location.href='quiz.html'">
+                        <div class="game-mode-inner">
+                          
+                                <div class="game-text">
+                                    <h2 class="game-title">Quiz</h2>
+                                    <p class="game-description">Metti alla prova le tue conoscenze con domande bibliche
+                                        dinamiche.</p>
+                                    <div class="game-link">
+                                        Inizia <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="game-icon-wrap">
+                                    <i class="bi bi-patch-question game-icon"></i>
+                                </div>
+
+                        
+                        </div>
+                    </div>
+
+                    <div class="game-mode" onclick="location.href='lezioni.html'">
+                        <div class="game-mode-inner">
+                            <div class="game-text">
+                                <h2 class="game-title">Lezioni</h2>
+                                <p class="game-description">
+                                    Approfondimenti tematici, personaggi e chiese del Nuovo Testamento.
+                                </p>
+                                <div class="game-link">
+                                    Esplora <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+
+                            <div class="game-icon-wrap">
+                                <i class="bi bi-journal-richtext game-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-mode" onclick="location.href='ordina.html'">
+                        <div class="game-mode-inner">
+                            <div class="game-text">
+                                <h2 class="game-title">Ordina</h2>
+                                <p class="game-description">
+                                    Riconosci e ordina correttamente nomi, libri ed elementi biblici.
+                                </p>
+                                <div class="game-link">
+                                    Prova <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="game-icon-wrap">
+                                <i class="bi bi-sort-alpha-down game-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-mode" onclick="location.href='timeline.html'">
+                        <div class="game-mode-inner">
+                            <div class="game-text">
+                                <h2 class="game-title">Cronologia</h2>
+                                <p class="game-description">
+                                    Ordina gli eventi storici e ricostruisci la sequenza biblica.
+                                </p>
+                                <div class="game-link">
+                                    Vai alla cronologia <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="game-icon-wrap">
+                                <i class="bi bi-clock-history game-icon"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="game-mode" onclick="location.href='lezioni.html'">
-                    <span class="game-icon">📚</span>
-                    <h2 class="game-title">Lezioni</h2>
-                    <p class="game-description">Approfondimenti tematici</p>
-                </div>
-
-                <div class="game-mode" onclick="location.href='ordina.html'">
-                    <span class="game-icon">🔠</span>
-                    <h2 class="game-title">Ordina</h2>
-                    <p class="game-description">Riconosci e ordina correttamente.</p>
-                </div>
-
-                <div class="game-mode" onclick="location.href='timeline.html'">
-                    <span class="game-icon">🕰️</span>
-                    <h2 class="game-title">Cronologia</h2>
-                    <p class="game-description">Ordina gli eventi storici.</p>
-                </div>
-
-
             </div>
         </div>
+
         <div id="footer-placeholder"></div>
-
-
     </div>
 
     <script>
-
         fetch("footer.html")
             .then(response => response.text())
             .then(data => {
@@ -69,11 +125,10 @@
                 document.getElementById('annoCorrente').textContent = new Date().getFullYear();
             });
 
-
         document.addEventListener('DOMContentLoaded', function () {
             const gameModes = document.querySelectorAll('.game-mode');
 
-            gameModes.forEach((mode, index) => {
+            gameModes.forEach((mode) => {
                 mode.addEventListener('mouseenter', function () {
                     this.style.zIndex = '10';
                 });
@@ -82,9 +137,8 @@
                     this.style.zIndex = '1';
                 });
 
-                // Add touch feedback for mobile
                 mode.addEventListener('touchstart', function () {
-                    this.style.transform = 'scale(0.95)';
+                    this.style.transform = 'scale(0.98)';
                 });
 
                 mode.addEventListener('touchend', function () {
@@ -94,16 +148,15 @@
                 });
             });
 
-            // Parallax effect for decorative elements
             document.addEventListener('mousemove', function (e) {
                 const decorativeElements = document.querySelectorAll('.decorative-element');
                 const mouseX = e.clientX / window.innerWidth;
                 const mouseY = e.clientY / window.innerHeight;
 
                 decorativeElements.forEach((element, index) => {
-                    const speed = (index + 1) * 0.5;
-                    const x = (mouseX - 0.5) * speed * 50;
-                    const y = (mouseY - 0.5) * speed * 50;
+                    const speed = (index + 1) * 0.35;
+                    const x = (mouseX - 0.5) * speed * 24;
+                    const y = (mouseY - 0.5) * speed * 24;
                     element.style.transform = `translate(${x}px, ${y}px)`;
                 });
             });
