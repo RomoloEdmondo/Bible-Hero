@@ -396,7 +396,7 @@
     "riferimento": "1 Samuele 1:20: Anna, dopo molte preghiere, partorì Samuele e lo dedicò al servizio del Signore."
   },
     {
-    "domanda": "Quale apostolo era parente di Gesù secondo la carne, oltre a Giacomo?",
+    "domanda": "Chi tra questi era parente di Gesù secondo la carne, oltre a Giacomo?",
     "risposte": ["Giuda (non Iscariota)", "Andrea", "Bartolomeo", "Filippo"],
     "corretta": "Giuda (non Iscariota)",
     "riferimento": "Marco 6:3: Non è costui il falegname, il figlio di Maria, fratello di Giacomo, di Ioses, di Giuda e di Simone? | Giuda 1:1: Giuda, servo di Gesù Cristo e fratello di Giacomo."
@@ -728,17 +728,6 @@
     "riferimento": "Isaia 5:1–7: la vigna è la casa d’Israele, curata da Dio ma infedele; anche in Matteo 21:33–44"
   },
     {
-    "domanda": "Per cosa è noto Jonathan Edwards nel contesto della spiritualità evangelica?",
-    "risposte": [
-      "Per la sua predicazione sul risveglio e l’enfasi sulla conversione autentica",
-      "Per il suo ruolo nel concilio di Trento come teologo protestante",
-      "Per aver combattuto in Israele durante le crociate",
-      "Per la sua opera nella compilazione del Vulgata americana"
-    ],
-    "corretta": "Per la sua predicazione sul risveglio e l’enfasi sulla conversione autentica",
-    "riferimento": "Edwards (1703–1758): figura centrale del Primo Grande Risveglio; autore di 'Peccatori nelle mani di un Dio adirato'"
-  },
-    {
     "domanda": "In cosa si distinse William Wilberforce come cristiano evangelico?",
     "risposte": [
       "Guidò la campagna per l’abolizione della schiavitù nell’impero britannico",
@@ -1008,7 +997,7 @@
     "Perse la vista"
   ],
   "corretta": "Morì sul colpo",
-  "riferimento": "2 Samuele 6:6–7 – Uzza fu colpito da Dio per aver toccato l’Arca, anche se lo fece per impedirne la caduta"
+  "riferimento": "2 Samuele 6:6–7 – Uzza stese la mano verso l'arca di Dio per reggerla, perché i buoi la facevano inclinare. L'ira del SIGNORE si accese contro Uzza; Dio lo colpì lì per la sua empietà ed egli morì in quel luogo."
 }
 ,
 {
@@ -1397,7 +1386,7 @@
     "riferimento": "Romani 8:26 – lo Spirito viene in aiuto alla nostra debolezza, perché non sappiamo pregare come si conviene; ma lo Spirito intercede egli stesso per noi con sospiri ineffabili;"
   },
     {
-    "domanda": "Cosa significa pregare 'nel nome di Gesù' dal punto di vista dottrinale?",
+    "domanda": "Cosa significa pregare 'nel nome di Gesù' dal punto di vista Biblico?",
     "risposte": [
       "Concludere ogni preghiera con 'nel nome di Gesù'",
       "Invocare la potenza di Gesù",
@@ -1570,12 +1559,12 @@
     "È un leader naturale"
   ],
   "corretta": "È uno dei sei abomini agli occhi del Signore",
-  "riferimento": "Proverbi 6:16-19 – Tra le cose che il Signore odia c’è anche 'chi semina discordie tra fratelli'"
+  "riferimento": "Proverbi 6:16-19 – Sei cose odia il SIGNORE, anzi sette gli sono in abominio: ... chi semina discordie tra fratelli. ..."
 },
     {
     "domanda": "Che beneficio ha chi cammina con i saggi secondo Proverbi?",
     "risposte": [
-      "Diventa famoso",
+      "Diventa ricco",
       "Diventa saggio",
       "Riceve onore terreno",
       "Evita ogni problema"
@@ -1661,7 +1650,7 @@
   "riferimento": "Levitico 25:23 – 'La terra non si venderà in perpetuo, perché la terra è mia...'"
 },
 {
-    "domanda": "Quale lezione spirituale si può trarre dalla storia dell’uomo di Dio che fu ucciso dopo aver ascoltato un altro profeta invece di obbedire a Dio?",
+    "domanda": "Quale lezione spirituale si può trarre dalla storia dell’uomo di Dio che fu ucciso dopo aver ascoltato un altro profeta invece di obbedire a Dio? (1 Re 13)",
     "risposte": [
       "È meglio digiunare prima di ogni decisione",
       "Dio perdona sempre gli errori in buona fede",
@@ -1794,7 +1783,7 @@
   "domanda": "Quante tribù formarono il Regno del Nord, chiamato Israele?",
   "risposte": ["10", "2", "12", "6"],
   "corretta": "10",
-  "riferimento": "1 Re 11:31 – Il profeta Ahia dice a Geroboamo che Dio gli darà dieci tribù."
+  "riferimento": "1 Re 11:30-31 – Aiia prese il mantello nuovo che aveva addosso, lo strappò in dodici pezzi e disse a Geroboamo: Prendine per te dieci pezzi, perché il SIGNORE, Dio d'Israele, dice: Ecco, io strappo questo regno dalle mani di Salomone e te ne darò dieci tribù."
 }
 ,
 {
@@ -2013,6 +2002,140 @@
   ],
   "corretta": "L’inimicizia tra il serpente e la donna e tra le loro discendenze",
   "riferimento": "Genesi 3:15 – «Io porrò inimicizia fra te e la donna, e fra la tua progenie e la progenie di lei; essa ti schiaccerà il capo e tu le ferirai il calcagno»."
+},
+{
+  "domanda": "Secondo il Vangelo di Matteo, cosa accadde a molti dei santi che erano morti dopo la risurrezione di Gesù?",
+  "risposte": [
+    "Salirono immediatamente in cielo senza essere visti da nessuno",
+    "Rimasero nelle tombe fino al giudizio finale",
+    "Uscirono dalle tombe, entrarono a Gerusalemme e apparvero a molti",
+    "Furono visti solo dagli apostoli in segreto"
+  ],
+  "corretta": "Uscirono dalle tombe, entrarono a Gerusalemme e apparvero a molti",
+  "riferimento": "Matteo 27:52-53 – «Le tombe si aprirono e molti corpi dei santi che dormivano risuscitarono; e, usciti dalle tombe dopo la risurrezione di lui, entrarono nella città santa e apparvero a molti.»"
+}
+,
+{
+  "domanda": "Quali apostoli furono i primi ad essere imprigionati secondo il libro degli Atti?",
+  "risposte": [
+    "Pietro e Andrea",
+    "Giacomo e Giovanni",
+    "Pietro e Giovanni",
+    "Matteo e Paolo"
+  ],
+  "corretta": "Pietro e Giovanni",
+  "riferimento": "Atti 4:1-3 – «Mentre essi parlavano al popolo, sopraggiunsero i sacerdoti... e li arrestarono e li misero in prigione fino al giorno seguente»."
+},
+{
+  "domanda": "Cosa accadde agli apostoli imprigionati in Atti 5 durante la notte?",
+  "risposte": [
+    "Furono liberati segretamente dai discepoli",
+    "Un angelo del Signore aprì le porte della prigione e li fece uscire",
+    "Furono trasferiti in un’altra città",
+    "Furono condannati a morte ma poi graziati"
+  ],
+  "corretta": "Un angelo del Signore aprì le porte della prigione e li fece uscire",
+  "riferimento": "Atti 5:19 – «Ma un angelo del Signore, durante la notte, aprì le porte della prigione e li fece uscire»."
+},
+{
+  "domanda": "Quale fu la reazione degli apostoli dopo essere stati flagellati e rilasciati dal Sinedrio?",
+  "risposte": [
+    "Fuggirono e smisero di predicare",
+    "Continuarono a predicare in segreto",
+    "Furono lieti di essere stati ritenuti degni di soffrire per il nome di Gesù",
+    "Si ritirarono per un tempo di silenzio e preghiera"
+  ],
+  "corretta": "Furono lieti di essere stati ritenuti degni di soffrire per il nome di Gesù",
+  "riferimento": "Atti 5:41-42 – «Se ne andarono... lieti di essere stati ritenuti degni di essere oltraggiati per il nome di Gesù»."
+},
+{
+  "domanda": "Quale figura del Sinedrio interviene per evitare la condanna a morte degli apostoli, proponendo un principio storico-teologico?",
+  "risposte": [
+    "Nicodemo",
+    "Caifa",
+    "Gamaliele",
+    "Anania"
+  ],
+  "corretta": "Gamaliele",
+  "riferimento": "Atti 5:34-39 – Gamaliele consiglia di non opporsi agli apostoli, affermando che se l’opera è da Dio non potrà essere distrutta."
+},
+{
+  "domanda": "Secondo Atti 4, quale insegnamento specifico provocò l’irritazione dei capi religiosi verso Pietro e Giovanni?",
+  "risposte": [
+    "L’insegnamento contro la legge di Mosè",
+    "L’annuncio della distruzione del tempio",
+    "L’insegnamento della risurrezione dei morti in Gesù",
+    "L’abolizione dei sacrifici animali"
+  ],
+  "corretta": "L’insegnamento della risurrezione dei morti in Gesù",
+  "riferimento": "Atti 4:2 – «Erano irritati perché insegnavano al popolo e annunciavano in Gesù la risurrezione dai morti»."
+}
+,
+{
+  "domanda": "Chi viene descritto nella Bibbia come l’uomo più bello, senza difetti fisici in Israele?",
+  "risposte": [
+    "Davide",
+    "Saul",
+    "Absalom",
+    "Salomone"
+  ],
+  "corretta": "Absalom",
+  "riferimento": "2 Samuele 14:25 – «In tutto Israele non c'era uomo tanto lodato per la sua bellezza quanto Absalom; dalla pianta dei piedi alla sommità del capo non aveva difetti»."
+},
+{
+  "domanda": "Chi nella Bibbia è descritto come l’uomo più mite sulla terra?",
+  "risposte": [
+    "Abramo",
+    "Mosè",
+    "Davide",
+    "Isacco"
+  ],
+  "corretta": "Mosè",
+  "riferimento": "Numeri 12:3 – «Mosè era un uomo molto mansueto, più di ogni altro uomo sulla faccia della terra»."
+},
+{
+  "domanda": "Chi è l’uomo più ricco menzionato nella Bibbia in termini di beni e possedimenti?",
+  "risposte": [
+    "Abramo",
+    "Giobbe",
+    "Salomone",
+    "Ezechia"
+  ],
+  "corretta": "Salomone",
+  "riferimento": "1 Re 10:23 – «Il re Salomone superò tutti i re della terra in ricchezza e sapienza»."
+},
+{
+  "domanda": "Chi è descritto come l’uomo più paziente nelle prove, diventando esempio per i credenti?",
+  "risposte": [
+    "Giuseppe",
+    "Giobbe",
+    "Geremia",
+    "Elia"
+  ],
+  "corretta": "Giobbe",
+  "riferimento": "Giacomo 5:11 – «Avete udito parlare della costanza di Giobbe»."
+},
+{
+  "domanda": "Chi è descritto come l’uomo secondo il cuore di Dio?",
+  "risposte": [
+    "Abramo",
+    "Davide",
+    "Samuele",
+    "Ezechiele"
+  ],
+  "corretta": "Davide",
+  "riferimento": "1 Samuele 13:14; Atti 13:22 – Dio trova Davide come uomo secondo il suo cuore."
+},
+{
+  "domanda": "Chi nella Bibbia è descritto come il più giusto e integro tra i suoi contemporanei?",
+  "risposte": [
+    "Abramo",
+    "Noè",
+    "Daniele",
+    "Giobbe"
+  ],
+  "corretta": "Noè",
+  "riferimento": "Genesi 6:9 – «Noè fu uomo giusto, integro fra i suoi contemporanei; Noè camminò con Dio»."
 }
 
 

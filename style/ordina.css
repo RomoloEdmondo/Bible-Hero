@@ -1,0 +1,267 @@
+/* =========================
+   ordina.html only
+   ========================= */
+
+:root {
+  --ordina-content-width: 700px;
+  --ordina-inline-padding: 0.85rem;
+}
+
+.page-title {
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  font-weight: 750;
+  line-height: 1.08;
+  margin-bottom: 0.9rem;
+}
+
+.page-title .icon {
+  font-size: 1em;
+  opacity: 0.82;
+}
+
+.ordina-controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: var(--ordina-content-width);
+  margin: 0 auto;
+  padding: 0 var(--ordina-inline-padding);
+  box-sizing: border-box;
+}
+
+.ordina-controls .btn,
+.ordina-select {
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  backdrop-filter: blur(8px);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ordina-controls .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.ordina-controls .btn:hover,
+.ordina-select:hover {
+  transform: translateY(-2px);
+}
+
+.ordina-controls .btn:active {
+  transform: translateY(0);
+}
+
+.ordina-controls .btn:focus-visible,
+.ordina-select:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 0.22rem rgba(255, 255, 255, 0.08),
+    0 10px 28px rgba(0, 0, 0, 0.24);
+}
+
+.ordina-select {
+  justify-self: start;
+  max-width: 250px;
+  padding: 0.58rem 2.35rem 0.58rem 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(226, 232, 240, 0.92);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  background-position: right 0.9rem center;
+}
+
+.ordina-select option {
+  color: #111827;
+}
+
+.btn-verify-order {
+  justify-self: center;
+  min-width: 176px;
+  padding: 0.64rem 1.18rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.95), rgba(21, 128, 61, 0.92));
+  color: #ffffff;
+  border-color: rgba(74, 222, 128, 0.38);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+}
+
+.btn-verify-order i {
+  font-size: 1rem;
+}
+
+.btn-verify-order:hover {
+  background: linear-gradient(135deg, rgba(52, 211, 123, 1), rgba(22, 163, 74, 0.96));
+  color: #ffffff;
+  border-color: rgba(134, 239, 172, 0.52);
+  box-shadow: 0 14px 30px rgba(34, 197, 94, 0.22);
+}
+
+.btn-randomize-compact {
+  justify-self: start;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255, 122, 74, 0.16);
+  color: #ffb08f;
+  border-color: rgba(255, 107, 53, 0.34);
+  flex-shrink: 0;
+}
+
+.btn-randomize-compact i {
+  font-size: 0.98rem;
+}
+
+.btn-randomize-compact:hover {
+  background: rgba(255, 122, 74, 0.28);
+  color: #fff3ed;
+  border-color: rgba(255, 140, 92, 0.48);
+  box-shadow: 0 14px 30px rgba(255, 107, 53, 0.16);
+}
+
+.btn-randomize-text {
+  display: none;
+}
+
+.sortable-list {
+  list-style: none;
+  width: 100%;
+  max-width: var(--ordina-content-width);
+  margin: 0 auto;
+  padding: 0 var(--ordina-inline-padding);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.sortable-item {
+  padding: 0.52rem 0.82rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(222, 226, 230, 0.9);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  cursor: grab;
+  user-select: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.sortable-item:hover {
+  transform: translateY(-1px);
+  background-color: #eef2f7;
+}
+
+.sortable-item.correct {
+  background-color: #d1e7dd;
+  border-color: #0f5132;
+}
+
+.sortable-item.incorrect {
+  background-color: #f8d7da;
+  border-color: #842029;
+}
+
+#feedback {
+  width: 100%;
+  max-width: var(--ordina-content-width);
+  margin: 0 auto;
+  padding: 0 var(--ordina-inline-padding);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#feedback .alert {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: min(560px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0.65rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+#feedback .alert-success {
+  background: rgba(34, 197, 94, 0.14);
+  color: #dcfce7;
+  border-color: rgba(34, 197, 94, 0.28);
+}
+
+#feedback .alert-warning {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fef3c7;
+  border-color: rgba(245, 158, 11, 0.28);
+}
+
+@media (max-width: 768px) {
+  .sortable-list {
+    padding: 0 0.35rem;
+    gap: 0.38rem;
+  }
+
+  .sortable-item {
+    padding: 0.56rem 0.78rem;
+    font-size: 0.93rem;
+    border-radius: 16px;
+  }
+
+  .ordina-controls {
+    grid-template-columns: 1fr;
+    padding: 0 0.35rem;
+  }
+
+  .ordina-select,
+  .btn-verify-order,
+  .btn-randomize-compact {
+    justify-self: stretch;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    border-radius: 999px;
+  }
+
+  .btn-randomize-compact {
+    padding: 0.72rem 1.2rem;
+  }
+
+  .btn-randomize-text {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+
+  #feedback {
+    padding: 0 0.35rem;
+  }
+
+  #feedback .alert {
+    max-width: calc(100% - 0.7rem);
+    padding: 0.62rem 0.85rem;
+    font-size: 0.94rem;
+  }
+}

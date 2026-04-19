@@ -9,33 +9,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/ordina.css">
   <link rel="stylesheet" href="style/footer.css">
 </head>
 
 <body>
   <div class="container">
-    <h1 class="text-center m-4 text-white"> <i class="bi bi-sort-alpha-down game-icon"></i> Ordina Categorie</h1>
+    <h1 class="page-title text-center m-4"> <i class="bi bi-sort-alpha-down icon"></i> <span class="accent">Ordina Categorie</span> </h1>
     <p class="text-center text-white">Scegli una lista e trascina gli elementi per metterli nell'ordine corretto.</p>
 
-    <div class="text-center mb-4">
-      <select id="selectSet" class="form-select w-50 mx-auto mb-3" onchange="caricaElementi()">
+    <div class="ordina-controls mb-4">
+      <select id="selectSet" class="form-select ordina-select" onchange="caricaElementi()">
       </select>
-      <button class="btn btn-next" onclick="verificaOrdine()">Verifica Ordine</button>
-      <button class="btn btn-next-outline me-2" onclick="caricaElementi()">🔄 Rimescola</button>
+
+      <button class="btn btn-next btn-verify-order" onclick="verificaOrdine()">
+        <i class="bi bi-check2-circle me-2"></i>
+        <span>Verifica Ordine</span>
+      </button>
+
+      <button class="btn btn-randomize-compact" onclick="caricaElementi()" aria-label="Rimescola lista" title="Rimescola">
+        <i class="bi bi-shuffle"></i>
+        <span class="btn-randomize-text">Rimescola</span>
+      </button>
     </div>
 
- <div class="container mb-4">
-  <ul id="sortable-list" class="sortable-list sortable-container"></ul>
-</div>
-<div class="text-center mb-3">
-  <button class="btn btn-next" onclick="verificaOrdine()">Verifica ordine</button>
-</div>
-<div id="feedback" class="text-center mt-4"></div>
+    <ul id="sortable-list" class="sortable-list sortable-container"></ul>
+    <div id="feedback" class="text-center mt-4"></div>
 
 
           <div class="d-flex justify-content-center mt-5">
             <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
-                <i class="bi bi-arrow-left-circle me-2"></i>Home
+                <i class="bi bi-house me-2"></i>Home
             </a>
           </div>
   </div>

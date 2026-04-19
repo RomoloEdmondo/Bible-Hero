@@ -1,0 +1,300 @@
+/* =========================
+   timeline.html only
+   Controls layout
+   ========================= */
+
+:root {
+  --timeline-content-width: 700px;
+  --timeline-inline-padding: 0.85rem;
+}
+
+.page-title {
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  font-weight: 750;
+  line-height: 1.08;
+  margin-bottom: 0.9rem;
+}
+
+.page-title .icon {
+  font-size: 1em;
+  opacity: 0.82;
+}
+
+.timeline-actions {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  max-width: var(--timeline-content-width);
+  margin: 0 auto;
+  padding: 0 var(--timeline-inline-padding);
+  box-sizing: border-box;
+}
+
+.timeline-main-actions {
+  display: contents;
+}
+
+.timeline-actions .btn {
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  border: 1.5px solid transparent;
+  backdrop-filter: blur(8px);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.timeline-actions .btn:hover {
+  transform: translateY(-2px);
+}
+
+.timeline-actions .btn:active {
+  transform: translateY(0);
+}
+
+.timeline-actions .btn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 0.22rem rgba(255, 255, 255, 0.08),
+    0 10px 28px rgba(0, 0, 0, 0.24);
+}
+
+
+/* =========================
+   Verifica Ordine
+   bottone principale
+   ========================= */
+
+.btn-verify-order {
+  grid-column: 2;
+  justify-self: center;
+  min-width: 176px;
+  padding: 0.64rem 1.18rem;
+  font-size: 1rem;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.95), rgba(21, 128, 61, 0.92));
+  color: #ffffff;
+  border-color: rgba(74, 222, 128, 0.38);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+}
+
+.btn-verify-order i {
+  font-size: 1rem;
+}
+
+.btn-verify-order:hover {
+  background: linear-gradient(135deg, rgba(52, 211, 123, 1), rgba(22, 163, 74, 0.96));
+  color: #ffffff;
+  border-color: rgba(134, 239, 172, 0.52);
+  box-shadow: 0 14px 30px rgba(34, 197, 94, 0.22);
+}
+
+
+/* =========================
+   Cambia timeline
+   secondario, più discreto
+   ========================= */
+
+.timeline-actions .btn.btn-change-timeline {
+  justify-self: start;
+  padding: 0.5rem 0.82rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(226, 232, 240, 0.88);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+}
+
+.btn-change-timeline i {
+  font-size: 0.86rem;
+  opacity: 0.92;
+}
+
+.btn-change-timeline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================
+   Rimescola
+   più compatto e rapido
+   ========================= */
+
+.btn-randomize-compact {
+  grid-column: 3;
+  justify-self: start;
+  margin-left: 0.2rem;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255, 122, 74, 0.16);
+  color: #ffb08f;
+  border-color: rgba(255, 107, 53, 0.34);
+  flex-shrink: 0;
+}
+
+.btn-randomize-compact i {
+  font-size: 0.98rem;
+}
+
+.btn-randomize-compact:hover {
+  background: rgba(255, 122, 74, 0.28);
+  color: #fff3ed;
+  border-color: rgba(255, 140, 92, 0.48);
+  box-shadow: 0 14px 30px rgba(255, 107, 53, 0.16);
+}
+
+/* Nasconde il testo normale in desktop, lasciando solo icona */
+.btn-randomize-text {
+  display: none;
+}
+
+
+/* =========================
+   Timeline list
+   ========================= */
+
+.timeline-list {
+  list-style: none;
+  max-width: var(--timeline-content-width);
+  margin: 0 auto;
+  padding: 0 var(--timeline-inline-padding);
+}
+
+.timeline-item {
+  padding: 0.72rem 0.9rem;
+  margin-bottom: 0.55rem;
+  border-radius: 18px;
+}
+
+
+/* =========================
+   Feedback e reference
+   ========================= */
+
+#timelineControls {
+  margin-top: 1.5rem;
+}
+
+#timeline-feedback {
+  width: 100%;
+  max-width: var(--timeline-content-width);
+  margin: 0 auto;
+  padding: 0 var(--timeline-inline-padding);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#timeline-feedback .alert {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: min(560px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0.65rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+#timeline-feedback .alert-success {
+  background: rgba(34, 197, 94, 0.14);
+  color: #dcfce7;
+  border-color: rgba(34, 197, 94, 0.28);
+}
+
+#timeline-feedback .alert-warning {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fef3c7;
+  border-color: rgba(245, 158, 11, 0.28);
+}
+
+#timeline-reference {
+  color: rgba(226, 232, 240, 0.74) !important;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  width: 100%;
+  max-width: var(--timeline-content-width);
+  margin: 0 auto;
+  padding: 0 var(--timeline-inline-padding);
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .timeline-list {
+    padding: 0 0.35rem;
+  }
+
+  .timeline-item {
+    padding: 0.78rem 0.88rem;
+    border-radius: 16px;
+  }
+
+  .timeline-actions {
+    grid-template-columns: 1fr;
+    padding: 0 0.35rem;
+  }
+
+  #timeline-feedback,
+  #timeline-reference {
+    padding: 0 0.35rem;
+  }
+
+  #timeline-feedback .alert {
+    max-width: calc(100% - 0.7rem);
+    padding: 0.62rem 0.85rem;
+    font-size: 0.94rem;
+  }
+
+  .timeline-main-actions {
+    display: contents;
+  }
+
+  .btn-change-timeline,
+  .btn-verify-order,
+  .btn-randomize-compact {
+    grid-column: auto;
+    justify-self: stretch;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 999px;
+  }
+
+  .btn-verify-order {
+    min-width: unset;
+  }
+
+  .btn-randomize-compact {
+    padding: 0.72rem 1.2rem;
+  }
+
+  .btn-randomize-text {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+}

@@ -16,10 +16,6 @@
 
 <body>
     <div class="d-flex flex-column min-vh-100">
-        <div class="decorative-element"></div>
-        <div class="decorative-element"></div>
-        <div class="decorative-element"></div>
-
         <div class="container-home d-flex flex-column text-center py-3 flex-grow-1 justify-content-center">
             <div class="hero-badge mx-auto">
                 <i class="bi bi-stars"></i>
@@ -39,21 +35,21 @@
                 <div class="game-modes">
                     <div class="game-mode" onclick="location.href='quiz.html'">
                         <div class="game-mode-inner">
-                          
-                                <div class="game-text">
-                                    <h2 class="game-title">Quiz</h2>
-                                    <p class="game-description">Metti alla prova le tue conoscenze con domande bibliche
-                                        dinamiche.</p>
-                                    <div class="game-link">
-                                        Inizia <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                </div>
 
-                                <div class="game-icon-wrap">
-                                    <i class="bi bi-patch-question game-icon"></i>
+                            <div class="game-text">
+                                <h2 class="game-title">Quiz</h2>
+                                <p class="game-description">Metti alla prova le tue conoscenze con domande bibliche
+                                    dinamiche.</p>
+                                <div class="game-link">
+                                    Inizia <i class="bi bi-arrow-right"></i>
                                 </div>
+                            </div>
 
-                        
+                            <div class="game-icon-wrap">
+                                <i class="bi bi-patch-question game-icon"></i>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -145,19 +141,6 @@
                     setTimeout(() => {
                         this.style.transform = '';
                     }, 150);
-                });
-            });
-
-            document.addEventListener('mousemove', function (e) {
-                const decorativeElements = document.querySelectorAll('.decorative-element');
-                const mouseX = e.clientX / window.innerWidth;
-                const mouseY = e.clientY / window.innerHeight;
-
-                decorativeElements.forEach((element, index) => {
-                    const speed = (index + 1) * 0.35;
-                    const x = (mouseX - 0.5) * speed * 24;
-                    const y = (mouseY - 0.5) * speed * 24;
-                    element.style.transform = `translate(${x}px, ${y}px)`;
                 });
             });
         });

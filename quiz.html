@@ -18,28 +18,47 @@
 </style>
 
 <body>
- <div class="container py-4">
-        <h1 class="text-center main-title-quiz mb-4">  <i class="bi bi-patch-question game-icon"></i> <span class="game-title-quiz">Quiz Biblico</span></h1>
-        
-        <div class="question-box" id="quizBox">
-            <h4 class="text-center mb-4" id="question">Caricamento domanda...</h4>
-            <div id="options" class="mt-3"></div>
-            <div id="feedback" class="text-center"></div>
-            <div class="text-center mt-4">
-                <button id="nextBtn" class="btn btn-next btn-lg px-5 py-2 shadow-sm rounded-pill" disabled>
-                    Prossima <i class="bi bi-arrow-right-circle ms-2"></i>
-                </button>
-            </div>
-        </div>
-        
-        <div id="result" class="text-center mt-4" style="display: none;"></div>
+  <div class="container py-4">
+    <h1 class="text-center main-title-quiz mb-4"> <i class="bi bi-patch-question game-icon"></i> <span
+        class="game-title-quiz">Quiz Biblico</span></h1>
 
-        <div class="d-flex justify-content-center mt-5">
-            <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
-                <i class="bi bi-arrow-left-circle me-2"></i>Home
-            </a>
+    <div class="question-box" id="quizBox">
+      <div class="quiz-top mb-4">
+        <div class="quiz-counter" id="questionCounter"></div>
+        <div class="progress quiz-progress mt-2">
+          <div class="progress-bar" id="quizProgressBar" style="width: 0%;"></div>
         </div>
+      </div>
+
+      <div class="question-title-wrap mb-4">
+        <h2 class="question-title text-center" id="question">Caricamento domanda...</h2>
+      </div>
+
+      <div id="options" class="options-grid"></div>
+
+     <div id="feedback" class="text-center" style="display: none;"></div>
+
+      <div class="text-center mt-4">
+        <button id="nextBtn" class="btn btn-next btn-lg px-4 py-2 rounded-pill" disabled>
+          Prossima <i class="bi bi-arrow-right-circle ms-2"></i>
+        </button>
+      </div>
     </div>
+
+    <div class="text-center mt-4" id="startQuizWrapper" style="display: none;">
+      <button id="openModalBtn" class="btn btn-next px-4 py-2 rounded-pill">
+        <i class="bi bi-play-circle me-2"></i>Inizia quiz
+      </button>
+    </div>
+
+    <div id="result" class="text-center mt-4" style="display: none;"></div>
+
+    <div class="mt-5 ps-2">
+      <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
+       <i class="bi bi-house me-2"></i>Home
+      </a>
+    </div>
+  </div>
 
   <script>
     let questions = [];
@@ -48,15 +67,24 @@
       .then(res => res.json())
       .then(data => {
         allQuestions = shuffleArray(data);
-        // mostra il modal
-        document.getElementById('maxBtn').textContent = `Tutte (${allQuestions.length})`;
-        const modal = new bootstrap.Modal(document.getElementById('questionCountModal'));
+
+        document.querySelector('#maxBtn .quiz-count-label').textContent = `${allQuestions.length} domande`;
+
+        const modalEl = document.getElementById('questionCountModal');
+        const modal = new bootstrap.Modal(modalEl);
         modal.show();
+
+        modalEl.addEventListener('hidden.bs.modal', function () {
+          if (!questions || questions.length === 0) {
+            document.getElementById("startQuizWrapper").style.display = "block";
+          }
+        });
       })
       .catch(err => {
         console.error("Errore nel caricamento delle domande:", err);
         document.getElementById("quizBox").innerHTML = "<p class='text-danger'>Errore nel caricamento delle domande.</p>";
       });
+
 
     function shuffleArray(array) {
       // Algoritmo Fisher-Yates
@@ -79,57 +107,116 @@
     let quizBox = document.getElementById("quizBox");
     let feedbackEl = document.getElementById("feedback");
 
+    function setNextButtonPulse(shouldPulse) {
+      nextBtn.classList.toggle("pulse-ready", shouldPulse);
+    }
+
+    document.getElementById("openModalBtn").addEventListener("click", () => {
+      const modal = new bootstrap.Modal(document.getElementById('questionCountModal'));
+      modal.show();
+    });
+
     function loadQuestion() {
       nextBtn.disabled = true;
+      setNextButtonPulse(false);
       feedbackEl.textContent = "";
+      feedbackEl.classList.remove("text-success", "text-danger");
+      feedbackEl.style.display = "none";
       const q = questions[current];
       questionEl.textContent = q.domanda;
       optionsEl.innerHTML = "";
-      shuffleArray([...q.risposte]).forEach(risposta => {
+      const lettere = ["A", "B", "C", "D"];
+
+      document.getElementById("questionCounter").textContent = `Domanda ${current + 1} di ${questions.length}`;
+      document.getElementById("quizProgressBar").style.width = `${((current) / questions.length) * 100}%`;
+
+      shuffleArray([...q.risposte]).forEach((risposta, index) => {
         const btn = document.createElement("button");
-        btn.textContent = risposta;
-       btn.classList.add("option");
-        btn.onclick = () => selectAnswer(btn, q);
+        btn.classList.add("option");
+        btn.type = "button";
+
+        btn.innerHTML = `
+    <span class="option-letter">${lettere[index] || index + 1}</span>
+    <span class="option-text">${risposta}</span>
+  `;
+
+        btn.onclick = () => selectAnswer(btn, q, risposta);
         optionsEl.appendChild(btn);
       });
     }
 
-function selectAnswer(button, q) {
-    [...optionsEl.children].forEach(btn => {
+    function selectAnswer(button, q, rispostaSelezionata) {
+       feedbackEl.style.display = "block";
+      [...optionsEl.children].forEach(btn => {
         btn.disabled = true;
-        if (btn.textContent === q.corretta) {
-            btn.classList.add("option", "correct");
+
+        const testoBtn = btn.querySelector(".option-text").textContent;
+        if (testoBtn === q.corretta) {
+          btn.classList.add("correct");
         }
-    });
+      });
 
-    button.classList.remove("btn-outline-secondary");
+      button.classList.add("selected");
 
-    if (button.textContent === q.corretta) {
-        button.classList.add("option", "correct");
-        score++;
-        feedbackEl.innerHTML = `✅ Corretto! ${q.riferimento ? `<br><small class="text-muted">📖 ${q.riferimento}</small>` : ''}`;
-        feedbackEl.classList.remove("text-danger");
-        feedbackEl.classList.add("text-success");
-    } else {
-        button.classList.add("option", "incorrect");
-        feedbackEl.innerHTML = `❌ Sbagliato! La risposta corretta è: <strong>${q.corretta}</strong>${q.riferimento ? `<br><small class="text-muted">📖 ${q.riferimento}</small>` : ''}`;
-        feedbackEl.classList.remove("text-success");
-        feedbackEl.classList.add("text-danger");
-        errori.push(q);
-    }
-    nextBtn.disabled = false;
-    nextBtn.focus();
+if (rispostaSelezionata === q.corretta) {
+  button.classList.add("correct");
+  score++;
+
+  feedbackEl.innerHTML = `
+    <span class="icon"><i class="bi bi-check-circle-fill"></i></span>
+    <div class="feedback-body">
+      <div class="feedback-title">Risposta corretta</div>
+      ${q.riferimento ? `<span class="feedback-ref"> ${q.riferimento}</span>` : ''}
+    </div>
+  `;
+
+  feedbackEl.classList.remove("text-danger");
+  feedbackEl.classList.add("text-success");
+
+} else {
+  button.classList.add("incorrect");
+
+feedbackEl.innerHTML = `
+  <div class="feedback-body">
+    <div class="feedback-title">
+      <i class="bi bi-x-circle-fill"></i> <span>Risposta errata</span>
+    </div>
+
+    <div class="feedback-row correct">
+      <span class="label">Risposta corretta:</span>
+      <span class="value">${q.corretta}</span>
+    </div>
+
+    ${q.riferimento ? `
+      <div class="feedback-ref">
+        ${q.riferimento}
+      </div>
+    ` : ''}
+  </div>
+`;
+
+  feedbackEl.classList.remove("text-success");
+  feedbackEl.classList.add("text-danger");
+
+  errori.push(q);
 }
 
-   nextBtn.onclick = () => {
-  current++;
-  if (current < questions.length) {
-    loadQuestion();
-  } else {
-    quizBox.innerHTML = "";
-    quizBox.style.display = "none";
+      document.getElementById("quizProgressBar").style.width = `${((current + 1) / questions.length) * 100}%`;
 
-    let html = `
+      nextBtn.disabled = false;
+      setNextButtonPulse(true);
+      nextBtn.focus();
+    }
+
+    nextBtn.onclick = () => {
+      current++;
+      if (current < questions.length) {
+        loadQuestion();
+      } else {
+        quizBox.innerHTML = "";
+        quizBox.style.display = "none";
+
+        let html = `
        <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
         <h3 class="text-success mb-3">
           <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
@@ -143,8 +230,8 @@ function selectAnswer(button, q) {
       </div>
     `;
 
-    if (errori.length > 0) {
-      html += `
+        if (errori.length > 0) {
+          html += `
        <div class="d-flex justify-content-center mt-4">
         <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
           <i class="bi bi-arrow-repeat"></i>
@@ -152,62 +239,73 @@ function selectAnswer(button, q) {
           <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
         </button>
       </div>`;
-    }
+        }
 
-    resultEl.innerHTML = html;
-    resultEl.style.display = "block";
-    localStorage.setItem('quizScore', score);
+        resultEl.innerHTML = html;
+        resultEl.style.display = "block";
+        localStorage.setItem('quizScore', score);
 
-    const retryBtn = document.getElementById("retryBtn");
-    if (retryBtn) {
-      retryBtn.addEventListener("click", ripetiErrori);
-    }
-  }
-};
+        const retryBtn = document.getElementById("retryBtn");
+        if (retryBtn) {
+          retryBtn.addEventListener("click", ripetiErrori);
+        }
+      }
+    };
 
 
+    function ripetiErrori() {
+      if (errori.length === 0) return;
 
-   function ripetiErrori() {
-  if (errori.length === 0) return;
+      // Reimposta i dati
+      questions = [...errori];
+      current = 0;
+      score = 0;
+      errori = [];
+      resultEl.innerHTML = "";
 
-  // Reimposta i dati
-  questions = [...errori];
-  current = 0;
-  score = 0;
-  errori = [];
-  resultEl.innerHTML = "";
+      // Ricostruisci il box del quiz
+      quizBox.style.display = 'block';
+      quizBox.innerHTML = `
+  <div class="quiz-top mb-4">
+      <div class="quiz-counter" id="questionCounter">Domanda 1 di ${questions.length}</div>
+      <div class="progress quiz-progress mt-2">
+          <div class="progress-bar" id="quizProgressBar" style="width: 0%;"></div>
+      </div>
+  </div>
 
-  // Ricostruisci il box del quiz
-quizBox.style.display = 'block';
-quizBox.innerHTML = `
-  <h4 class="text-center mb-4" id="question">Caricamento domanda...</h4>
-  <div id="options" class="mt-3"></div>
-  <div id="feedback" class="text-center"></div>
+  <div class="question-title-wrap mb-4">
+      <h2 class="question-title text-center" id="question">Caricamento domanda...</h2>
+  </div>
+
+  <div id="options" class="options-grid"></div>
+  <div id="feedback" class="text-center" style="display: none;"></div>
+
   <div class="text-center mt-4">
-    <button id="nextBtn" class="btn btn-next btn-lg px-5 py-2 shadow-sm rounded-pill" disabled>
+    <button id="nextBtn" class="btn btn-next btn-lg px-4 py-2 rounded-pill" disabled>
       Prossima <i class="bi bi-arrow-right-circle ms-2"></i>
     </button>
   </div>
 `;
 
-  resultEl.style.display = "none";
+      resultEl.style.display = "none";
 
-  // Riassegna i riferimenti DOM
-  questionEl = document.getElementById("question");
-  optionsEl = document.getElementById("options");
-  feedbackEl = document.getElementById("feedback");
-  nextBtn = document.getElementById("nextBtn");
+      // Riassegna i riferimenti DOM
+      questionEl = document.getElementById("question");
+      optionsEl = document.getElementById("options");
+      feedbackEl = document.getElementById("feedback");
+      nextBtn = document.getElementById("nextBtn");
+      setNextButtonPulse(false);
 
-  // Ricollega l'evento
-  nextBtn.onclick = () => {
-    current++;
-    if (current < questions.length) {
-      loadQuestion();
-    } else {
-      quizBox.innerHTML = "";
-      quizBox.style.display = 'none';
+      // Ricollega l'evento
+      nextBtn.onclick = () => {
+        current++;
+        if (current < questions.length) {
+          loadQuestion();
+        } else {
+          quizBox.innerHTML = "";
+          quizBox.style.display = 'none';
 
-      let html = `
+          let html = `
         <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
           <h3 class="text-success mb-3">
             <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
@@ -220,11 +318,11 @@ quizBox.innerHTML = `
           </p>
         </div>
       `;
-      quizBox.style.display = 'none';
+          quizBox.style.display = 'none';
 
 
-      if (errori.length > 0) {
-        html += `
+          if (errori.length > 0) {
+            html += `
         <div class="d-flex justify-content-center mt-4">
           <button id="retryBtn" class="btn btn-warning btn-lg d-flex align-items-center gap-2 px-4 shadow-sm rounded-pill">
             <i class="bi bi-arrow-repeat"></i>
@@ -232,21 +330,21 @@ quizBox.innerHTML = `
             <span class="badge rounded-pill bg-danger text-white">${errori.length}</span>
           </button>
         </div>`;
-      }
+          }
 
-      resultEl.innerHTML = html;
-      resultEl.style.display = "block";
-      localStorage.setItem('quizScore', score);
+          resultEl.innerHTML = html;
+          resultEl.style.display = "block";
+          localStorage.setItem('quizScore', score);
 
-      const retryBtn = document.getElementById("retryBtn");
-      if (retryBtn) {
-        retryBtn.addEventListener("click", ripetiErrori);
-      }
+          const retryBtn = document.getElementById("retryBtn");
+          if (retryBtn) {
+            retryBtn.addEventListener("click", ripetiErrori);
+          }
+        }
+      };
+
+      loadQuestion();
     }
-  };
-
-  loadQuestion();
-}
 
 
     function startQuiz(count) {
@@ -256,6 +354,7 @@ quizBox.innerHTML = `
       errori = [];
       resultEl.innerHTML = "";
       quizBox.style.display = 'block';
+      document.getElementById("startQuizWrapper").style.display = "none";
       loadQuestion();
 
       // chiudi il modal
@@ -266,27 +365,52 @@ quizBox.innerHTML = `
 
   </script>
 
-
   <!-- Modal selezione domande -->
-<div class="modal fade" id="questionCountModal" tabindex="-1" aria-labelledby="questionCountLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content text-center shadow-lg border-0 p-4 custom-modal-bg">
+  <div class="modal fade" id="questionCountModal" tabindex="-1" aria-labelledby="questionCountLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm modal-quiz-start">
+      <div class="modal-content quiz-start-modal border-0">
 
-      <div class="modal-header border-0">
-        <h4 class="modal-title w-100 game-title-quiz" id="questionCountLabel">Quante domande vuoi affrontare?</h4>
+        <div class="modal-body p-4 p-md-5 text-center">
+          <div class="quiz-start-badge mb-3">
+            <i class="bi bi-sliders2 me-2"></i>
+            Impostazione quiz
+          </div>
+
+          <h3 class="quiz-start-title mb-2" id="questionCountLabel">
+            Seleziona il numero di domande
+          </h3>
+
+          <p class="quiz-start-subtitle mb-4">
+            Scegli quante domande vuoi affrontare prima di iniziare.
+          </p>
+
+          <div class="quiz-start-grid">
+            <button class="quiz-count-btn" onclick="startQuiz(1)" type="button">
+              <span class="quiz-count-number">1</span>
+              <span class="quiz-count-label">Domanda</span>
+            </button>
+
+            <button class="quiz-count-btn quiz-count-btn-featured" onclick="startQuiz(10)" type="button">
+              <span class="quiz-count-number">10</span>
+              <span class="quiz-count-label">Domande</span>
+              <span class="quiz-count-badge">Consigliato</span>
+            </button>
+
+            <button class="quiz-count-btn" onclick="startQuiz(30)" type="button">
+              <span class="quiz-count-number">30</span>
+              <span class="quiz-count-label">Domande</span>
+            </button>
+
+            <button class="quiz-count-btn quiz-count-btn-outline" onclick="startQuiz('MAX')" id="maxBtn" type="button">
+              <span class="quiz-count-number">Tutte</span>
+              <span class="quiz-count-label">0 domande</span>
+            </button>
+          </div>
+        </div>
+
       </div>
-
-      <div class="modal-body pt-3">
-        <button class="btn btn-next rounded-pill px-4 py-2 m-2" onclick="startQuiz(1)">1</button>
-        <button class="btn btn-next rounded-pill px-4 py-2 m-2" onclick="startQuiz(10)">10</button>
-        <button class="btn btn-next rounded-pill px-4 py-2 m-2" onclick="startQuiz(30)">30</button>
-       <button class="btn btn-next-outline rounded-pill px-4 py-2 m-2" onclick="startQuiz('MAX')" id="maxBtn">Tutte (?)</button>
-
-      </div>
-
     </div>
   </div>
-</div>
 
 
 </body>
