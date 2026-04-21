@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fondamento: Dio</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/footer.css">
+
+  <style>
+    body {
+      background: url('../img/quiz-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .overlay-bg {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(6px);
+      border-radius: 24px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-box {
+      background: linear-gradient(135deg, #f8fbff, #eef5ff);
+      border-radius: 24px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .lesson-badge {
+      background: #0d6efd;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #1f2d3d;
+    }
+
+    .theme-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      height: 100%;
+    }
+
+    .theme-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    .theme-card .card-header {
+      border: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .theme-card .card-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.22), transparent 55%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .theme-title {
+      font-size: 1.35rem;
+      letter-spacing: 0.4px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    .theme-header {
+      color: #fff;
+    }
+
+    .header-exodus {
+      background: linear-gradient(135deg, #1d4ed8, #38bdf8);
+    }
+
+    .header-isaiah {
+      background: linear-gradient(135deg, #7c2d12, #f59e0b);
+    }
+
+    .header-psalm {
+      background: linear-gradient(135deg, #14532d, #22c55e);
+    }
+
+    .header-synthesis {
+      background: linear-gradient(135deg, #312e81, #8b5cf6);
+    }
+
+    .header-subtitle {
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0.92;
+      line-height: 1.2;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #214c9b;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin: 0.2rem;
+    }
+
+    .reference-box {
+      background: #f8f9fa;
+      border-left: 4px solid #0d6efd;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    .memory-box {
+      background: #fff8e6;
+      border: 1px solid #ffe08a;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+
+    .small-muted {
+      color: #6c757d;
+      font-size: 0.92rem;
+    }
+
+    .timeline-item {
+      border-left: 3px solid #0d6efd;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 4px;
+      width: 13px;
+      height: 13px;
+      background: #0d6efd;
+      border-radius: 50%;
+    }
+
+    .summary-list li {
+      margin-bottom: 0.7rem;
+    }
+
+    .lesson-nav {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .lesson-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      background: rgba(13, 110, 253, 0.1);
+      color: #0d3b8e;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(13, 110, 253, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .lesson-nav-btn:hover {
+      background: rgba(13, 110, 253, 0.18);
+      color: #0b5ed7;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(13, 110, 253, 0.15);
+    }
+
+    .theme-card table th {
+      color: #1f2d3d;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .theme-card table td {
+      color: #495057;
+    }
+
+    .theme-card .table {
+      margin-bottom: 0;
+    }
+
+    .ref-tag {
+      border-bottom: 1px dashed rgba(13, 110, 253, 0.5);
+      cursor: help;
+      transition: all 0.2s ease;
+    }
+
+    .ref-tag:hover {
+      color: #0362f0;
+      border-bottom: 1px solid #0b5ed7;
+    }
+
+    .curiosity-box {
+      background: #ededed;
+      border-left: 5px solid #0d6efd;
+      border-radius: 14px;
+      padding: 0.7rem 0.9rem;
+    }
+
+    .curiosity-title {
+      font-weight: 700;
+      color: #0d6efd;
+      margin-bottom: 0.5rem;
+    }
+
+    .curiosity-box ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .curiosity-box li {
+      margin-bottom: 0.35rem;
+      color: #333;
+    }
+
+    .explore-toggle-btn {
+      background: rgba(13, 110, 253, 0.1);
+      color: #0d3b8e;
+      border: 1px solid rgba(13, 110, 253, 0.35);
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .explore-toggle-btn:hover {
+      background: linear-gradient(135deg, rgba(13, 110, 253, 0.15), rgba(13, 110, 253, 0.05));
+      color: #0b5ed7;
+      border-color: rgba(13, 110, 253, 0.55);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px rgba(13, 110, 253, 0.18);
+    }
+
+    .quiz-option {
+      border: 1px solid #dee2e6;
+      border-radius: 14px;
+      padding: 0.9rem 1rem;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #fff;
+    }
+
+    .quiz-option:hover {
+      background: #f8f9fa;
+    }
+
+    .quiz-option.correct {
+      border-color: #198754;
+      background: #eaf7ef;
+      color: #146c43;
+      font-weight: 600;
+    }
+
+    .quiz-option.wrong {
+      border-color: #dc3545;
+      background: #fdecec;
+      color: #b02a37;
+      font-weight: 600;
+    }
+
+    .quiz-toggle-btn {
+      align-self: center;
+      background: linear-gradient(135deg, #ffb347, #ff6b35);
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      padding: 0.75rem 1.6rem;
+      box-shadow: 0 10px 25px rgba(255, 107, 53, 0.35);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quiz-toggle-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.25), transparent 60%);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .quiz-toggle-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 16px 35px rgba(255, 107, 53, 0.45);
+    }
+
+    .quiz-toggle-btn:hover::after {
+      transform: translateX(0%);
+    }
+
+    .quiz-toggle-btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .keyword-tag {
+      background: linear-gradient(135deg, #f8f9fa, #ffffff);
+      border: 1px solid #e0e0e0;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #333;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      margin: 0.35rem;
+    }
+
+    .keyword-tag small {
+      font-weight: 500;
+      color: #666;
+    }
+
+    .keyword-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      border-color: #0d6efd;
+    }
+
+    .doctrine-box {
+      background: linear-gradient(135deg, #f7fbff, #edf4ff);
+      border: 1px solid rgba(13, 110, 253, 0.12);
+      border-radius: 18px;
+      padding: 1rem 1.1rem;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4 py-lg-5">
+    <div class="overlay-bg p-3 p-md-4 p-lg-5">
+      <div class="lesson-nav mb-4">
+        <a href="../lezioni.html" class="lesson-nav-btn">
+          <i class="bi bi-arrow-left-circle me-2"></i>Torna alle lezioni
+        </a>
+      </div>
+
+      <section class="hero-box mb-5">
+        <span class="lesson-badge">Lezione interattiva biblica</span>
+        <h1 class="section-title display-6 mb-3">Fondamento: Dio</h1>
+        <p class="lead mb-3">
+          In questa lezione studiamo <strong>chi è Dio</strong> alla luce di tre testi fondamentali:
+          <strong>Esodo 34:6-7</strong>, <strong>Isaia 6</strong> e <strong>Salmo 103</strong>.
+          L’obiettivo non è solo elencare attributi, ma comprendere come la Scrittura presenta
+          Dio nella sua <strong>santità</strong>, <strong>misericordia</strong> e <strong>giustizia</strong>,
+          con profondità.
+        </p>
+
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-search me-2"></i>Cosa impari</h5>
+              <p class="mb-0">Che Dio non è definito da un solo attributo, ma dalla perfetta armonia di santità, misericordia, verità e giustizia.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-journal-text me-2"></i>Cosa osservare</h5>
+              <p class="mb-0">Come Dio si rivela, come l’uomo reagisce alla sua presenza e quali implicazioni spirituali derivano per la chiesa.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="memory-box h-100">
+              <h5><i class="bi bi-lightbulb me-2"></i>Metodo di studio</h5>
+              <p class="mb-0">Leggi ogni scheda, apri gli approfondimenti, confronta i testi e termina con il quiz per consolidare i punti chiave.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="row g-4">
+
+          <div class="col-md-6 col-xl-6">
+            <div class="card theme-card">
+              <div class="card-header theme-header header-exodus text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-tablet-landscape-fill me-2"></i>
+                    <span class="fw-bold fs-5 theme-title">Esodo 34:6-7</span>
+                  </div>
+                  <small class="header-subtitle mt-1">Dio rivela il suo carattere</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Rivelazione divina</span>
+                  <span class="tag">Misericordia</span>
+                  <span class="tag">Giustizia</span>
+                  <span class="tag">Fedeltà</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title"><i class="bi bi-lightbulb me-2"></i>Curiosità</div>
+                  <ul>
+                    <li>Questo è uno dei testi più importanti di tutto l’Antico Testamento per capire come Dio descrive sé stesso.</li>
+                    <li>La rivelazione arriva subito dopo il peccato del vitello d’oro, quindi in un contesto di giudizio e restaurazione.</li>
+                    <li>Molti altri testi biblici riprendono proprio questo linguaggio per parlare del carattere di Dio.</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 150px;">Contesto</th>
+                        <td>Mosè intercede per un popolo colpevole; Dio rinnova la rivelazione della sua gloria e del suo patto.</td>
+                      </tr>
+                      <tr>
+                        <th>Ritratto di Dio</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:6 - Dio è misericordioso e pietoso">misericordioso,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:6 - lento all'ira">paziente,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:6 - ricco in bontà e fedeltà">ricco in bontà e verità,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:7 - perdona l'iniquità, la trasgressione e il peccato, ma non tiene il colpevole per innocente">giusto e santo nel giudizio</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Tensione teologica</th>
+                            <td>
+                            Dio 
+                            <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:7 - perdona l'iniquità, la trasgressione e il peccato">perdona realmente</span>, 
+                            ma 
+                            <span class="ref-tag" data-bs-toggle="tooltip" title="Esodo 34:7 - non tiene il colpevole per innocente">non annulla la sua giustizia</span>; 
+                            la sua grazia non è mai complicità col peccato.
+                            </td>                      </tr>
+                      <tr>
+                        <th>Verità chiave</th>
+                        <td>In Dio misericordia e giustizia non si oppongono: entrambe appartengono alla perfezione del suo essere.</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Una chiesa matura non deve predicare solo la bontà di Dio o solo il suo giudizio, ma la gloria completa del suo carattere.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Esodo 32–34; Esodo 34:6-7
+                </div>
+
+                <button class="btn btn-sm rounded-pill explore-toggle-btn" data-bs-toggle="collapse" data-bs-target="#collapseExodus">
+                  <i class="bi bi-chevron-down me-2"></i>Approfondisci
+                </button>
+
+                <div class="collapse mt-3" id="collapseExodus">
+                  <ul class="summary-list">
+                    <li><strong>Auto-rivelazione divina:</strong> qui non è l’uomo a definire Dio, ma è Dio a proclamare il proprio Nome. Questo rende il testo normativo per la teologia biblica.</li>
+                    <li><strong>Ordine significativo degli attributi:</strong> il testo inizia con misericordia, pazienza e bontà, ma non termina lì; la proclamazione include anche il giudizio. Dio non è sentimentalismo, né fredda severità.</li>
+                    <li><strong>Patto e responsabilità:</strong> il peccato d’Israele non annulla il patto, ma rende evidente che la comunione con Dio richiede espiazione, ravvedimento e santità.</li>
+                    <li><strong>Lettura cristologica:</strong> questa tensione tra perdono e giustizia prepara la comprensione dell’opera di Cristo, in cui Dio rimane giusto mentre giustifica il peccatore che crede.</li>
+                    <li><strong>Applicazione:</strong> Il Credente deve riflettere questo equilibrio anche nel ministero: compassione verso il peccatore, ma senza relativizzare il peccato.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-6">
+            <div class="card theme-card">
+              <div class="card-header theme-header header-isaiah text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-stars me-2"></i>
+                    <span class="fw-bold fs-5 theme-title">Isaia 6</span>
+                  </div>
+                  <small class="header-subtitle mt-1">La visione del Santo: gloria, impurità dell’uomo, purificazione e chiamata.</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Santità</span>
+                  <span class="tag">Gloria</span>
+                  <span class="tag">Purificazione</span>
+                  <span class="tag">Chiamata</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title"><i class="bi bi-lightbulb me-2"></i>Curiosità</div>
+                  <ul>
+                    <li>La triplice proclamazione “Santo, santo, santo” esprime intensità assoluta e pienezza della santità divina.</li>
+                    <li>Isaia non reagisce con leggerezza, ma con rovina interiore: la vera visione di Dio abbatte l’autosufficienza umana.</li>
+                    <li>La chiamata profetica nasce dopo la purificazione: prima il peccato viene trattato, poi il servizio viene affidato.</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 150px;">Contesto</th>
+                        <td>In un tempo di crisi nazionale, Isaia vede il vero Re sul trono: la stabilità non è nella terra, ma nel cielo.</td>
+                      </tr>
+                      <tr>
+                        <th>Ritratto di Dio</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Isaia 6:3 - Santo, santo, santo è il Signore degli eserciti">assolutamente santo,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Isaia 6:1 - Io vidi il Signore seduto sopra un trono alto, molto elevato">sovrano,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Isaia 6:3 - Tutta la terra è piena della sua gloria">glorioso,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Isaia 6:7 - la tua iniquità è tolta e il tuo peccato è espiato">purificatore</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Reazione umana</th>
+                            <td>
+                            Isaia 
+                            <span class="ref-tag" data-bs-toggle="tooltip" title="Isaia 6:5 - Guai a me! Sono perduto">riconosce la propria impurità</span> 
+                            e quella del popolo; la santità di Dio svela il vero stato del cuore umano.
+                            </td>                      </tr>
+                      <tr>
+                        <th>Verità chiave</th>
+                        <td>La santità di Dio non è un attributo secondario: è la perfezione che illumina tutti gli altri suoi attributi.</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Non si può servire rettamente Dio senza prima avere una visione alta della sua santità e una consapevolezza reale del peccato.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Isaia 6:1-13
+                </div>
+
+                <button class="btn btn-sm rounded-pill explore-toggle-btn" data-bs-toggle="collapse" data-bs-target="#collapseIsaiah">
+                  <i class="bi bi-chevron-down me-2"></i>Approfondisci
+                </button>
+
+                <div class="collapse mt-3" id="collapseIsaiah">
+                  <ul class="summary-list">
+                    <li><strong>Santità come centro:</strong> la triplice acclamazione non indica solo purezza morale, ma la totale alterità, maestà e perfezione di Dio.</li>
+                    <li><strong>Effetto sulla coscienza:</strong> quando l’uomo vede Dio veramente, smette di confrontarsi con gli altri e si misura con il Santo. Da qui nasce il “guai a me”.</li>
+                    <li><strong>Espiazione e missione:</strong> il carbone preso dall’altare mostra che la colpa non viene semplicemente ignorata; deve essere rimossa in modo conforme alla giustizia di Dio.</li>
+                    <li><strong>Chiamata profetica:</strong> “Eccomi, manda me” nasce da un cuore toccato dalla grazia. Il vero servizio nasce dalla purificazione, non dall’ambizione personale.</li>
+                    <li><strong>Applicazione:</strong> una guida sana nasce davanti al trono di Dio, non solo nell’efficienza organizzativa. Dove manca la santità, il ministero si svuota.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-6">
+            <div class="card theme-card">
+              <div class="card-header theme-header header-psalm text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-heart-fill me-2"></i>
+                    <span class="fw-bold fs-5 theme-title">Salmo 103</span>
+                  </div>
+                  <small class="header-subtitle mt-1">Il Dio compassionevole: perdono, cura paterna, pazienza e fedeltà verso i suoi.</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Compassione</span>
+                  <span class="tag">Perdono</span>
+                  <span class="tag">Paternità</span>
+                  <span class="tag">Fedeltà</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title"><i class="bi bi-lightbulb me-2"></i>Curiosità</div>
+                  <ul>
+                    <li>Il Salmo 103 non parla di una misericordia astratta, ma di una misericordia sperimentata nella vita concreta del credente.</li>
+                    <li>Riprende il linguaggio di Esodo 34, mostrando continuità nella rivelazione del carattere di Dio.</li>
+                    <li>Unisce adorazione, dottrina e cura pastorale: il cuore benedice Dio perché ricorda chi Egli è e cosa fa.</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 150px;">Contesto</th>
+                        <td>Davide richiama l’anima a benedire il Signore ricordando i suoi benefici e il suo carattere stabile verso i timorati di Dio.</td>
+                      </tr>
+                      <tr>
+                        <th>Ritratto di Dio</th>
+                        <td>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Salmo 103:3 - Egli perdona tutte le tue colpe">perdonatore,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Salmo 103:4 - salva la tua vita dalla fossa e ti corona di bontà e compassioni">salvatore e benefattore,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Salmo 103:8 - Il Signore è pietoso e clemente, lento all'ira e ricco di bontà">pietoso e clemente,</span>
+                          <span class="ref-tag" data-bs-toggle="tooltip" title="Salmo 103:13 - Come un padre è pietoso verso i suoi figli, così è pietoso il Signore verso quelli che lo temono">padre compassionevole</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Equilibrio</th>
+                        <td>La misericordia di Dio è immensa, ma è rivolta a quelli che lo temono: non è permissivismo, ma grazia santa.</td>
+                      </tr>
+                      <tr>
+                        <th>Verità chiave</th>
+                        <td>Dio conosce la <span class="ref-tag" data-bs-toggle="tooltip" title="Salmo 103:14 - egli conosce la nostra natura, si ricorda che siamo polvere">fragilità dell’uomo</span> dell’uomo e si china su di lui con compassione senza mai compromettere la sua verità.</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>Chi guida il popolo di Dio deve conoscere il Signore non solo come sovrano santo, ma anche come Padre compassionevole che rialza, corregge e sostiene.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Riferimenti:</strong> Salmo 103:1-18
+                </div>
+
+                <button class="btn btn-sm rounded-pill explore-toggle-btn" data-bs-toggle="collapse" data-bs-target="#collapsePsalm">
+                  <i class="bi bi-chevron-down me-2"></i>Approfondisci
+                </button>
+
+                <div class="collapse mt-3" id="collapsePsalm">
+                  <ul class="summary-list">
+                    <li><strong>Teologia della memoria:</strong> Davide parla alla propria anima. L’adorazione nasce dal ricordare chi è Dio e dal non dimenticare i suoi benefici.</li>
+                    <li><strong>Misericordia personale e patizia:</strong> il Dio del patto non si limita a governare; entra nella storia del suo popolo, perdona, risana, sostiene e guida.</li>
+                    <li><strong>Compassione paterna:</strong> l’immagine del padre non indebolisce la maestà di Dio, ma rende visibile la sua tenerezza verso la fragilità dei suoi figli.</li>
+                    <li><strong>Fragilità umana e stabilità divina:</strong> l’uomo è come erba, ma la bontà del Signore dura in eterno. Questo sposta la sicurezza del credente da sé stesso a Dio.</li>
+                    <li><strong>Applicazione:</strong> Il Credente deve riflettere questo cuore: fermezza nella verità, ma anche pazienza, comprensione e cura delle anime deboli.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-6">
+            <div class="card theme-card">
+              <div class="card-header theme-header header-synthesis text-white">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-diagram-3-fill me-2"></i>
+                    <span class="fw-bold fs-5 theme-title">Sintesi teologica</span>
+                  </div>
+                  <small class="header-subtitle mt-1">Chi è Dio? Una visione integrale per la chiesa, il ministero e l’adorazione.</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="tag">Santo</span>
+                  <span class="tag">Misericordioso</span>
+                  <span class="tag">Giusto</span>
+                  <span class="tag">Degno di adorazione</span>
+                </div>
+
+                <div class="curiosity-box mb-4">
+                  <div class="curiosity-title"><i class="bi bi-lightbulb me-2"></i>Idea centrale</div>
+                  <ul>
+                    <li>Dio non deve essere ridotto a un solo tratto del suo carattere.</li>
+                    <li>La santità senza misericordia diventerebbe terrore; la misericordia senza santità diventerebbe permissivismo.</li>
+                    <li>La Bibbia presenta sempre un Dio perfettamente coerente con sé stesso.</li>
+                  </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                      <tr>
+                        <th style="width: 150px;">Esodo 34</th>
+                        <td>Dio si fa conoscere come colui che perdona, ma che non giustifica il male.</td>
+                      </tr>
+                      <tr>
+                        <th>Isaia 6</th>
+                        <td>Dio appare nella sua santità trascendente, davanti alla quale l’uomo crolla e viene purificato.</td>
+                      </tr>
+                      <tr>
+                        <th>Salmo 103</th>
+                        <td>Dio si mostra vicino, compassionevole, paterno e fedele verso quelli che lo temono.</td>
+                      </tr>
+                      <tr>
+                        <th>Sintesi</th>
+                        <td>Dio è insieme santo, misericordioso e giusto; ogni vero ministero nasce dal conoscere e riflettere questo Dio.</td>
+                      </tr>
+                      <tr>
+                        <th>Lezione pratica</th>
+                        <td>La chiesa deve formare credenti che non abbiano un’idea sentimentale o superficiale di Dio, ma una visione alta, biblica e trasformante del suo essere.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reference-box mb-3">
+                  <strong>Applicazione:</strong> gli attributi di Dio non sono parti separate, ma perfezioni armoniche dell’unico Dio vivente e vero.
+                </div>
+
+                <button class="btn btn-sm rounded-pill explore-toggle-btn" data-bs-toggle="collapse" data-bs-target="#collapseSynthesis">
+                  <i class="bi bi-chevron-down me-2"></i>Approfondisci
+                </button>
+
+                <div class="collapse mt-3" id="collapseSynthesis">
+                 <ul class="summary-list">
+                    <li><strong>Nel modo di conoscere Dio:</strong> non possiamo ridurre Dio a ciò che è comodo o comprensibile per noi; dobbiamo lasciarci formare da come la Scrittura lo rivela.</li>
+                    <li><strong>Nel cammino spirituale:</strong> la santità di Dio porta a un santo timore, la sua misericordia consola, e la sua giustizia ci richiama a una vita seria e trasformata.</li>
+                    <li><strong>Nel carattere personale:</strong> conoscere Dio ci porta a crescere in equilibrio: verità senza durezza, amore senza superficialità, pazienza senza compromessi.</li>
+                    <li><strong>Nella comunità:</strong> quando Dio è veramente conosciuto, nascono adorazione sincera, umiltà nei rapporti, ravvedimento reale e una fede stabile nel tempo.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title h3 mb-4">Schema per memorizzare meglio</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h5 class="mb-3"><i class="bi bi-diagram-3-fill me-2"></i>Domande guida per studiare chi è Dio</h5>
+                <div class="timeline-item"><strong>1.</strong> In che modo Dio si rivela in questo testo?</div>
+                <div class="timeline-item"><strong>2.</strong> Quale attributo emerge con più forza?</div>
+                <div class="timeline-item"><strong>3.</strong> Come reagisce l’uomo davanti a questa rivelazione?</div>
+                <div class="timeline-item"><strong>4.</strong> Quale equilibrio tra misericordia, santità e giustizia appare?</div>
+                <div class="timeline-item"><strong>5.</strong> Come questa verità deve influenzare chiesa, culto e ministero?</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h5 class="mb-3 d-flex align-items-center">
+                  <i class="bi bi-stars me-2 text-warning"></i>
+                  <span class="fw-bold">Parole chiave da ricordare</span>
+                </h5>
+                <div>
+                  <span class="keyword-tag">Esodo 34 <small>Misericordia e giustizia</small></span>
+                  <span class="keyword-tag">Isaia 6 <small>Santità e chiamata</small></span>
+                  <span class="keyword-tag">Salmo 103 <small>Compassione e fedeltà</small></span>
+                  <span class="keyword-tag">Dio <small>Santo, giusto, misericordioso</small></span>
+                  <span class="keyword-tag">Ministero <small>Equilibrio e riverenza</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title h3 mb-4">Approfondimento tematico</h2>
+        <div class="accordion" id="thematicAccordion">
+
+          <div class="accordion-item border-0 rounded-4 overflow-hidden mb-3 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#theme1">
+                La santità di Dio non è un dettaglio, ma il centro
+              </button>
+            </h2>
+            <div id="theme1" class="accordion-collapse collapse show" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Isaia 6</strong> mostra che la vera conoscenza di Dio inizia quando Egli è visto come il Santo. Senza santità, ogni discorso su Dio diventa superficiale.</p>
+                <p class="mb-0"><strong>Idea chiave:</strong> una visione alta di Dio produce umiltà, ravvedimento e adorazione vera.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 rounded-4 overflow-hidden mb-3 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#theme2">
+                Misericordia e giustizia non si contraddicono
+              </button>
+            </h2>
+            <div id="theme2" class="accordion-collapse collapse" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Esodo 34:6-7</strong> insegna che Dio perdona veramente, ma non banalizza il peccato. La sua misericordia è santa e la sua giustizia è perfetta.</p>
+                <p class="mb-0"><strong>Idea chiave:</strong> la grazia biblica non è permissivismo, ma misericordia fondata sulla verità di Dio.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 rounded-4 overflow-hidden shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#theme3">
+                Il Dio altissimo è anche vicino al suo popolo
+              </button>
+            </h2>
+            <div id="theme3" class="accordion-collapse collapse" data-bs-parent="#thematicAccordion">
+              <div class="accordion-body">
+                <p><strong>Salmo 103</strong> mostra che il Dio santo è anche il Dio che perdona, sostiene e si comporta da Padre verso quelli che lo temono.</p>
+                <p class="mb-0"><strong>Idea chiave:</strong> la trascendenza di Dio non elimina la sua tenerezza; la sua maestà non esclude la sua compassione.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    <section class="mb-5">
+  <div class="card border-0 rounded-4 shadow-sm">
+    <div class="card-body p-4 p-lg-5">
+      <h2 class="section-title h3 mb-4">Applicazioni per la vita cristiana</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="doctrine-box">
+            <h5><i class="bi bi-megaphone-fill me-2"></i>Nel modo di parlare di Dio</h5>
+            <p class="mb-0">Impariamo a parlare di Dio in modo completo: non ridotto solo alla consolazione o solo al giudizio, ma riconosciuto come santo, misericordioso e giusto.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="doctrine-box">
+            <h5><i class="bi bi-people-fill me-2"></i>Nel rapporto con gli altri</h5>
+            <p class="mb-0">Conoscere il carattere di Dio ci insegna ad avere equilibrio anche verso le persone: compassione verso chi è fragile, serietà davanti al peccato e pazienza nei percorsi di crescita.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="doctrine-box">
+            <h5><i class="bi bi-building me-2"></i>Nella vita della chiesa</h5>
+            <p class="mb-0">Una chiesa sana cresce quando sviluppa un’autentica visione di Dio: timore santo, fiducia nella sua grazia, amore per la verità e adorazione sincera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="mb-4">
+        <div class="card border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="text-center mb-4">
+              <h2 class="section-title h3 mb-1">Mini quiz finale</h2>
+              <p class="small-muted mb-3">Metti alla prova quello che hai imparato.</p>
+              <button class="btn btn-primary rounded-pill quiz-toggle-btn" id="toggleQuizBtn">
+                <i class="bi bi-lightbulb-fill me-2"></i>Avvia il quiz
+              </button>
+            </div>
+
+            <div id="quizSection" class="d-none">
+              <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-outline-secondary rounded-pill" id="resetQuizBtn">
+                  <i class="bi bi-arrow-counterclockwise me-2"></i>Reset quiz
+                </button>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>1. In Esodo 34:6-7 cosa dimostra che Dio non è solo misericordioso?</h5>
+                <div class="quiz-option" data-index="0">Il fatto che parla con Mosè</div>
+                <div class="quiz-option" data-index="1">Il fatto che è lento all’ira</div>
+                <div class="quiz-option" data-index="2">Il fatto che non lascia il colpevole impunito</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>2. In Isaia 6 cosa avviene prima della chiamata al servizio?</h5>
+                <div class="quiz-option" data-index="0">Isaia riceve un messaggio da annunciare</div>
+                <div class="quiz-option" data-index="1">Isaia osserva il trono di Dio</div>
+                <div class="quiz-option" data-index="2">Isaia viene purificato dal peccato</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="1">
+                <h5>3. Nel Salmo 103 la misericordia di Dio è rivolta a chi?</h5>
+                <div class="quiz-option" data-index="0">A tutti senza distinzione</div>
+                <div class="quiz-option" data-index="1">A quelli che lo temono</div>
+                <div class="quiz-option" data-index="2">Solo a Israele come nazione</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="2">
+                <h5>4. Cosa succede all’uomo quando vede davvero Dio (Isaia 6)?</h5>
+                <div class="quiz-option" data-index="0">Si sente più sicuro di sé</div>
+                <div class="quiz-option" data-index="1">Si sente pronto a servire subito</div>
+                <div class="quiz-option" data-index="2">Riconosce la propria condizione di peccato</div>
+              </div>
+
+              <div class="mb-4 quiz-question" data-correct="1">
+                <h5>5. Qual è il punto comune tra Esodo 34 e Salmo 103?</h5>
+                <div class="quiz-option" data-index="0">Dio cambia carattere nel tempo</div>
+                <div class="quiz-option" data-index="1">Dio è misericordioso ma resta giusto</div>
+                <div class="quiz-option" data-index="2">Dio ignora il peccato dell’uomo</div>
+              </div>
+
+              <div class="alert alert-primary rounded-4 d-none" id="quizResult"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const quizQuestions = document.querySelectorAll('.quiz-question');
+    const quizResult = document.getElementById('quizResult');
+    const resetQuizBtn = document.getElementById('resetQuizBtn');
+    const toggleQuizBtn = document.getElementById('toggleQuizBtn');
+    const quizSection = document.getElementById('quizSection');
+
+    function calculateQuizResult() {
+      let answeredAll = true;
+      let score = 0;
+
+      quizQuestions.forEach(question => {
+        const correctIndex = question.getAttribute('data-correct');
+        const selected = question.querySelector('.quiz-option.selected');
+
+        if (!selected) {
+          answeredAll = false;
+          return;
+        }
+
+        if (selected.getAttribute('data-index') === correctIndex) {
+          score++;
+        }
+      });
+
+      if (answeredAll) {
+        quizResult.classList.remove('d-none');
+        quizResult.innerHTML = `
+          <strong>Risultato:</strong> hai risposto correttamente a <strong>${score} su ${quizQuestions.length}</strong> domande.
+          ${score === quizQuestions.length
+            ? '<br>Ottimo lavoro! Hai assimilato molto bene la lezione.'
+            : '<br>Rileggi le schede principali e prova a ripetere i punti chiave.'}
+        `;
+      }
+    }
+
+    quizQuestions.forEach(question => {
+      const correctIndex = question.getAttribute('data-correct');
+      const options = question.querySelectorAll('.quiz-option');
+
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          if (question.classList.contains('answered')) return;
+
+          question.classList.add('answered');
+          option.classList.add('selected');
+
+          options.forEach(opt => {
+            if (opt.getAttribute('data-index') === correctIndex) {
+              opt.classList.add('correct');
+            }
+          });
+
+          if (option.getAttribute('data-index') !== correctIndex) {
+            option.classList.add('wrong');
+          }
+
+          calculateQuizResult();
+        });
+      });
+    });
+
+    resetQuizBtn.addEventListener('click', () => {
+      quizQuestions.forEach(question => {
+        question.classList.remove('answered');
+        const options = question.querySelectorAll('.quiz-option');
+        options.forEach(option => {
+          option.classList.remove('selected', 'correct', 'wrong');
+        });
+      });
+
+      quizResult.classList.add('d-none');
+      quizResult.innerHTML = '';
+    });
+
+    toggleQuizBtn.addEventListener('click', () => {
+      const isHidden = quizSection.classList.contains('d-none');
+      quizSection.classList.toggle('d-none', !isHidden);
+
+      if (isHidden) {
+        toggleQuizBtn.innerHTML = '<i class="bi bi-lightning-charge-fill me-2"></i>Chiudi quiz';
+        quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        toggleQuizBtn.innerHTML = '<i class="bi bi-lightbulb-fill me-2"></i>Avvia il quiz';
+      }
+    });
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+  </script>
+</body>
+
+</html>
