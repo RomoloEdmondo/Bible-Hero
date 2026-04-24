@@ -36,12 +36,6 @@
         "riferimento": "1 Samuele 28:7: Allora Saul disse ai suoi servi: «Cercatemi una donna che evoca gli spiriti» e io andrò da lei a consultarla"
     },
     {
-        "domanda": "Chi fu l’imperatore romano durante la nascita di Gesù?",
-        "risposte": ["Augusto", "Tiberio", "Nerone", "Cesare"],
-        "corretta": "Augusto",
-        "riferimento": "Luca 2:1: In quel tempo uscì un decreto da parte di Cesare Augusto..."
-    },
-    {
         "domanda": "Chi fu il discepolo che Gesù vide sotto il fico prima di chiamarlo?",
         "risposte": ["Natanaele", "Andrea", "Tommaso", "Filippo"],
         "corretta": "Natanaele",
@@ -1838,15 +1832,15 @@
   "corretta": "No, le dieci tribù furono disperse",
   "riferimento": "2 Re 17:23 – Israele fu deportato e non tornò più come regno."
 },
-  {
-    "domanda": "Qual è l’ordine cronologico corretto di questi personaggi: Noè, Abramo, Mosè, Davide?",
-    "risposte": [
-      "Noè → Abramo → Mosè → Davide",
-      "Abramo → Noè → Davide → Mosè",
-      "Mosè → Abramo → Noè → Davide",
-      "Noè → Mosè → Abramo → Davide"
-    ],
-    "corretta": "Noè → Abramo → Mosè → Davide",
+{
+  "domanda": "Quale dei seguenti ordini rappresenta correttamente la successione cronologica di questi personaggi biblici?",
+  "risposte": [
+    "Abramo → Mosè → Noè → Davide",
+    "Noè → Abramo → Mosè → Davide",
+    "Mosè → Noè → Abramo → Davide",
+    "Noè → Mosè → Abramo → Davide"
+  ],
+  "corretta": "Noè → Abramo → Mosè → Davide",
     "riferimento": "Genesi–Re – L’ordine cronologico biblico segue questo schema, secondo genealogie e racconti storici."
   },
     {
@@ -2004,14 +1998,14 @@
   "riferimento": "Genesi 3:15 – «Io porrò inimicizia fra te e la donna, e fra la tua progenie e la progenie di lei; essa ti schiaccerà il capo e tu le ferirai il calcagno»."
 },
 {
-  "domanda": "Secondo il Vangelo di Matteo, cosa accadde a molti dei santi che erano morti dopo la risurrezione di Gesù?",
+  "domanda": "Secondo il Vangelo di Matteo, cosa accadde a molti santi già morti al momento della risurrezione di Gesù?",
   "risposte": [
-    "Salirono immediatamente in cielo senza essere visti da nessuno",
+    "Salirono immediatamente in cielo" ,
     "Rimasero nelle tombe fino al giudizio finale",
-    "Uscirono dalle tombe, entrarono a Gerusalemme e apparvero a molti",
-    "Furono visti solo dagli apostoli in segreto"
+    "Risuscitarono, entrarono a Gerusalemme e apparvero a molti",
+    "Furono visti dagli apostoli in segreto"
   ],
-  "corretta": "Uscirono dalle tombe, entrarono a Gerusalemme e apparvero a molti",
+  "corretta": "Risuscitarono, entrarono a Gerusalemme e apparvero a molti",
   "riferimento": "Matteo 27:52-53 – «Le tombe si aprirono e molti corpi dei santi che dormivano risuscitarono; e, usciti dalle tombe dopo la risurrezione di lui, entrarono nella città santa e apparvero a molti.»"
 }
 ,
@@ -2140,7 +2134,7 @@
 {
   "domanda": "In Isaia 6 cosa avviene prima che Isaia venga mandato al servizio?",
   "risposte": [
-    "Isaia riceve subito un messaggio da annunciare",
+    "Isaia riceve un messaggio da annunciare",
     "Isaia osserva semplicemente la visione del trono",
     "Isaia viene purificato nelle sue labbra",
     "Isaia decide volontariamente di offrire il proprio servizio"
@@ -2169,7 +2163,117 @@
   ],
   "corretta": "Perché Isaia stesso riconosce la sua impurità nelle labbra",
   "riferimento": "Isaia 6:5-7 – Isaia confessa: «sono un uomo dalle labbra impure», e Dio purifica proprio ciò che lui ha riconosciuto."
+},
+{
+  "domanda": "Secondo Proverbi, qual è il principio della saggezza?",
+  "risposte": [
+    "L’ascoltare e mettere in pratica la correzione",
+    "Il timore del Signore",
+    "Il camminare nell’integrità davanti a Dio",
+    "Il cercare la sapienza con tutto il cuore"
+  ],
+  "corretta": "Il timore del Signore",
+  "riferimento": "Proverbi 1:7; 9:10 – «Il principio della saggezza è il timore del SIGNORE»."
+},
+{
+  "domanda": "Secondo il libro dei Proverbi, in cosa consiste l’intelligenza?",
+  "risposte": [
+    "Nel discernere il bene dal male",
+    "Nel conoscere il Santo",
+    "Nel camminare nella giustizia",
+    "Nel custodire la propria lingua"
+  ],
+  "corretta": "Nel conoscere il Santo",
+  "riferimento": "Proverbi 9:10 – «…la conoscenza del Santo è l’intelligenza»."
+},
+{
+  "domanda": "Quale Vangelo sinottico è generalmente considerato il più antico e base per gli altri?",
+  "risposte": [
+    "Marco",
+    "Matteo",
+    "Luca",
+    "Giovanni"
+  ],
+  "corretta": "Marco",
+  "riferimento": "Molti studiosi sostengono la priorità di Marco (ipotesi delle due fonti)."
+},
+{
+  "domanda": "Quale richiesta fa Davide a Dio dopo il giudizio sul popolo per il censimento?",
+  "risposte": [
+    "Che la punizione cada su di lui e sulla sua casa",
+    "Che il popolo sia risparmiato per le promesse",
+    "Che il giudizio sia fermato con un sacrificio",
+    "Che il profeta interceda per il popolo"
+  ],
+  "corretta": "Che la punizione cada su di lui e sulla sua casa",
+  "riferimento": "2 Samuele 24:17 – «Sono io che ho peccato... la tua mano si volga dunque contro di me»"
+},
+{
+  "domanda": "Qual è la differenza fondamentale tra i Vangeli sinottici e il Vangelo di Giovanni?",
+  "risposte": [
+    "I sinottici sono apocrifi, Giovanni è canonico",
+    "I sinottici seguono una struttura simile, Giovanni ha un approccio più teologico e riflessivo",
+    "Giovanni è il più antico",
+    "I sinottici non parlano di miracoli"
+  ],
+  "corretta": "I sinottici seguono una struttura simile, Giovanni ha un approccio più teologico e riflessivo",
+  "riferimento": "Matteo, Marco, Luca vs Giovanni"
+},
+{
+  "domanda": "In che senso Gesù 'compie' la Legge secondo Matteo 5:17?",
+  "risposte": [
+    "La abolisce sostituendola con una nuova legge",
+    "La osserva perfettamente e ne rivela il pieno significato",
+    "La applica solo agli ebrei",
+    "La riduce a pochi comandamenti morali"
+  ],
+  "corretta": "La osserva perfettamente e ne rivela il pieno significato",
+  "riferimento": "Matteo 5:17 - Non pensate che io sia venuto per abolire la legge o i profeti; io sono venuto non per abolire, ma per portare a compimento."
+},
+{
+  "domanda": "Cosa si intende per 'nuova nascita' in Giovanni 3?",
+  "risposte": [
+    "Un cambiamento morale progressivo",
+    "Un’opera spirituale di Dio che genera una nuova vita",
+    "Il battesimo in acqua",
+    "Una decisione personale di migliorarsi"
+  ],
+  "corretta": "Un’opera spirituale di Dio che genera una nuova vita",
+  "riferimento": "Giovanni 3:5-8- In verità, in verità ti dico che se uno non è nato d'acqua e di Spirito, non può entrare nel regno di Dio. 6 Quello che è nato dalla carne è carne, e quello che è nato dallo Spirito è spirito. 7 Non ti meravigliare se ti ho detto: Bisogna che nasciate di nuovo"
+},
+{
+  "domanda": "Qual è il ruolo dello Spirito Santo secondo il Nuovo Testamento?",
+  "risposte": [
+    "Dare potenza per i miracoli",
+    "Convincere di peccato e guidare nella verità",
+    "Sostituire la presenza di Cristo",
+    "Essere una forza impersonale"
+  ],
+  "corretta": "Convincere di peccato e guidare nella verità",
+  "riferimento": "Giovanni 16:8-13 Quando sarà venuto, convincerà il mondo quanto al peccato ... lo Spirito della verità, egli vi guiderà in tutta la verità"
+},
+{
+  "domanda": "Qual è il significato della 'legge' nel pensiero di Paolo?",
+  "risposte": [
+    "Un mezzo di salvezza",
+    "Una guida morale valida per giustificare l’uomo",
+    "Uno strumento che rivela il peccato ma non salva",
+    "Un sistema abolito senza valore"
+  ],
+  "corretta": "Uno strumento che rivela il peccato ma non salva",
+  "riferimento": "Romani 3:20 - perché mediante le opere della legge nessuno sarà giustificato davanti a lui; infatti la legge dà la conoscenza del peccato."
 }
-
+,
+{
+  "domanda": "In che senso Cristo è il 'secondo Adamo'?",
+  "risposte": [
+    "Perché è stato creato come Adamo",
+    "Perché rappresenta una nuova umanità redenta",
+    "Perché vive nello stesso luogo di Adamo",
+    "Perché ripete esattamente la storia di Adamo"
+  ],
+  "corretta": "Perché rappresenta una nuova umanità redenta",
+  "riferimento": "1 Corinzi 15:45 - Così anche sta scritto: «Il primo uomo, Adamo, divenne anima vivente»; l'ultimo Adamo è spirito vivificante."
+}
 
 ]
