@@ -291,7 +291,7 @@
 
     .quiz-counter {
         padding: 0.22rem 0.7rem;
-        font-size: 0.78rem;
+        font-size: 0.9rem;
     }
 
     .quiz-progress {
@@ -364,9 +364,9 @@
     }
 
     .btn-next {
-        min-width: 150px;
-        padding: 0.45rem 1rem !important;
-        font-size: 0.95rem;
+        min-width: 175px;
+        padding: 0.58rem 1.25rem !important;
+        font-size: 1rem;
     }
 
     .btn-next.pulse-ready:not(:disabled) {
@@ -520,7 +520,7 @@
     }
 
     .option {
-        padding: 0.95rem 0.95rem;
+        padding: 1.10rem 1.15rem;
         gap: 0.75rem;
         border-radius: 13px;
     }
@@ -541,9 +541,9 @@
     }
 
     .btn-next {
-        min-width: 150px;
-        padding: 0.45rem 1rem !important;
-        font-size: 0.95rem;
+        min-width: 175px;
+        padding: 0.58rem 1.25rem !important;
+        font-size: 1rem;
     }
 
     .btn-next.pulse-ready:not(:disabled) {
