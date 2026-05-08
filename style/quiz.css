@@ -258,22 +258,129 @@
 }
 
 @media (max-width: 576px) {
-    #feedback {
-        padding: 0.6rem 0.75rem;
-        font-size: 0.88rem;
+    body {
+        min-height: 100svh;
+    }
+
+    body > .container {
+        min-height: 100svh;
+        padding: 0.45rem 0.3rem !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-title-quiz {
+        display: none;
+    }
+
+    .question-box {
+        width: 100%;
+        min-height: auto;
+        margin-top: 0.5rem;
+        padding: 0.75rem 0.6rem 0.65rem;
         border-radius: 12px;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+        border-color: rgba(255, 255, 255, 0.36);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quiz-top {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .quiz-counter {
+        padding: 0.22rem 0.7rem;
+        font-size: 0.78rem;
+    }
+
+    .quiz-progress {
+        height: 7px;
+        margin-top: 0.35rem !important;
+    }
+
+    .question-title-wrap {
+        width: 100%;
+        margin-bottom: 1.5rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .question-title {
+        font-size: 1.5rem;
+        line-height: 1.12;
+        overflow-wrap: anywhere;
+    }
+
+    .options-grid {
+        width: 100%;
+        gap: 0.28rem;
+    }
+
+    .option {
+        min-height: 0;
+        padding: 0.48rem 0.55rem;
+        gap: 0.55rem;
+        border-radius: 13px;
+    }
+
+    .option-letter {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        border-radius: 9px;
+        font-size: 0.82rem;
+    }
+
+    .option-text {
+        font-size: 0.95rem;
+        line-height: 1.22;
+        overflow-wrap: anywhere;
+    }
+
+    #feedback {
+        margin-top: 0.5rem;
+        padding: 0.45rem 0.55rem;
+        font-size: 0.8rem;
+        line-height: 1.22;
+        border-radius: 11px;
     }
 
     #feedback .feedback-title {
-        font-size: 0.86rem;
+        font-size: 0.8rem;
     }
 
     #feedback .feedback-row {
-        font-size: 0.86rem;
+        font-size: 0.78rem;
     }
 
     #feedback .feedback-ref {
-        font-size: 0.74rem;
+        font-size: 0.68rem;
+        padding: 0.18rem 0.48rem;
+    }
+
+    .question-box > .text-center.mt-4 {
+        margin-top: 0.65rem !important;
+        padding-top: 0.5rem;
+    }
+
+    .btn-next {
+        min-width: 150px;
+        padding: 0.45rem 1rem !important;
+        font-size: 0.95rem;
+    }
+
+    .btn-next.pulse-ready:not(:disabled) {
+        animation: none;
+    }
+
+    #result {
+        padding: 1rem;
+        border-radius: 18px;
+    }
+
+    .btn-home {
+        padding: 0.45rem 1rem;
+        font-size: 0.95rem;
     }
 }
 
@@ -395,5 +502,51 @@
 
     #feedback {
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .question-box {
+        min-height: auto;
+        margin-top: 1rem;
+        padding: 0.75rem 0.6rem 0.65rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+        border-color: rgba(255, 255, 255, 0.36);
+    }
+
+    .question-title {
+        font-size: 1.5rem;
+    }
+
+    .option {
+        padding: 0.95rem 0.95rem;
+        gap: 0.75rem;
+        border-radius: 13px;
+    }
+
+    .option-letter {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 0.82rem;
+    }
+
+    .option-text {
+        font-size: 0.95rem;
+    }
+
+    #feedback {
+        font-size: 0.8rem;
+    }
+
+    .btn-next {
+        min-width: 150px;
+        padding: 0.45rem 1rem !important;
+        font-size: 0.95rem;
+    }
+
+    .btn-next.pulse-ready:not(:disabled) {
+        animation: none;
     }
 }
