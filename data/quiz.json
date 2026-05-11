@@ -2493,9 +2493,84 @@
     ],
     "corretta": "Visitare orfani e vedove nelle loro afflizioni e conservarsi puri dal mondo",
     "riferimento": "Giacomo 1:27 - «La religione pura e senza macchia davanti a Dio è questa: visitare gli orfani e le vedove nelle loro afflizioni e conservarsi puri dal mondo.»"
-  }
-
-
+  },
+    {
+    "domanda": "Secondo Gesù (Marco 10), quale deve essere l'atteggiamento di chi desidera essere grande nel Regno di Dio?",
+    "risposte": [
+      "Diventare servitore degli altri",
+      "Dimostrare maggiore conoscenza della legge",
+      "Essere riconosciuto pubblicamente dalla comunità",
+      "Guidare gli altri con autorità e fermezza"
+    ],
+    "corretta": "Diventare servitore degli altri",
+    "riferimento": "Marco 10:43 - «Chiunque vorrà essere grande fra voi sarà vostro servitore.»"
+  },
+  {
+    "domanda": "Quale pratica spirituale caratterizzava la vita di Cornelio?",
+    "risposte": [
+      "Pregava Dio continuamente e faceva molte elemosine",
+      "Offriva sacrifici quotidiani nel tempio",
+      "Digunava ogni settimana insieme ai sacerdoti",
+      "Insegnava la legge nelle sinagoghe"
+    ],
+    "corretta": "Pregava Dio continuamente e faceva molte elemosine",
+    "riferimento": "Atti 10:2 - «Faceva molte elemosine al popolo e pregava Dio continuamente.»"
+  },
+  {
+    "domanda": "Cosa disse l'angelo a Cornelio riguardo alle sue preghiere e alle sue elemosine?",
+    "risposte": [
+      "Sono salite come una ricordanza davanti a Dio",
+      "Saranno ricompensate nel regno futuro",
+      "Hanno mostrato la sua fedeltà alla legge mosaica",
+      "Gli garantiranno una posizione speciale tra gli apostoli"
+    ],
+    "corretta": "Sono salite come una ricordanza davanti a Dio",
+    "riferimento": "Atti 10:4 - «Le tue preghiere e le tue elemosine sono salite come una ricordanza davanti a Dio.»"
+  },
+  {
+      "domanda": "Che ruolo ricopriva Cornelio secondo Atti",
+      "risposte": [
+        "Centurione della coorte Italica",
+        "Sommo sacerdote del tempio",
+        "Fariseo membro del sinedrio",
+        "Governatore della Giudea"
+      ],
+      "corretta": "Centurione della coorte Italica",
+      "riferimento": "Atti 10:1 - «Vi era in Cesarea un uomo di nome Cornelio, centurione della coorte detta Italica.»"
+    },
+      {
+    "domanda": "Quale profeta cucinò un cibo avvelenato che poi fu reso innocuo miracolosamente?",
+    "risposte": [
+      "Eliseo",
+      "Elia",
+      "Geremia",
+      "Natan"
+    ],
+    "corretta": "Eliseo",
+    "riferimento": "2 Re 4:38-41 - Eliseo rese innocua la minestra velenosa."
+  },
+    {
+    "domanda": "Quale discepolo morì e tornò in vita dopo essere caduto da una finestra durante una predicazione di Paolo?",
+    "risposte": [
+      "Eutico",
+      "Timoteo",
+      "Sostene",
+      "Silvano"
+    ],
+    "corretta": "Eutico",
+    "riferimento": "Atti 20:9-12 - Eutico poiché Paolo tirava in lungo il suo dire; egli, sopraffatto dal sonno, precipitò giù dal terzo piano e venne raccolto morto. (Luca l'autore del brano è tradizionalmente considerato medico e Usa il termine normale per “morto”)"
+  },
+  {
+  "domanda": "Quale discepolo riconobbe Gesù risorto nello spezzare il pane sulla via di Emmaus?",
+  "risposte": [
+    "Cleopa",
+    "Natanaele",
+    "Filippo",
+    "Andrea"
+  ],
+  "corretta": "Cleopa",
+  "riferimento": "Luca 24:30-31 - «Quando fu a tavola con loro prese il pane...Allora si aprirono loro gli occhi e lo riconobbero.»"
+}
 
 
 ]
