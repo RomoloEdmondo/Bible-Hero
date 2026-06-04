@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ordina</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Gioco Biblico">
+  <meta name="theme-color" content="#0d6efd">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
@@ -38,7 +42,7 @@
 
 
           <div class="d-flex justify-content-center mt-5">
-            <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
+            <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2 mb-5">
                 <i class="bi bi-house me-2"></i>Home
             </a>
           </div>
@@ -64,7 +68,21 @@
     const feedback = document.getElementById("feedback");
     const selectSet = document.getElementById("selectSet");
 
-    new Sortable(lista, { animation: 150 });
+    new Sortable(lista, {
+      animation: 180,
+      easing: "cubic-bezier(0.2, 0, 0, 1)",
+      ghostClass: "sortable-ghost",
+      chosenClass: "sortable-chosen",
+      dragClass: "sortable-drag",
+      delayOnTouchOnly: true,
+      delay: 80,
+      touchStartThreshold: 4,
+      fallbackTolerance: 6,
+      scroll: true,
+      bubbleScroll: true,
+      scrollSensitivity: 70,
+      scrollSpeed: 12
+    });
 
     function mescolaArray(array) {
       return array.slice().sort(() => Math.random() - 0.5);
@@ -87,6 +105,8 @@
   function caricaElementi() {
   const selezione = selectSet.value;
   ordineCorretto = liste[selezione];
+  if (!Array.isArray(ordineCorretto)) return;
+
   const elementi = mescolaArray(ordineCorretto);
 
   lista.innerHTML = "";
@@ -101,8 +121,14 @@
 
   elementi.forEach(nome => {
     const li = document.createElement("li");
-    li.textContent = nome;
+    li.dataset.value = nome;
     li.className = "sortable-item";
+    li.innerHTML = `
+      <span class="sortable-grip" aria-hidden="true">
+        <i class="bi bi-grip-vertical"></i>
+      </span>
+      <span class="sortable-label">${nome}</span>
+    `;
     lista.appendChild(li);
   });
 
@@ -115,7 +141,7 @@
 
       items.forEach((el, idx) => {
         el.classList.remove("correct", "incorrect");
-        if (el.textContent === ordineCorretto[idx]) {
+        if (el.dataset.value === ordineCorretto[idx]) {
           el.classList.add("correct");
           corretti++;
         } else {
@@ -128,7 +154,6 @@
         : `<div class="alert alert-warning">❌ ${ordineCorretto.length - corretti} errori. <br> Gli elementi corretti sono evidenziati in verde, quelli errati in rosso.</div>`;
     }
 
-    caricaElementi();
   </script>
 </body>
 </html>

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Biblico</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Gioco Biblico">
+  <meta name="theme-color" content="#0d6efd">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -53,7 +57,7 @@
 
     <div id="result" class="text-center mt-4" style="display: none;"></div>
 
-    <div class="mt-5 ps-2">
+    <div class="mt-5 ps-2 text-center">
       <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
        <i class="bi bi-house me-2"></i>Home
       </a>
@@ -208,6 +212,62 @@ feedbackEl.innerHTML = `
       nextBtn.focus();
     }
 
+    function buildQuizResultHtml() {
+      const titoloRisultato = errori.length === 0
+        ? `<i class="bi bi-trophy-fill me-2"></i>Congratulazioni! hai risposto correttamente a tutte le domande <i class="bi bi-stars ms-2"></i>`
+        : `<i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!`;
+
+      return `
+       <div class="quiz-result-card card border-0 shadow-sm p-4 text-center bg-white rounded-4">
+        <h3 class="quiz-result-title text-success mb-3">
+          ${titoloRisultato}
+        </h3>
+        <div class="quiz-score-summary" aria-label="Risposte corrette ${score} su ${questions.length}">
+          <span class="quiz-score-label">Risposte corrette</span>
+          <div class="quiz-score-value">
+            <span class="quiz-score-badge quiz-score-badge-success">${score}</span>
+            <span class="quiz-score-separator">su</span>
+            <span class="quiz-score-badge quiz-score-badge-total">${questions.length}</span>
+          </div>
+        </div>
+      </div>
+    `;
+    }
+
+    function launchPerfectQuizCelebration() {
+      if (document.querySelector(".quiz-celebration")) return;
+
+      const overlay = document.createElement("div");
+      overlay.className = "quiz-celebration";
+      overlay.setAttribute("aria-hidden", "true");
+
+      const confettiColors = ["#22c55e", "#f59e0b", "#ef4444", "#3b82f6", "#a855f7", "#f97316", "#14b8a6", "#facc15", "#ffd700", "#d4af37"];
+      for (let i = 0; i < 58; i++) {
+        const piece = document.createElement("span");
+        piece.className = "quiz-confetti";
+        piece.style.setProperty("--x", `${18 + Math.random() * 82}vw`);
+        piece.style.setProperty("--y", `${-34 - Math.random() * 78}vh`);
+        piece.style.setProperty("--delay", `${Math.random() * 0.18}s`);
+        piece.style.setProperty("--rotate", `${Math.random() * 360}deg`);
+        piece.style.setProperty("--color", confettiColors[i % confettiColors.length]);
+        piece.style.setProperty("--drift", `${Math.random() * 130 - 35}px`);
+        overlay.appendChild(piece);
+      }
+
+      const balloonColors = ["#22c55e", "#f97316", "#3b82f6", "#ec4899", "#facc15"];
+      for (let i = 0; i < 5; i++) {
+        const balloon = document.createElement("span");
+        balloon.className = "quiz-balloon";
+        balloon.style.setProperty("--left", `${12 + i * 19}%`);
+        balloon.style.setProperty("--delay", `${i * 0.06}s`);
+        balloon.style.setProperty("--balloon-color", balloonColors[i % balloonColors.length]);
+        overlay.appendChild(balloon);
+      }
+
+      document.body.appendChild(overlay);
+      window.setTimeout(() => overlay.remove(), 1700);
+    }
+
     nextBtn.onclick = () => {
       current++;
       if (current < questions.length) {
@@ -216,19 +276,7 @@ feedbackEl.innerHTML = `
         quizBox.innerHTML = "";
         quizBox.style.display = "none";
 
-        let html = `
-       <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
-        <h3 class="text-success mb-3">
-          <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
-        </h3>
-        <p class="fs-5">
-          <span class="text-muted">Risposte corrette:</span>
-          <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
-          <span class="text-muted">su</span>
-          <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
-        </p>
-      </div>
-    `;
+        let html = buildQuizResultHtml();
 
         if (errori.length > 0) {
           html += `
@@ -244,6 +292,10 @@ feedbackEl.innerHTML = `
         resultEl.innerHTML = html;
         resultEl.style.display = "block";
         localStorage.setItem('quizScore', score);
+
+        if (errori.length === 0) {
+          launchPerfectQuizCelebration();
+        }
 
         const retryBtn = document.getElementById("retryBtn");
         if (retryBtn) {
@@ -305,19 +357,7 @@ feedbackEl.innerHTML = `
           quizBox.innerHTML = "";
           quizBox.style.display = 'none';
 
-          let html = `
-        <div class="card border-0 shadow-sm p-4 text-center bg-white rounded-4">
-          <h3 class="text-success mb-3">
-            <i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!
-          </h3>
-          <p class="fs-5">
-            <span class="text-muted">Risposte corrette:</span>
-            <span class="badge rounded-pill bg-success fs-5 px-3 py-2">${score}</span>
-            <span class="text-muted">su</span>
-            <span class="badge rounded-pill bg-secondary fs-5 px-3 py-2">${questions.length}</span>
-          </p>
-        </div>
-      `;
+          let html = buildQuizResultHtml();
           quizBox.style.display = 'none';
 
 
@@ -335,6 +375,10 @@ feedbackEl.innerHTML = `
           resultEl.innerHTML = html;
           resultEl.style.display = "block";
           localStorage.setItem('quizScore', score);
+
+          if (errori.length === 0) {
+            launchPerfectQuizCelebration();
+          }
 
           const retryBtn = document.getElementById("retryBtn");
           if (retryBtn) {
