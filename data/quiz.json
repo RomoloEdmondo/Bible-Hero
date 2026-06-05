@@ -2635,7 +2635,7 @@
 "Durante l’ultima cena"
 ],
 "corretta": "Dopo che Gesù fu glorificato",
-"riferimento": "Giovanni 12:16 - «I suoi discepoli non compresero da principio queste cose.»"
+"riferimento": "Giovanni 12:16 - «I suoi discepoli non compresero subito queste cose; ma quando Gesù fu glorificato, allora si ricordarono che queste cose erano state scritte di lui e che essi gliele avevano fatte.»"
 },
 {
 "domanda": "Quali personaggi biblici cavalcarono un asino?",
@@ -2647,6 +2647,127 @@
 ],
 "corretta": "Gesù, Balaam, la Sunamita, Davide, Abigail e i figli di Iair",
 "riferimento": "Giovanni 12:14; Numeri 22:21; 2 Re 4:24; 1 Re 1:33; 1 Samuele 25:20; Giudici 10:4"
+},
+{
+"domanda":"In cosa differisce principalmente la Parusia da una visione?",
+"risposte":[
+"La Parusia riguarda una presenza reale, mentre la visione una percezione rivelata.",
+"La Parusia è sempre privata, mentre la visione è sempre pubblica.",
+"La Parusia avviene soltanto in sogno, la visione da svegli.",
+"La Parusia è sempre simbolica, mentre la visione è sempre letterale."
+],
+"corretta":"La Parusia riguarda una presenza reale, mentre la visione una percezione rivelata.",
+"riferimento":"1 Tessalonicesi 4:16-17; Atti 10:17 - «Il Signore stesso scenderà dal cielo»; «Pietro stava domandandosi che cosa significasse la visione.»"
+},
+{
+  "domanda": "Quale concetto è maggiormente enfatizzato dalla parola 'Parusia'?",
+  "risposte": [
+    "Una presenza reale e manifesta",
+    "Una rappresentazione simbolica",
+    "Un'apparizione esclusivamente spirituale",
+    "Una rivelazione ricevuta in sogno"
+  ],
+  "corretta": "Una presenza reale e manifesta",
+  "riferimento": "Matteo 24:27; 2 Tessalonicesi 2:8"
+},
+{
+  "domanda": "Quale significato aveva principalmente la parola greca 'Logos' nel contesto di Giovanni 1:1?",
+  "risposte": [
+    "Una semplice parola pronunciata",
+    "Un angelo messaggero di Dio",
+    "Parola, discorso, ragione o pensiero espresso",
+    "Un titolo riservato ai profeti"
+  ],
+  "corretta": "Parola, discorso, ragione o pensiero espresso",
+  "riferimento": "Giovanni 1:1 - Nel principio era il 'Logos', il 'Logos' era presso Dio e il 'Logos' era Dio."
+},
+{
+  "domanda": "Perché Giovanni usa il termine greco 'Logos' per riferirsi a Gesù?",
+  "risposte": [
+    "Per indicare una parola pronunciata",
+    "Per presentarlo come l'espressione e rivelazione di Dio",
+    "Per identificarlo come un uomo creato",
+    "Per attribuirgli il ruolo di profeta"
+  ],
+  "corretta": "Per presentarlo come l'espressione e rivelazione di Dio",
+  "riferimento": "Giovanni 1:1-14 . . .E il (Logos) è diventato carne e ha abitato per un tempo fra di noi"
+},
+{
+  "domanda": "Che cosa significa il termine greco 'Pneuma' nel Nuovo Testamento?",
+  "risposte": [
+    "Anima immortale",
+    "Spirito, soffio o vento",
+    "Mente razionale",
+    "Corpo glorificato"
+  ],
+  "corretta": "Spirito, soffio o vento",
+  "riferimento": "Giovanni 3:8: Gesù paragona il Pneuma al vento che soffia dove vuole. Atti 2:2-4: lo Spirito Santo si manifesta con il suono impetuoso del vento e riempie i credenti."
+},
+{
+  "domanda": "Quale episodio dell'Antico Testamento anticipa l'innalzamento di Cristo sulla croce secondo le parole di Gesù?",
+  "risposte": [
+    "L'arca di Noè",
+    "Il serpente di bronzo nel deserto",
+    "Il passaggio del Mar Rosso",
+    "La caduta di Gerico"
+  ],
+  "corretta": "Il serpente di bronzo nel deserto",
+  "riferimento": "Numeri 21:8-9; Giovanni 3:14-15 14 - E come Mosè innalzò il serpente nel deserto, così bisogna che il Figlio dell'uomo sia innalzato, 15 affinché chiunque crede in lui abbia vita eterna."
+},
+{
+  "domanda": "Quale evento dell'Esodo viene interpretato da Paolo come una figura del battesimo cristiano?",
+  "risposte": [
+    "La manna dal cielo",
+    "L'attraversamento del Mar Rosso",
+    "L'acqua dalla roccia",
+    "La costruzione del tabernacolo"
+  ],
+  "corretta": "L'attraversamento del Mar Rosso",
+  "riferimento": "1 Corinzi 10:1-2 - i nostri padri. . .furono tutti battezzati nella nuvola e nel mare, per essere di Mosè;"
+},
+{
+  "domanda": "Perché Pietro collega il battesimo all'episodio dell'arca di Noè?",
+  "risposte": [
+    "Perché l'arca era utilizzata per le immersioni rituali",
+    "Perché l'acqua rappresentò sia giudizio che salvezza",
+    "Perché Noè amministrava battesimi",
+    "Perché il diluvio durò esattamente quaranta giorni"
+  ],
+  "corretta": "Perché l'acqua rappresentò sia giudizio che salvezza",
+  "riferimento": "1 Pietro 3:20-21 - Al tempo di Noè, mentre si preparava l'arca, nella quale poche anime (8), furono salvate attraverso l'acqua. Quest'acqua era figura del battesimo (che non è eliminazione di sporcizia dal corpo, ma la richiesta di una buona coscienza verso Dio). Esso ora salva anche voi, mediante la risurrezione di Gesù Cristo,"
+},
+{
+  "domanda": "Per quale motivo Gesù volle essere battezzato pur essendo senza peccato?",
+  "risposte": [
+    "Per ricevere il perdono dei peccati",
+    "Per adempiere ogni giustizia e identificarsi",
+    "Per soddisfare il requisito sacerdotale richiesto dalla Legge di Mosè",
+    "Per entrare nella comunità di Giovanni"
+  ],
+  "corretta": "Per adempiere ogni giustizia e identificarsi",
+  "riferimento": "Matteo 3:13-17: . . Gesù gli rispose: «Lascia fare per ora, poiché conviene che noi adempiamo in questo modo ogni giustizia». Allora Giovanni lo lasciò fare. "
+},
+{
+  "domanda": "Quale differenza emerge tra il battesimo in acqua e il battesimo nello Spirito Santo?",
+  "risposte": [
+    "Il primo è amministrato da uomini, il secondo da Cristo",
+    "Il primo è per gli ebrei, il secondo per i gentili che credono",
+    "Il primo è simbolico, il secondo non esiste",
+    "Non vi è alcuna differenza"
+  ],
+  "corretta": "Il primo è amministrato da uomini, il secondo da Cristo",
+  "riferimento": "Matteo 3:11; Atti 1:5. Io vi battezzo con acqua, in vista del ravvedimento; ma colui che viene dopo me è più forte ... egli vi battezzerà con lo Spirito Santo e con il fuoco."
+},
+{
+  "domanda": "Quale elemento rende particolarmente significativo il battesimo di Gesù rispetto a tutti gli altri battesimi del Nuovo Testamento?",
+  "risposte": [
+    "Fu l'unico svolto nel fiume Giordano",
+    "Fu accompagnato dalla manifestazione simultanea del Padre, del Figlio e dello Spirito Santo",
+    "Fu amministrato da un sacerdote levitico",
+    "Fu celebrato durante la Pasqua"
+  ],
+  "corretta": "Fu accompagnato dalla manifestazione simultanea del Padre, del Figlio e dello Spirito Santo",
+  "riferimento": "Matteo 3:16-17. Il Figlio viene battezzato, lo Spirito scende come una colomba e il Padre parla dal cielo."
 }
 
 ]
