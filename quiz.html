@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/quiz.css">
+  <link rel="stylesheet" href="style/footer.css">
 </head>
 <style>
 
@@ -64,8 +65,17 @@
     </div>
   </div>
 
+  <div id="quiz-footer-placeholder"></div>
+
   <script>
     let questions = [];
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("quiz-footer-placeholder").innerHTML = data;
+        document.getElementById("annoCorrente").textContent = new Date().getFullYear();
+      });
 
     fetch(`data/quiz.json?ts=${Date.now()}`)
       .then(res => res.json())

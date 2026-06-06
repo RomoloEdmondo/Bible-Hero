@@ -64,6 +64,22 @@
     color: rgba(255, 255, 255, 0.68);
 }
 
+.footer-separator {
+    margin: 0 0.35rem;
+    color: rgba(255, 255, 255, 0.34);
+}
+
+.footer-info-link {
+    color: rgba(255, 255, 255, 0.74);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-info-link:hover {
+    color: #fbbf24;
+}
+
 @media (max-width: 768px) {
     .footer-hero {
         margin-top: 0.85rem;

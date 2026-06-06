@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri la missione di Bibbia Interattiva e come inviare segnalazioni o suggerimenti.">
+  <title>Informazioni | Bibbia Interattiva</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Gioco Biblico">
+  <meta name="theme-color" content="#1c1208">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/informazioni.css">
+  <link rel="stylesheet" href="style/footer.css">
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <main class="info-page container flex-grow-1">
+      <header class="info-heading text-center">
+        <div class="info-kicker">
+          <i class="bi bi-info-circle"></i>
+          Il progetto
+        </div>
+        <h1 class="info-title">
+          Informazioni <span>Bibbia Interattiva</span>
+        </h1>
+        <p class="info-intro">
+          Uno spazio semplice e accessibile per conoscere meglio la Bibbia e incoraggiare
+          una fede vissuta ogni giorno.
+        </p>
+      </header>
+
+      <section class="info-card" aria-label="Informazioni sul progetto">
+        <div class="info-section">
+          <div class="info-icon info-icon-mission" aria-hidden="true">
+            <i class="bi bi-book-half"></i>
+          </div>
+          <div>
+            <h2>Lo scopo</h2>
+            <p>
+              Bibbia Interattiva nasce per aiutare le persone a conoscere la Parola di Dio,
+              approfondirne il messaggio e crescere nella fede e nella vita cristiana.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-divider"></div>
+
+        <div class="info-section">
+          <div class="info-icon info-icon-contact" aria-hidden="true">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div>
+            <h2>Segnalazioni e suggerimenti</h2>
+            <div class="info-contact-row">
+              <p>
+                Hai trovato un errore, riscontrato un problema o desideri proporre un miglioramento?
+                Ogni segnalazione è preziosa e contribuisce a rendere il progetto più utile e accurato.
+              </p>
+              <a class="info-email" href="mailto:romolo.91@live.it">
+                <i class="bi bi-envelope"></i>
+                <span>Scrivimi</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-divider"></div>
+
+        <div class="info-section">
+          <div class="info-icon info-icon-share" aria-hidden="true">
+            <i class="bi bi-share"></i>
+          </div>
+          <div>
+            <h2>Condividi il progetto</h2>
+            <p>
+              Questo sito esiste per la gloria di Dio. Se lo ritieni utile, fallo conoscere
+              anche ad altre persone e invitale a utilizzarlo nel loro cammino di fede.
+            </p>
+          </div>
+        </div>
+
+        <blockquote class="info-quote">
+          <i class="bi bi-stars" aria-hidden="true"></i>
+          <p>Conoscere la Parola, crescere nella fede, condividerne il valore.</p>
+        </blockquote>
+      </section>
+
+      <div class="info-actions text-center">
+        <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
+          <i class="bi bi-house me-2"></i>Home
+        </a>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+  </div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        const yearEl = document.getElementById("annoCorrente");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+      });
+  </script>
+</body>
+
+</html>
