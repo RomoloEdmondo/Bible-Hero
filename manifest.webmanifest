@@ -2,9 +2,11 @@
   "name": "Gioco Biblico",
   "short_name": "Gioco Biblico",
   "description": "Quiz, lezioni, esercizi di ordine e timeline per studiare la Bibbia.",
+  "id": "./",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "background_color": "#0b1020",
   "theme_color": "#0d6efd",
   "icons": [
