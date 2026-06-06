@@ -366,45 +366,58 @@
     .home-panel {
         padding: 0.68rem;
         border-radius: 20px;
-        margin-top: 2.28rem;
+        margin-top: 1rem;
         margin-bottom: auto;
     }
 
     .game-modes {
-        gap: 0.58rem;
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
     }
 
     .game-mode {
-        min-height: 168px;
-        padding: 0.78rem 0.7rem;
+        min-height: 0;
+        padding: 0.9rem;
         border-radius: 16px;
     }
 
     .game-mode-inner {
-        gap: 0.62rem;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.85rem;
+    }
+
+    .game-text {
+        min-width: 0;
     }
 
     .game-title {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
+        margin-bottom: 0.2rem;
     }
 
     .game-description {
-        font-size: 0.76rem;
-        -webkit-line-clamp: 2;
+        display: block;
+        overflow: visible;
+        margin-bottom: 0.38rem;
+        font-size: 0.8rem;
+        line-height: 1.35;
     }
 
     .game-link {
-        font-size: 0.78rem;
+        font-size: 0.8rem;
+        gap: 0.35rem;
     }
 
     .game-icon-wrap {
-        width: 42px;
-        height: 42px;
-        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
     }
 
     .game-icon {
-        font-size: 1.02rem;
+        font-size: 1.15rem;
     }
 }
 

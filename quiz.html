@@ -57,7 +57,7 @@
 
     <div id="result" class="text-center mt-4" style="display: none;"></div>
 
-    <div class="mt-5 ps-2 text-center">
+    <div class="home-link-wrapper mt-5 ps-2 text-center">
       <a href="index.html" class="btn btn-home btn-lg rounded-pill shadow px-4 py-2">
        <i class="bi bi-house me-2"></i>Home
       </a>
@@ -214,8 +214,9 @@ feedbackEl.innerHTML = `
 
     function buildQuizResultHtml() {
       const titoloRisultato = errori.length === 0
-        ? `<i class="bi bi-trophy-fill me-2"></i>Congratulazioni! hai risposto correttamente a tutte le domande <i class="bi bi-stars ms-2"></i>`
-        : `<i class="bi bi-check-circle-fill me-2"></i>Hai completato il quiz!`;
+        ? `<span class="quiz-perfect-heading"><i class="bi bi-trophy-fill"></i> Perfetto!</span>
+           <span class="quiz-perfect-subtitle">Hai completato il quiz senza commettere errori.</span>`
+        : `<i class="bi bi-check-circle-fill me-2"></i>Quiz completato!`;
 
       return `
        <div class="quiz-result-card card border-0 shadow-sm p-4 text-center bg-white rounded-4">
@@ -291,6 +292,7 @@ feedbackEl.innerHTML = `
 
         resultEl.innerHTML = html;
         resultEl.style.display = "block";
+        document.body.classList.add("quiz-result-active");
         localStorage.setItem('quizScore', score);
 
         if (errori.length === 0) {
@@ -314,6 +316,7 @@ feedbackEl.innerHTML = `
       score = 0;
       errori = [];
       resultEl.innerHTML = "";
+      document.body.classList.remove("quiz-result-active");
 
       // Ricostruisci il box del quiz
       quizBox.style.display = 'block';
@@ -374,6 +377,7 @@ feedbackEl.innerHTML = `
 
           resultEl.innerHTML = html;
           resultEl.style.display = "block";
+          document.body.classList.add("quiz-result-active");
           localStorage.setItem('quizScore', score);
 
           if (errori.length === 0) {
@@ -397,6 +401,7 @@ feedbackEl.innerHTML = `
       score = 0;
       errori = [];
       resultEl.innerHTML = "";
+      document.body.classList.remove("quiz-result-active");
       quizBox.style.display = 'block';
       document.getElementById("startQuizWrapper").style.display = "none";
       loadQuestion();
@@ -425,7 +430,7 @@ feedbackEl.innerHTML = `
           </h3>
 
           <p class="quiz-start-subtitle mb-4">
-            Scegli quante domande vuoi affrontare prima di iniziare.
+            Quante domande vuoi affrontare?
           </p>
 
           <div class="quiz-start-grid">
