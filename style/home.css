@@ -395,15 +395,22 @@
     }
 
     .home-info-link {
+        display: flex;
+        align-items: center;
         width: 32px;
         height: 32px;
         justify-content: center;
         padding: 0;
         font-size: 0;
+        line-height: 1;
     }
 
     .home-info-link i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 0.9rem;
+        line-height: 1;
     }
 
     .subtitle {
